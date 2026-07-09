@@ -1,5 +1,31 @@
 # buat-teledrive-pakebrian
 
+```
+
+# Prompt: Telegram Bot - Phase 8 (My Files)
+
+Lanjutkan pengembangan Telegram Bot.
+
+Fokus hanya membuat fitur My Files.
+
+Target:
+
+- Saat pengguna menekan tombol 📁 My Files, tampilkan daftar file milik user dari MongoDB.
+- Hanya tampilkan file milik user tersebut.
+- Urutkan dari upload terbaru.
+- Maksimal tampilkan 10 file per halaman.
+- Jika file belum ada, tampilkan:
+  📂 Kamu belum memiliki file.
+  Silakan upload file terlebih dahulu.
+- Tampilkan nama file, ukuran, dan tanggal upload.
+- Jangan membuat website.
+- Jangan membuat dokumentasi baru.
+- Jangan membuat link download dulu.
+- Commit langsung ke GitHub dan tampilkan file yang diubah.
+
+
+
+```
 
 ```
 # Prompt: Telegram Bot - Phase 7 (Metadata Database)
