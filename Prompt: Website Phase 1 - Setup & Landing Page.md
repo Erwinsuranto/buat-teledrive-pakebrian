@@ -1,4 +1,98 @@
 # Prompt website 
+```
+
+# Prompt: Website Architecture Preparation
+
+Lanjutkan pengembangan website Telegram Drive.
+
+PENTING:
+- Jangan mengubah Bot Telegram.
+- Jangan mengubah Upload Handler.
+- Jangan mengubah MongoDB.
+- Jangan mengubah API.
+- Jangan membuat Download Page.
+- Jangan membuat Auth/Login.
+- Jangan membuat business logic.
+- Jangan membuat koneksi database.
+
+Fokus hanya merapikan struktur arsitektur frontend agar siap dihubungkan ke backend nanti.
+
+Lakukan hal berikut:
+
+1. Audit seluruh folder project frontend.
+
+2. Rapikan struktur folder menjadi konsisten.
+
+3. Buat folder yang diperlukan untuk tahap backend berikutnya, misalnya:
+- services/
+- hooks/
+- lib/
+- providers/
+- types/
+- constants/
+- utils/
+
+4. Semua folder cukup berisi placeholder bila belum dipakai.
+
+5. Pisahkan reusable components bila masih ada yang tercampur.
+
+6. Pastikan import path tetap rapi.
+
+7. Hapus kode duplikat bila ada.
+
+8. Rapikan penamaan file dan component agar konsisten.
+
+9. Pastikan project tetap build tanpa error.
+
+10. Jangan mengubah tampilan UI yang sudah selesai.
+
+11. Jangan membuat endpoint.
+
+12. Jangan membuat fetch.
+
+13. Jangan membuat API.
+
+14. Jangan membuat database query.
+
+15. Jangan membuat halaman Download.
+
+16. Jangan mengubah Bot Telegram sama sekali.
+
+## Setelah selesai
+
+1. Commit langsung ke GitHub.
+
+2. Update README.md yang sudah ada (WAJIB):
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Jangan membuat file dokumentasi lain.
+- Tambahkan Development Log baru di bagian PALING BAWAH README.md.
+
+Format:
+
+### DD MMM YYYY - HH:mm WIB
+
+Perubahan:
+- ...
+
+File dibuat:
+- ...
+
+File diubah:
+- ...
+
+Commit:
+- xxxxxxx
+
+3. Laporkan:
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+- Pastikan Bot Telegram, Upload Handler, MongoDB, API, Download Page, dan Auth/Login tidak disentuh.
+
+
+
+```
 
 ```
 
