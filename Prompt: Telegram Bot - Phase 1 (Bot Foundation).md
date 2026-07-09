@@ -2,6 +2,68 @@
 
 ```
 
+# Prompt: Telegram Bot - Phase 4 (Start Menu & User Experience)
+
+Lanjutkan pengembangan Telegram Bot.
+
+Jangan membuat website.
+
+Jangan membuat README, docs, roadmap, atau file markdown baru.
+
+Jangan mengubah fitur upload yang sudah selesai.
+
+Fokus pada pengalaman pengguna (UX) bot.
+
+Target Phase 4:
+
+- Perbarui command /start menjadi lebih menarik menggunakan emoji.
+- Tambahkan ucapan selamat datang yang rapi.
+- Gunakan HTML parse mode agar teks lebih menarik.
+- Tambahkan Reply Keyboard (bukan Inline Keyboard).
+
+Menu yang ditampilkan:
+
+📤 Upload File
+📁 My Files
+🔍 Search
+❓ Bantuan
+⚙️ Tentang Bot
+
+Jika pengguna menekan salah satu menu, bot harus memberikan respon yang sesuai (sementara boleh berupa placeholder kecuali Upload File).
+
+Contoh pesan /start:
+
+👋 Halo, <nama pengguna>!
+
+Selamat datang di <b>Telegram Drive</b>.
+
+☁️ Simpan file dengan mudah.
+⚡ Upload cepat.
+🔗 Link download akan dibuat otomatis.
+📂 Semua file tersimpan dengan aman di Telegram.
+
+Silakan pilih menu di bawah.
+
+Tambahkan emoji pada semua pesan agar terlihat modern tetapi tidak berlebihan.
+
+Gunakan satu file khusus untuk konfigurasi semua teks agar nanti mudah diterjemahkan atau diubah.
+
+Jangan membuat database.
+Jangan membuat website.
+Jangan membuat link download.
+Jangan membuat dokumentasi baru.
+
+Pastikan build berhasil tanpa error.
+
+Commit langsung ke repository GitHub dan tampilkan daftar file yang dibuat atau diubah.
+
+
+
+```
+
+
+```
+
 
 # Prompt: Telegram Bot - Phase 3 (Save Uploaded Files to Telegram Channel)
 
