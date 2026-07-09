@@ -1,4 +1,146 @@
 # Prompt website 
+# Prompt: Database Schema Preparation
+```
+
+# Prompt: Database Schema Preparation
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- API
+- Download Page
+- Auth/Login
+- Middleware
+- Endpoint
+- Business Logic
+
+Fokus hanya membuat struktur model/schema TypeScript yang akan digunakan backend nanti.
+
+Buat folder jika belum ada:
+
+schemas/
+
+atau
+
+models/
+
+(sesuaikan struktur project yang sudah ada.)
+
+Buat model berikut:
+
+1. User
+2. File
+3. UploadLog
+4. DownloadLog
+5. Folder (untuk fitur masa depan)
+
+Semua model hanya berisi interface/type/schema placeholder.
+
+Belum boleh membuat:
+
+- mongoose.model()
+- Prisma
+- Drizzle
+- SQL
+- Mongo Query
+- CRUD
+- API
+- fetch
+- axios
+
+Data File minimal memiliki:
+
+- id
+- downloadToken
+- telegramFileId
+- telegramMessageId
+- fileName
+- originalName
+- extension
+- mimeType
+- size
+- thumbnail
+- uploadedBy
+- uploadedAt
+- deletedAt
+- downloadCount
+
+Data User minimal memiliki:
+
+- telegramId
+- username
+- displayName
+- firstSeen
+- lastSeen
+
+Data UploadLog minimal memiliki:
+
+- uploadTime
+- uploader
+- fileId
+- status
+
+Data DownloadLog minimal memiliki:
+
+- downloadTime
+- ip
+- device
+- fileId
+
+Folder cukup placeholder untuk roadmap berikutnya.
+
+Gunakan export yang rapi agar mudah digunakan backend nanti.
+
+Pastikan seluruh project tetap build tanpa error.
+
+Jangan mengubah UI.
+
+Jangan mengubah halaman website.
+
+Jangan mengubah Bot.
+
+## Setelah selesai
+
+1. Commit langsung ke GitHub.
+
+2. Update README.md yang sudah ada (WAJIB):
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Jangan membuat file dokumentasi lain.
+- Tambahkan Development Log baru di bagian paling bawah README.md.
+
+Format Development Log:
+
+### DD MMM YYYY - HH:mm WIB
+
+Perubahan:
+- ...
+
+File dibuat:
+- ...
+
+File diubah:
+- ...
+
+Commit:
+- xxxxxxx
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan Bot Telegram, Upload Handler, MongoDB, API, Download Page, dan Auth/Login tidak disentuh.
+
+
+
+```
 ```
 
 
