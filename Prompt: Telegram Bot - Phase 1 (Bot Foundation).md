@@ -1,5 +1,42 @@
 # buat-teledrive-pakebrian
 
+```
+
+# Prompt: Telegram Bot - Rapikan Pesan Upload
+
+Jangan menambahkan fitur baru.
+
+Rapikan UX setelah upload.
+
+Target:
+
+- Hapus pesan "Sedang memproses file kamu...".
+- Gunakan Telegram Chat Action (typing/upload_document/upload_photo) sebagai indikator proses, bukan mengirim pesan.
+- Hapus Link Download dari balasan bot.
+- downloadToken tetap dibuat dan tetap disimpan di MongoDB, tetapi jangan ditampilkan ke user.
+- Rapikan pesan sukses menjadi:
+
+✅ Upload Berhasil!
+
+🖼️ Jenis File
+👤 Pengguna
+📦 Ukuran
+🆔 ID Singkat
+🕒 Waktu Upload
+
+✨ File berhasil disimpan di Telegram Drive.
+
+- Jangan mengubah alur upload.
+- Jangan mengubah MongoDB.
+- Jangan mengubah Telegram Channel Database.
+- Jangan membuat website.
+- Jangan membuat dokumentasi baru.
+
+Commit langsung ke GitHub dan tampilkan file yang diubah.
+
+
+
+```
 
 ```
 
