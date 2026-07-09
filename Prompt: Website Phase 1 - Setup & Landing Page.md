@@ -1,6 +1,71 @@
 # Prompt website 
 
+```
 
+Nama Prompt: Website Phase 3 - Website Structure
+
+Tambahkan fitur berikut ke project Telegram Drive.
+
+ATURAN WAJIB
+
+1. Fokus hanya mengerjakan fitur yang diminta.
+2. Jangan mengubah Bot Telegram.
+3. Jangan mengubah Upload Telegram Channel.
+4. Jangan mengubah MongoDB.
+5. Jangan membuat API.
+6. Jangan membuat database baru.
+7. Jangan membuat README.md baru.
+8. Gunakan hanya README.md yang sudah ada jika memang perlu.
+9. Jangan membuat docs, markdown, roadmap baru.
+10. Gunakan struktur project yang sudah ada.
+11. Jika membuat file baru, buat seperlunya.
+12. Pastikan project tetap build tanpa error.
+13. Commit langsung ke GitHub.
+14. Tampilkan daftar file yang dibuat atau diubah.
+15. Jangan menghapus kode yang sudah berjalan.
+
+FITUR YANG HARUS DIBUAT
+
+Buat struktur halaman website menggunakan App Router Next.js.
+
+Tambahkan halaman berikut:
+
+🏠 Home
+📁 My Files
+📤 Upload
+🔍 Search
+ℹ️ About
+❓ Help
+🔐 Login
+
+Semua halaman cukup berupa placeholder dengan layout yang sama.
+
+Setiap halaman cukup memiliki:
+
+- Judul halaman
+- Icon
+- Deskripsi singkat
+- Tombol kembali ke Home
+
+Gunakan Header dan Footer yang sudah dibuat.
+
+Jangan membuat Dashboard.
+
+Jangan membuat Download Page.
+
+Jangan membuat API.
+
+Jangan menghubungkan MongoDB.
+
+Jangan mengambil data apa pun.
+
+Jangan membuat autentikasi.
+
+Fokus hanya membuat struktur halaman agar routing website sudah lengkap.
+
+
+
+```
 
 ```
 
