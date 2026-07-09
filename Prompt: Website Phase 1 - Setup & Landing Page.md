@@ -1,4 +1,157 @@
 # Prompt website
+
+# Prompt: API Layer (Foundation Only)
+
+```
+
+# Prompt: API Layer (Foundation Only)
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- Download Page
+- Auth/Login
+- Middleware
+- Business Logic
+
+Fokus hanya membuat pondasi API Layer.
+
+Tujuan:
+
+Membuat struktur API yang nantinya dipakai Website Dashboard, File Manager, Search, Download, dan halaman lainnya.
+
+BELUM BOLEH:
+
+- Query MongoDB
+- CRUD
+- Business Logic
+- Validasi Database
+- Download Logic
+- Upload Logic
+- Auth Logic
+
+API hanya menjadi placeholder yang memanggil Service Layer.
+
+Buat struktur seperti berikut (sesuaikan dengan App Router project):
+
+app/api/
+│
+├── files/
+│   └── route.ts
+│
+├── users/
+│   └── route.ts
+│
+├── uploads/
+│   └── route.ts
+│
+├── downloads/
+│   └── route.ts
+│
+├── folders/
+│   └── route.ts
+│
+└── health/
+    └── route.ts
+
+Semua route cukup:
+
+- export GET
+- export POST (jika diperlukan)
+- memanggil Service placeholder
+- mengembalikan response JSON sederhana
+
+Contoh:
+
+{
+  success: true,
+  message: "Placeholder API",
+  data: null
+}
+
+Health API hanya mengembalikan:
+
+{
+  status: "ok",
+  version: "0.1.0"
+}
+
+Gunakan helper response yang rapi jika diperlukan.
+
+Belum boleh membuat:
+
+- fetch
+- axios
+- database query
+- business logic
+- autentikasi
+- download
+- upload
+- middleware baru
+
+Pastikan semua route bisa di-build tanpa error.
+
+Jangan mengubah UI.
+
+Jangan mengubah Dashboard.
+
+Jangan mengubah Landing Page.
+
+Jangan mengubah Bot Telegram.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian paling bawah README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Hanya tambahkan log baru.
+- Gunakan format:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB
+- Repository Layer
+- Service Layer
+- Download Page
+- Auth/Login
+
+tetap tidak disentuh.
+
+
+
+```
+
 # Prompt: Service Layer (Tahap Pondasi)
 ```
 
