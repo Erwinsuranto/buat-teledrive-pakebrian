@@ -1,5 +1,132 @@
 # Prompt website
+# Prompt: Database Integration (Repository
 
+
+```
+# Prompt: Database Integration (Repository → MongoDB)
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+
+- Bot Telegram
+- Upload Handler
+- Website UI
+- Dashboard UI
+- Landing Page
+- API Route
+- Service Layer
+- Validation Layer
+- Download Page
+- Auth/Login
+
+Fokus hanya menghubungkan Repository Layer dengan MongoDB.
+
+Tujuan:
+
+Repository yang sebelumnya masih placeholder sekarang mulai menggunakan MongoDB sebagai sumber data.
+
+WAJIB:
+
+- Gunakan koneksi MongoDB yang sudah ada.
+- Jangan membuat koneksi MongoDB baru.
+- Jangan mengubah konfigurasi MongoDB.
+- Jangan mengubah schema yang sudah ada.
+- Jangan membuat database baru.
+
+Implementasikan fungsi repository agar menggunakan model/schema yang sudah tersedia.
+
+Contoh:
+
+FileRepository
+- findById()
+- findByDownloadToken()
+- findAll()
+- create()
+- update()
+- delete()
+
+UserRepository
+- findTelegramUser()
+- createUser()
+- updateUser()
+
+FolderRepository
+- createFolder()
+- listFolder()
+
+UploadRepository
+- saveUpload()
+- getHistory()
+
+DownloadRepository
+- saveDownload()
+- getStatistics()
+
+Gunakan async/await.
+
+Gunakan error handling yang rapi.
+
+Jangan mengubah Service Layer.
+
+Jangan mengubah API.
+
+Jangan mengubah UI.
+
+Jangan mengubah Bot Telegram.
+
+Pastikan project tetap build tanpa error.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian paling bawah README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Tambahkan log baru saja.
+- Format:
+  DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan:
+
+- Bot Telegram
+- Upload Handler
+- UI Website
+- Dashboard
+- Landing Page
+- API
+- Service Layer
+- Validation Layer
+- Download Page
+- Auth/Login
+
+tetap tidak disentuh.
+
+
+
+
+```
 # Prompt: Validation Layer
 
 ```
