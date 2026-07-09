@@ -1,5 +1,46 @@
 # buat-teledrive-pakebrian
 
+
+```
+# Prompt: Telegram Bot - Phase 5 (Upload Validation & User Experience)
+
+Lanjutkan pengembangan Telegram Bot.
+
+Jangan membuat website.
+
+Jangan membuat README, docs, roadmap, atau file markdown baru.
+
+Fokus hanya pada validasi upload dan pengalaman pengguna.
+
+Target Phase 5:
+
+- Tambahkan batas maksimal ukuran file melalui konfigurasi .env.
+- Validasi tipe file yang didukung.
+- Jika file terlalu besar, tampilkan pesan yang ramah beserta emoji.
+- Saat proses upload tampilkan status seperti:
+  ⏳ Sedang memproses...
+- Setelah berhasil:
+  ✅ File berhasil disimpan.
+- Jika gagal:
+  ❌ Upload gagal.
+  Sertakan alasan yang mudah dipahami.
+- Tambahkan logging yang lebih jelas.
+- Jangan mengubah fitur upload yang sudah berjalan.
+- Jangan membuat database.
+- Jangan membuat website.
+- Jangan membuat link download.
+- Jangan membuat dokumentasi baru.
+
+Usahakan perubahan file seminimal mungkin.
+
+Pastikan project build tanpa error.
+
+Commit langsung ke repository GitHub dan tampilkan daftar file yang dibuat atau diubah.
+
+
+
+
+```
 ```
 
 # Prompt: Telegram Bot - Phase 4 (Start Menu & User Experience)
