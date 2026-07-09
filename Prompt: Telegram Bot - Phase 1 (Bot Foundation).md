@@ -2,6 +2,36 @@
 
 ```
 
+# Prompt: Telegram Bot - Phase 9 (Search Files)
+
+Lanjutkan pengembangan Telegram Bot.
+
+Fokus hanya pada fitur Search.
+
+Target:
+
+- Saat pengguna menekan 🔍 Search, bot meminta kata kunci.
+- Cari file milik user sendiri di MongoDB berdasarkan nama file.
+- Pencarian tidak membedakan huruf besar/kecil.
+- Tampilkan maksimal 10 hasil.
+- Jika tidak ada hasil tampilkan:
+  ❌ File tidak ditemukan.
+- Jika ada hasil tampilkan:
+  📄 Nama File
+  📦 Ukuran
+  📅 Tanggal Upload
+- Setelah hasil ditampilkan, tampilkan kembali menu utama.
+- Jangan membuat website.
+- Jangan membuat dokumentasi baru.
+- Jangan membuat link download dulu.
+- Commit langsung ke GitHub dan tampilkan file yang diubah.
+
+
+
+```
+
+```
+
 # Prompt: Telegram Bot - Phase 8 (My Files)
 
 Lanjutkan pengembangan Telegram Bot.
