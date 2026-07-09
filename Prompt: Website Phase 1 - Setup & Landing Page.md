@@ -1,6 +1,111 @@
 # Prompt website 
 
+```
 
+# Prompt: Website Design System
+
+Lanjutkan pengembangan website Telegram Drive.
+
+PENTING:
+- Jangan mengubah Bot Telegram.
+- Jangan mengubah Upload Handler.
+- Jangan mengubah MongoDB.
+- Jangan mengubah API.
+- Jangan membuat Download Page.
+- Jangan membuat Auth/Login.
+- Jangan menghubungkan database.
+- Fokus hanya membangun Design System dan reusable UI components.
+
+Gunakan Next.js App Router + Tailwind CSS.
+
+Buat Design System yang akan dipakai seluruh website.
+
+Buat reusable components untuk:
+
+- Button
+- Input
+- Search Box
+- Select
+- Badge
+- Card
+- Modal
+- Dialog
+- Dropdown Menu
+- Tooltip
+- Toast
+- Tabs
+- Pagination
+- Breadcrumb
+- Empty State
+- Loading Skeleton
+- Avatar
+- Status Badge
+- File Icon Component
+- File Type Badge
+- Theme Container
+- Section Header
+
+Semua component dipisahkan ke folder components/ui.
+
+Gunakan style yang konsisten:
+
+- Modern
+- Minimalis
+- Rounded
+- Smooth animation
+- Mobile First
+- Responsive
+- Clean spacing
+
+Semua halaman yang sudah dibuat (Landing Page, Dashboard, Files, Uploads, Users, Settings, Help, About) gunakan component baru ini agar tampilannya konsisten.
+
+Jangan menambahkan backend.
+
+Jangan membuat API.
+
+Jangan membuat database.
+
+Jangan membuat business logic.
+
+Fokus hanya pada UI dan reusable components.
+
+Pastikan project tetap build tanpa error.
+
+## Setelah selesai
+
+1. Commit langsung ke GitHub.
+
+2. Update README.md yang sudah ada (WAJIB):
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Jangan membuat file dokumentasi lain.
+- Tambahkan Development Log baru di bagian paling bawah README.md.
+
+Format Development Log:
+
+### DD MMM YYYY - HH:mm WIB
+
+Perubahan:
+- ...
+
+File dibuat:
+- ...
+
+File diubah:
+- ...
+
+Commit:
+- xxxxxxx
+
+3. Setelah selesai laporkan:
+- File yang dibuat.
+- File yang diubah.
+- Hash Commit GitHub.
+- Pastikan Bot Telegram, Upload Handler, MongoDB, API, Download Page, dan Auth/Login tidak disentuh.
+
+
+
+```
 
 ```
 
