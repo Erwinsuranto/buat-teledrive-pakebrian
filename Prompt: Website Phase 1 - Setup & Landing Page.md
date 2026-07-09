@@ -1,5 +1,134 @@
 # Prompt website
+# Prompt: Service Layer (Tahap Pondasi)
+```
 
+# Prompt: Service Layer
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- API
+- Route
+- Download Page
+- Auth/Login
+- Middleware
+- Business Logic
+
+Fokus hanya membuat Service Layer sebagai pondasi backend.
+
+Tujuan:
+
+Membuat folder services yang akan menjadi penghubung antara Repository dan API.
+
+Belum boleh membuat:
+
+- Query MongoDB
+- CRUD
+- API
+- Route
+- Endpoint
+- fetch
+- axios
+- Business Logic
+
+Buat struktur seperti berikut (sesuaikan dengan project):
+
+services/
+│
+├── user.service.ts
+├── file.service.ts
+├── upload.service.ts
+├── download.service.ts
+├── folder.service.ts
+└── index.ts
+
+Masing-masing service hanya berisi class/function placeholder.
+
+Contoh:
+
+FileService
+
+- getFile()
+- getFiles()
+- createFile()
+- updateFile()
+- deleteFile()
+
+UserService
+
+- getUser()
+- createUser()
+
+UploadService
+
+- saveUpload()
+- uploadHistory()
+
+DownloadService
+
+- downloadHistory()
+- statistics()
+
+FolderService
+
+- createFolder()
+- listFolder()
+
+Semua fungsi cukup memanggil repository placeholder atau melempar Error("Not Implemented").
+
+Belum boleh ada implementasi database.
+
+Belum boleh ada query.
+
+Belum boleh memakai mongoose.
+
+Gunakan export yang rapi agar API nantinya tinggal import service.
+
+Pastikan project tetap build tanpa error.
+
+Jangan mengubah UI.
+
+Jangan mengubah halaman website.
+
+Jangan mengubah Bot Telegram.
+
+---
+
+## Setelah selesai
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian paling bawah README.md yang sudah ada.
+
+WAJIB:
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Tambahkan log baru saja.
+- Gunakan format tanggal dan jam:
+  DD MMM YYYY - HH:mm WIB
+
+Isi log:
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan Bot Telegram, Upload Handler, MongoDB, Repository Layer, API, Download Page, dan Auth/Login tidak disentuh.
+
+
+
+```
 # Prompt: Repository Layer (Belum CRUD)
 
 ```
