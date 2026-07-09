@@ -1,5 +1,48 @@
 # buat-teledrive-pakebrian
+```
 
+# Prompt: Telegram Bot - Phase 6 (Fallback & Conversation Flow)
+
+Lanjutkan pengembangan Telegram Bot.
+
+Jangan membuat website.
+
+Jangan membuat README, docs, roadmap, atau file markdown baru.
+
+Jangan mengubah fitur upload yang sudah berjalan.
+
+Fokus pada alur percakapan bot.
+
+Target Phase 6:
+
+- Tambahkan handler untuk semua pesan yang tidak dikenali.
+- Jika pengguna mengirim teks yang bukan command atau menu, balas dengan pesan yang ramah.
+
+Contoh:
+
+🤔 Maaf, saya tidak mengerti perintah tersebut.
+
+Silakan gunakan menu di bawah atau ketik /start untuk kembali ke menu utama.
+
+- Jika pengguna menekan tombol keyboard, arahkan ke handler yang sesuai.
+- Setelah setiap aksi selesai, tampilkan kembali menu utama agar pengguna tidak bingung.
+- Tambahkan command /cancel untuk membatalkan proses yang sedang berjalan.
+- Jika pengguna mengirim file saat bot tidak sedang menunggu upload, berikan petunjuk yang jelas.
+- Rapikan seluruh pesan agar konsisten menggunakan emoji.
+- Simpan seluruh teks pada file konfigurasi messages.ts yang sudah ada, jangan membuat file konfigurasi baru.
+- Jangan membuat database.
+- Jangan membuat website.
+- Jangan membuat link download.
+- Jangan membuat dokumentasi baru.
+- Usahakan perubahan file seminimal mungkin.
+
+Pastikan project build tanpa error.
+
+Commit langsung ke repository GitHub dan tampilkan daftar file yang dibuat atau diubah.
+
+
+
+```
 
 ```
 # Prompt: Telegram Bot - Phase 5 (Upload Validation & User Experience)
