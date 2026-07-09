@@ -1,4 +1,140 @@
-# Prompt website 
+# Prompt website
+
+# Prompt: Repository Layer (Belum CRUD)
+
+```
+
+# Prompt: Repository Layer
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- API
+- Download Page
+- Auth/Login
+- Middleware
+- Endpoint
+- Business Logic
+
+Fokus hanya membuat Repository Layer sebagai pondasi backend.
+
+Tujuan:
+
+Membuat folder repository yang nantinya menjadi satu-satunya tempat akses database.
+
+Belum boleh membuat:
+
+- Query MongoDB
+- CRUD
+- API
+- Route
+- Endpoint
+- Controller
+- fetch
+- axios
+
+Buat struktur seperti berikut (sesuaikan dengan struktur project):
+
+repositories/
+│
+├── user.repository.ts
+├── file.repository.ts
+├── upload.repository.ts
+├── download.repository.ts
+├── folder.repository.ts
+└── index.ts
+
+Setiap repository cukup membuat class/interface/function placeholder.
+
+Contoh fungsi placeholder:
+
+File Repository
+
+- findById()
+- findByDownloadToken()
+- findAll()
+- create()
+- update()
+- delete()
+
+User Repository
+
+- findTelegramUser()
+- createUser()
+- updateUser()
+
+Upload Repository
+
+- saveUpload()
+- getHistory()
+
+Download Repository
+
+- saveDownload()
+- getStatistics()
+
+Folder Repository
+
+- createFolder()
+- listFolder()
+
+Semua fungsi hanya throw Error("Not Implemented") atau placeholder.
+
+Belum boleh mengakses MongoDB.
+
+Belum boleh mengimpor mongoose.
+
+Belum boleh membuat query.
+
+Gunakan export yang rapi agar nanti API cukup import repository.
+
+Pastikan project tetap build tanpa error.
+
+Jangan mengubah UI.
+
+Jangan mengubah halaman website.
+
+Jangan mengubah Bot Telegram.
+
+---
+
+## Setelah selesai
+
+1. Commit langsung ke GitHub.
+
+2. Update README.md yang sudah ada.
+
+WAJIB:
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Tambahkan Development Log baru di bagian paling bawah README.md.
+- Gunakan format tanggal dan jam:
+  `DD MMM YYYY - HH:mm WIB`
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan Bot Telegram, Upload Handler, MongoDB, API, Download Page, dan Auth/Login tidak disentuh.
+
+
+
+```
+
 # Prompt: Database Schema Preparation
 ```
 
