@@ -2,6 +2,41 @@
 
 ```
 
+Audit startup bot.
+
+Masalah:
+Setelah menjalankan `npm run bot`, yang muncul hanya:
+
+[INFO] Metadata database connected.
+
+Padahal saya ingin startup banner muncul SETELAH semua koneksi berhasil.
+
+Urutannya harus:
+
+🚀 Telegram Drive Bot Running
+🤖 Bot : @BOT_USERNAME
+📦 MongoDB : Connected ✅
+📢 Channel : Connected ✅
+🌐 Mode : Development
+🕒 Started : waktu server
+
+✅ Bot siap menerima upload file.
+
+Banner hanya muncul sekali saat startup.
+
+Jangan ubah fitur upload.
+Jangan ubah database.
+Jangan ubah handler.
+
+Jika ada logger lama yang membuat banner tidak muncul, perbaiki.
+
+Commit langsung ke GitHub.
+
+
+
+```
+```
+
 
 Jangan menambah fitur baru.
 
