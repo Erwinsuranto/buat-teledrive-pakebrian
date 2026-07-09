@@ -1,5 +1,32 @@
 # buat-teledrive-pakebrian
+```
 
+# Prompt: Telegram Bot - Phase 11 (Share Download Link)
+
+Lanjutkan pengembangan Telegram Bot.
+
+Fokus hanya pada pembuatan link download.
+
+Target:
+
+- Setelah upload berhasil, bot mengirim pesan:
+  ✅ File berhasil disimpan.
+
+  🔗 Link Download:
+  https://t.me/<BOT_USERNAME>?start=<downloadToken>
+
+- BOT_USERNAME diambil otomatis dari konfigurasi bot.
+- Pastikan link menggunakan downloadToken yang sudah ada, jangan membuat token baru.
+- Saat link dibuka, bot langsung memproses token yang sudah dibuat sebelumnya.
+- Jangan mengubah sistem upload.
+- Jangan mengubah MongoDB.
+- Jangan membuat website.
+- Jangan membuat dokumentasi baru.
+- Commit langsung ke GitHub dan tampilkan file yang diubah.
+
+
+
+```
 ```
 
 # Prompt: Telegram Bot - Phase 10 (Download Link)
