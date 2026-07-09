@@ -1,4 +1,134 @@
 # Prompt website
+# Prompt: API Layer Implementation
+
+```
+
+# Prompt: API Layer Implementation
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- UI Website
+- Dashboard UI
+- Validation Layer
+- Auth/Login
+
+Fokus hanya mengimplementasikan API Layer menggunakan Service Layer yang sudah selesai.
+
+WAJIB:
+
+API tidak boleh mengakses MongoDB secara langsung.
+
+API hanya boleh memanggil Service Layer.
+
+Implementasikan endpoint berikut menggunakan struktur App Router Next.js yang sudah ada.
+
+User API
+
+- GET
+- POST
+- PUT
+- DELETE
+
+File API
+
+- GET
+- POST
+- PUT
+- DELETE
+
+Folder API
+
+- GET
+- POST
+- PUT
+- DELETE
+
+Upload API
+
+- GET
+- POST
+
+Download API
+
+- GET
+- POST
+
+Health API
+
+- GET
+
+Gunakan:
+
+- async/await
+- TypeScript
+- Response JSON konsisten
+- HTTP Status Code yang benar
+- try/catch
+- error response konsisten
+
+API tidak boleh berisi business logic.
+
+Semua business logic WAJIB berada di Service Layer.
+
+Pastikan seluruh endpoint memanggil Service Layer.
+
+Jangan membuat endpoint baru selain struktur yang sudah ada.
+
+Pastikan build tetap tanpa error.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian PALING BAWAH README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Hanya menambahkan Development Log baru.
+- Format:
+  DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan bagian berikut tetap TIDAK DISENTUH:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- UI Website
+- Dashboard
+- Validation Layer
+- Auth/Login
+
+
+
+```
 # Prompt: Service Layer Implementation
 
 ```
