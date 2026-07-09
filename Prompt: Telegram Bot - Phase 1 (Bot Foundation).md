@@ -2,6 +2,33 @@
 
 ```
 
+
+Jangan menambah fitur baru.
+
+Rapikan log saat bot berhasil dijalankan.
+
+Ganti log startup menjadi lebih informatif menggunakan emoji.
+
+Contoh:
+
+🚀 Telegram Drive Bot Running...
+🤖 Bot : @BOT_USERNAME
+📦 Database : Connected ✅
+📡 Telegram Channel : Ready ✅
+🌐 Mode : Development
+⏰ Started : Tampilkan waktu server
+
+✅ Bot siap menerima upload file.
+
+Jangan mengubah fitur upload, MongoDB, atau Telegram Channel.
+
+Commit langsung ke GitHub.
+
+
+```
+
+```
+
 # Prompt: Telegram Bot - Rapikan Pesan Upload
 
 Jangan menambahkan fitur baru.
