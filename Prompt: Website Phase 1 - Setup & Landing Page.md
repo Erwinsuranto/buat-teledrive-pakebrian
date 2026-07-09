@@ -1,4 +1,85 @@
 # Prompt website
+# Prompt: Real Build Verification
+```
+
+# Prompt: Real Build Verification
+
+Lanjutkan pengembangan Telegram Drive.
+
+JANGAN membuat fitur baru.
+
+JANGAN mengubah UI.
+
+JANGAN mengubah Bot Telegram.
+
+JANGAN mengubah Upload Handler.
+
+JANGAN mengubah MongoDB Connection.
+
+JANGAN mengubah Repository, Service, API maupun Dashboard kecuali jika ditemukan error build.
+
+Tugas:
+
+1. Jalankan build project secara nyata.
+
+- npm install (jika diperlukan)
+- npm run lint
+- npm run build
+
+2. Jika terdapat error:
+
+- perbaiki hanya error tersebut
+- jangan melakukan refactor besar
+- jangan membuat fitur baru
+
+3. Pastikan:
+
+✓ TypeScript tanpa error
+✓ Next.js Build berhasil
+✓ Import valid
+✓ API Route valid
+✓ Dashboard dapat dikompilasi
+✓ Repository, Service, API saling terhubung
+
+4. Setelah build berhasil:
+
+Commit langsung ke GitHub.
+
+Tambahkan Development Log baru di bagian PALING BAWAH README.md.
+
+Jangan membuat README baru.
+
+Format log:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi:
+
+- Build berhasil
+- Jumlah warning
+- Jumlah error yang diperbaiki
+- File diubah
+- Commit Hash
+
+Laporkan:
+
+- Hasil npm run lint
+- Hasil npm run build
+- File diubah
+- Commit Hash
+
+Pastikan bagian berikut tetap tidak disentuh:
+
+- Bot Telegram
+- Upload Handler
+- Landing Page
+- Download Page
+- Auth/Login
+
+
+
+```
+
 # Prompt: Final QA, Build Audit & Refactor
 
 ```
