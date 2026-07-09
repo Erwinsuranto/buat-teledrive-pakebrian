@@ -1,5 +1,145 @@
 # Prompt website
 
+# Prompt: Validation Layer
+
+```
+
+
+# Prompt: Validation Layer
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB
+- Repository Layer
+- Service Layer
+- API Route
+- Download Page
+- Auth/Login
+- Middleware
+- Business Logic
+
+Fokus hanya membuat Validation Layer sebagai pondasi.
+
+Tujuan:
+
+Membuat sistem validasi yang nantinya digunakan seluruh API.
+
+BELUM BOLEH:
+
+- Validasi database
+- Query MongoDB
+- CRUD
+- Upload Logic
+- Download Logic
+- Auth Logic
+
+Buat struktur seperti berikut (sesuaikan project):
+
+validators/
+│
+├── file.validator.ts
+├── user.validator.ts
+├── upload.validator.ts
+├── folder.validator.ts
+├── download.validator.ts
+└── index.ts
+
+Setiap validator cukup membuat schema/function placeholder.
+
+Contoh:
+
+FileValidator
+
+- validateCreate()
+- validateUpdate()
+
+UserValidator
+
+- validateUser()
+
+FolderValidator
+
+- validateFolder()
+
+UploadValidator
+
+- validateUpload()
+
+DownloadValidator
+
+- validateDownload()
+
+Semua validator cukup mengembalikan placeholder.
+
+Belum boleh memakai MongoDB.
+
+Belum boleh ada business logic.
+
+Belum boleh mengubah API.
+
+Pastikan project tetap build tanpa error.
+
+Gunakan export yang rapi.
+
+Jangan mengubah UI.
+
+Jangan mengubah Dashboard.
+
+Jangan mengubah Landing Page.
+
+Jangan mengubah Bot Telegram.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian paling bawah README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Hanya menambahkan log baru.
+- Gunakan format:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB
+- Repository Layer
+- Service Layer
+- API Layer
+- Download Page
+- Auth/Login
+
+tetap tidak disentuh.
+
+
+```
 # Prompt: API Layer (Foundation Only)
 
 ```
