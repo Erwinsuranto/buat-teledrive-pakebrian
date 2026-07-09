@@ -1,4 +1,33 @@
 # buat-teledrive-pakebrian
+
+
+```
+
+
+# Prompt: Audit Core Upload Flow
+
+Jangan menambahkan fitur baru.
+
+Fokus hanya mengaudit alur utama Telegram Drive.
+
+Pastikan:
+
+- Bot menerima upload file.
+- File berhasil dikirim ke Telegram Channel Database.
+- Metadata berhasil disimpan ke MongoDB.
+- Jika salah satu langkah gagal, tampilkan error yang jelas.
+- Pastikan tidak ada bug pada alur upload.
+- Rapikan kode jika diperlukan tanpa mengubah fitur.
+- Build project harus berhasil tanpa error.
+
+Jangan membuat website.
+Jangan membuat dokumentasi baru.
+Jangan membuat fitur tambahan.
+
+Commit hasil audit ke GitHub dan tampilkan file yang diubah.
+
+
+```
 ```
 
 # Prompt: Telegram Bot - Phase 11 (Share Download Link)
