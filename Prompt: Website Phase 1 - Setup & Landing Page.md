@@ -1,4 +1,103 @@
 # Prompt website 
+
+
+
+```
+
+
+# Prompt: UI File Manager
+
+Lanjutkan pengembangan website Telegram Drive.
+
+PENTING:
+- Jangan mengubah Bot Telegram.
+- Jangan mengubah Upload Handler.
+- Jangan mengubah MongoDB.
+- Jangan mengubah API.
+- Jangan membuat Download Page.
+- Jangan membuat Auth/Login.
+- Jangan menghubungkan database.
+- Fokus hanya membuat UI halaman File Manager.
+
+Gunakan Next.js App Router + Tailwind CSS.
+
+Perbaiki halaman /files agar menjadi File Manager modern.
+
+Tambahkan:
+
+- Header halaman
+- Search Bar (UI saja)
+- Filter Button (UI saja)
+- Sort Button (UI saja)
+- Toggle Grid/List View
+- File Card
+- File List View
+- Folder Card
+- Empty State
+- Loading Skeleton
+- Pagination Component (dummy)
+- Breadcrumb
+- Responsive Mobile
+- Context Menu UI (Rename, Move, Delete, Share) sebagai placeholder tanpa fungsi
+- Floating Upload Button (UI saja)
+
+Setiap File Card tampilkan dummy:
+
+- Thumbnail
+- Nama File
+- Jenis File
+- Ukuran
+- Tanggal Upload
+- Icon File
+
+Semua data menggunakan dummy data.
+
+Jangan membuat fetch API.
+
+Jangan membuat database query.
+
+Jangan membuat business logic.
+
+Jangan membuat halaman Download.
+
+Gunakan reusable components.
+
+Pastikan halaman dapat dibuka tanpa error.
+
+## Setelah selesai
+
+1. Commit langsung ke GitHub.
+
+2. Update README.md yang sudah ada (WAJIB):
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Jangan membuat file dokumentasi lain.
+- Tambahkan Development Log baru di bagian paling bawah README.md.
+
+Format Development Log wajib:
+
+### DD MMM YYYY - HH:mm WIB
+
+Perubahan:
+- ...
+
+File dibuat:
+- ...
+
+File diubah:
+- ...
+
+Commit:
+- xxxxxxx
+
+3. Setelah selesai laporkan:
+- File yang dibuat.
+- File yang diubah.
+- Hash Commit GitHub.
+- Pastikan Bot Telegram, Upload Handler, MongoDB, API, Download Page, dan Auth/Login tidak disentuh.
+
+
+```
 ```
 
 # Prompt: Website Admin Dashboard Layout
