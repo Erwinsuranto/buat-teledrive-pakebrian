@@ -1,4 +1,133 @@
 # Prompt website
+# Prompt: Final QA, Build Audit & Refactor
+
+```
+
+# Prompt: Final QA, Build Audit & Refactor
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan membuat fitur baru.
+
+Jangan mengubah behavior aplikasi.
+
+Jangan mengubah desain.
+
+Jangan mengubah Bot Telegram.
+
+Jangan mengubah Upload Handler.
+
+Fokus hanya melakukan audit seluruh project.
+
+Checklist:
+
+✓ TypeScript Error
+✓ ESLint
+✓ Next.js Build
+✓ Import yang tidak digunakan
+✓ Duplicate Code
+✓ Circular Dependency
+✓ Folder Structure
+✓ Naming Consistency
+✓ Async Error Handling
+✓ API Response Consistency
+✓ Service Consistency
+✓ Repository Consistency
+✓ Validator Consistency
+✓ Component Consistency
+
+Pastikan:
+
+Model
+↓
+
+Repository
+↓
+
+Service
+↓
+
+API
+↓
+
+Dashboard
+
+sudah terhubung dengan benar.
+
+Pastikan tidak ada:
+
+- file duplicate
+- unused component
+- unused hook
+- unused util
+- dead code
+- unreachable code
+- import error
+- build warning
+
+Perbaiki bila ditemukan.
+
+Jangan mengubah UI.
+
+Jangan mengubah Landing Page.
+
+Jangan mengubah Download Page.
+
+Jangan mengubah Bot Telegram.
+
+Jangan mengubah Upload Handler.
+
+Jangan mengubah MongoDB Connection.
+
+Pastikan project build tanpa warning yang bisa diperbaiki.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Jalankan audit build.
+
+2. Commit langsung ke GitHub.
+
+3. Tambahkan Development Log baru di bagian PALING BAWAH README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Hanya menambahkan Development Log baru.
+- Format:
+  DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Hasil audit
+- Ringkasan perbaikan
+- File dibuat
+- File diubah
+- Commit Hash
+
+4. Laporkan:
+
+- Status build
+- File dibuat
+- File diubah
+- Commit Hash
+
+Pastikan bagian berikut tetap TIDAK DISENTUH:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Landing Page
+- Download Page
+- Auth/Login
+
+
+
+```
 # Prompt: Dashboard API Integration
 
 
