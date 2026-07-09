@@ -1,6 +1,110 @@
 # Prompt website 
 ```
 
+
+# Prompt: Frontend Data Layer Preparation
+
+Lanjutkan pengembangan website Telegram Drive.
+
+PENTING:
+- Jangan mengubah Bot Telegram.
+- Jangan mengubah Upload Handler.
+- Jangan mengubah MongoDB.
+- Jangan mengubah API.
+- Jangan membuat Download Page.
+- Jangan membuat Auth/Login.
+- Jangan membuat endpoint.
+- Jangan membuat fetch request.
+- Jangan membuat business logic.
+
+Fokus hanya menyiapkan Data Layer frontend agar siap dihubungkan ke backend pada tahap berikutnya.
+
+Buat struktur berikut:
+
+- types/file.ts
+- types/user.ts
+- types/upload.ts
+- services/file-service.ts (placeholder)
+- services/user-service.ts (placeholder)
+- services/upload-service.ts (placeholder)
+- constants/file-types.ts
+- constants/status.ts
+
+Buat TypeScript Interface berdasarkan data yang sudah digunakan Bot Telegram.
+
+Contoh informasi file:
+
+- id
+- downloadToken
+- fileName
+- fileType
+- fileSize
+- thumbnail
+- channelMessageId
+- telegramFileId
+- uploadedAt
+- uploadedBy
+
+Contoh informasi user:
+
+- id
+- telegramId
+- username
+- firstName
+- lastName
+
+Semua service hanya berisi placeholder dan komentar untuk implementasi API nanti.
+
+Jangan membuat fetch().
+
+Jangan membuat axios.
+
+Jangan membuat API Route.
+
+Jangan membuat MongoDB Query.
+
+Jangan mengubah UI.
+
+Jangan mengubah halaman yang sudah selesai.
+
+Pastikan project tetap build tanpa error.
+
+## Setelah selesai
+
+1. Commit langsung ke GitHub.
+
+2. Update README.md yang sudah ada (WAJIB):
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Jangan membuat file dokumentasi lain.
+- Tambahkan Development Log baru di bagian paling bawah README.md.
+
+Format:
+
+### DD MMM YYYY - HH:mm WIB
+
+Perubahan:
+- ...
+
+File dibuat:
+- ...
+
+File diubah:
+- ...
+
+Commit:
+- xxxxxxx
+
+3. Laporkan:
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+- Pastikan Bot Telegram, Upload Handler, MongoDB, API, Download Page, dan Auth/Login tidak disentuh.
+
+
+```
+```
+
 # Prompt: Website Architecture Preparation
 
 Lanjutkan pengembangan website Telegram Drive.
