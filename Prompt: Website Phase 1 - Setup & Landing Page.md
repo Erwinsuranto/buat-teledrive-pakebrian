@@ -1,4 +1,119 @@
 # Prompt website
+# Prompt: Dashboard API Integration
+
+
+```
+
+# Prompt: Dashboard API Integration
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Validation Layer
+- Auth/Login
+- Landing Page
+
+Fokus hanya menghubungkan Dashboard Website dengan API yang sudah dibuat.
+
+Dashboard tidak boleh lagi menggunakan placeholder statis apabila endpoint API sudah tersedia.
+
+Hubungkan Dashboard ke endpoint API menggunakan fetch() atau utility yang sudah ada.
+
+Integrasikan halaman berikut:
+
+Dashboard
+- Total Users
+- Total Files
+- Total Upload
+- Total Download
+- Recent Uploads
+- Recent Downloads
+
+Files
+- Ambil data dari API
+- Tampilkan list file
+- Loading state
+- Empty state
+- Error state
+
+Users
+- Ambil data dari API
+- Loading state
+- Empty state
+
+Uploads
+- Ambil data upload history
+- Loading state
+
+Settings
+- Persiapkan struktur untuk mengambil data API di masa depan.
+- Jangan implementasikan konfigurasi bisnis.
+
+Gunakan TypeScript.
+
+Gunakan komponen yang sudah ada.
+
+Jangan membuat desain baru.
+
+Jangan mengubah Design System.
+
+Jangan mengubah Landing Page.
+
+Pastikan build tetap tanpa error.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian PALING BAWAH README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Hanya menambahkan Development Log baru.
+- Format waktu:
+  DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan bagian berikut tetap TIDAK DISENTUH:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Validation Layer
+- Auth/Login
+- Landing Page
+
+
+
+```
 # Prompt: API Layer Implementation
 
 ```
