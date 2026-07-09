@@ -1,4 +1,107 @@
 # Prompt website 
+```
+
+# Prompt: Website Admin Dashboard Layout
+
+Lanjutkan pengembangan website Telegram Drive.
+
+PENTING:
+- Jangan mengubah Bot Telegram.
+- Jangan mengubah Upload Handler.
+- Jangan mengubah MongoDB.
+- Jangan mengubah API.
+- Jangan membuat Download Page.
+- Jangan membuat Auth/Login.
+- Jangan menghubungkan database.
+- Fokus hanya membuat struktur UI Dashboard Admin.
+
+Gunakan Next.js App Router + Tailwind CSS.
+
+Buat struktur halaman berikut:
+
+- /dashboard
+- /files
+- /uploads
+- /users
+- /settings
+
+Semua halaman masih berupa placeholder tetapi menggunakan layout yang sama.
+
+Dashboard harus memiliki:
+
+- Sidebar modern
+- Top Navbar
+- Breadcrumb
+- Responsive Mobile
+- Card Component
+- Table Component
+- Empty State Component
+- Loading Skeleton Component
+- Modal Component
+- Confirm Dialog Component
+
+Semua component dipisahkan ke folder components agar reusable.
+
+Gunakan desain modern, bersih, konsisten dengan identitas Telegram Drive.
+
+Belum boleh ada:
+- Fetch API
+- Database
+- Business Logic
+- Download Page
+- Auth/Login
+
+Pastikan semua route dapat dibuka tanpa error.
+
+## Setelah selesai
+
+1. Commit langsung ke GitHub.
+
+2. Update README.md yang sudah ada (WAJIB):
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Jangan membuat file dokumentasi lain.
+- Tambahkan Development Log baru di bagian PALING BAWAH README.md.
+
+Format Development Log wajib seperti berikut:
+
+## Development Log
+
+### DD MMM YYYY - HH:mm WIB
+
+Contoh:
+
+### 09 Jul 2026 - 22:35 WIB
+
+Perubahan:
+- Dashboard UI dibuat.
+- Sidebar dibuat.
+- Navbar dibuat.
+- Breadcrumb dibuat.
+- Card Placeholder dibuat.
+- Table Placeholder dibuat.
+- Loading Skeleton dibuat.
+- Empty State dibuat.
+- Component dipisahkan agar reusable.
+
+File dibuat:
+- ...
+
+File diubah:
+- ...
+
+Commit:
+- xxxxxxx
+
+3. Setelah selesai laporkan:
+- File yang dibuat.
+- File yang diubah.
+- Hash Commit GitHub.
+- Pastikan Bot Telegram, Upload Handler, MongoDB, API, Download Page, dan Auth/Login tidak disentuh.
+
+
+
+```
 
 ```
 
