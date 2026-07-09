@@ -1,4 +1,60 @@
 # Prompt website
+# Prompt: Download Token Foundation
+```
+
+
+Lanjutkan pengembangan Telegram Drive.
+
+Fokus kali ini adalah membuat pondasi Download Token System.
+
+Tugas:
+
+- Buat struktur download token yang nantinya dipakai website dan Bot Telegram.
+- Token harus unik.
+- Token harus dapat dipakai kembali oleh Website Download Page.
+- Token harus mudah dihubungkan ke MongoDB nanti.
+- Jangan implementasi download sebenarnya dulu.
+- Jangan mengubah business logic yang sudah ada.
+- Buat kode modular dan mudah dikembangkan.
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log BARU di bagian PALING BAWAH README.md.
+
+Jangan menghapus isi README lama.
+Jangan membuat README baru.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi:
+- Perubahan yang dibuat.
+- File dibuat.
+- File diubah.
+- Commit Hash.
+
+Laporkan:
+- File dibuat.
+- File diubah.
+- Hash Commit GitHub.
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Landing Page
+- Download Page
+- Auth/Login
+
+
+```
 # Prompt: Real Build Verification
 ```
 
