@@ -1,4 +1,58 @@
 # Prompt website
+
+# Prompt: Download Token Entity
+```
+
+Lanjutkan pengembangan Telegram Drive.
+
+Fokus kali ini adalah menghubungkan Download Token Foundation ke struktur entity/model.
+
+Tugas:
+
+- Tambahkan field downloadToken pada struktur entity/model file.
+- downloadToken bersifat unik.
+- Belum perlu dihubungkan ke MongoDB.
+- Belum perlu dipakai oleh Repository, Service, API, maupun Bot.
+- Jangan mengubah alur upload ataupun download.
+- Pastikan struktur tetap modular agar nanti mudah dihubungkan ke MongoDB.
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log BARU di bagian PALING BAWAH README.md.
+
+Jangan menghapus isi README lama.
+Jangan membuat README baru.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi:
+- Perubahan yang dibuat.
+- File dibuat.
+- File diubah.
+- Commit Hash.
+
+Laporkan:
+- File dibuat.
+- File diubah.
+- Hash Commit GitHub.
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Landing Page
+- Download Page
+- Auth/Login
+
+  ```
 # Prompt: Download Token Foundation
 ```
 
