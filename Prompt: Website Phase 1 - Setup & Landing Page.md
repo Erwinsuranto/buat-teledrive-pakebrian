@@ -1,4 +1,124 @@
 # Prompt website
+
+# Prompt: MongoDB Model Layer
+
+```
+
+
+# Prompt: MongoDB Model Layer
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Validation Layer
+- Website UI
+- Dashboard
+- Download Page
+- Auth/Login
+
+Fokus hanya membuat MongoDB Model Layer.
+
+Tujuan:
+
+Membuat seluruh model/schema MongoDB yang nantinya dipakai Repository Layer.
+
+BELUM BOLEH:
+
+- Query database
+- CRUD
+- Repository Logic
+- Service Logic
+- API Logic
+- Upload Logic
+- Download Logic
+
+Buat folder model/schema yang mengikuti struktur project.
+
+Minimal sediakan model untuk:
+
+- User
+- File
+- Folder
+- UploadHistory
+- DownloadHistory
+
+Gunakan mongoose schema.
+
+Pastikan setiap model:
+
+- mempunyai interface/type
+- export yang rapi
+- tidak membuat koneksi MongoDB baru
+- memakai koneksi MongoDB yang sudah ada
+- tidak menjalankan query
+
+Tambahkan index export bila diperlukan.
+
+Pastikan project tetap build tanpa error.
+
+Jangan mengubah UI.
+
+Jangan mengubah Dashboard.
+
+Jangan mengubah Landing Page.
+
+Jangan mengubah Bot Telegram.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian paling bawah README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Hanya menambahkan Development Log baru.
+- Format:
+  DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository
+- Service
+- API
+- Validation
+- UI Website
+- Download Page
+- Auth/Login
+
+tetap tidak disentuh.
+
+
+```
 # Prompt: Database Integration (Repository
 
 
