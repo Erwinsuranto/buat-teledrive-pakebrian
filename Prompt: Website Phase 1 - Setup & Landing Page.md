@@ -1,5 +1,132 @@
 # Prompt website
+# Prompt: Repository Implementation (MongoDB)
 
+
+```
+
+
+# Prompt: Repository Implementation (MongoDB)
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- UI Website
+- Landing Page
+- Dashboard UI
+- API Route
+- Validation Layer
+- Auth/Login
+
+Fokus hanya menghubungkan Repository Layer dengan MongoDB Model yang sudah dibuat.
+
+Gunakan model yang sudah ada.
+
+JANGAN membuat model/schema baru.
+
+Repository hanya bertugas berinteraksi dengan MongoDB.
+
+Implementasikan method dasar untuk setiap repository, seperti:
+
+User Repository:
+- create
+- findById
+- findAll
+- update
+- delete
+
+File Repository:
+- create
+- findById
+- findByToken
+- findAll
+- update
+- delete
+
+Folder Repository:
+- create
+- findById
+- findAll
+- update
+- delete
+
+Upload History Repository:
+- create
+- findByUser
+- findAll
+
+Download History Repository:
+- create
+- findByUser
+- findByToken
+
+Gunakan async/await.
+
+Gunakan TypeScript typing.
+
+Gunakan Model MongoDB yang sudah ada.
+
+Jangan membuat business logic.
+
+Jangan memanggil Service.
+
+Jangan memanggil API.
+
+Jangan membuat endpoint.
+
+Repository hanya sebagai akses database.
+
+Pastikan project tetap build tanpa error.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian paling bawah README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Hanya menambahkan Development Log baru.
+- Format:
+  DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- UI Website
+- Dashboard
+- API Route
+- Validation Layer
+- Auth/Login
+
+tetap tidak disentuh.
+
+
+```
 # Prompt: MongoDB Model Layer
 
 ```
