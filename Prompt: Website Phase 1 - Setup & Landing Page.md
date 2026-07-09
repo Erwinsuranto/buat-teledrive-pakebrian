@@ -1,4 +1,57 @@
 # Prompt website 
+
+```
+
+
+Lanjutkan pengembangan website Telegram Drive.
+
+PENTING:
+- Jangan mengubah kode Bot Telegram.
+- Jangan mengubah Upload Handler.
+- Jangan mengubah MongoDB Schema.
+- Jangan mengubah API.
+- Jangan membuat Download Page.
+- Jangan membuat autentikasi/login.
+- Fokus hanya pada struktur Dashboard UI.
+
+Buat Dashboard dengan layout modern menggunakan Next.js + Tailwind.
+
+Sidebar:
+- Dashboard
+- My Files
+- Search
+- Upload
+- Bantuan
+- Tentang
+
+Header:
+- Logo Telegram Drive
+- Judul halaman
+- Placeholder User Menu
+
+Halaman Dashboard:
+- Welcome Card
+- Total Files (placeholder)
+- Total Storage (placeholder)
+- Recent Files (placeholder)
+- Recent Activity (placeholder)
+
+Semua data masih dummy/placeholder.
+Jangan ada fetch API.
+Jangan ada koneksi database.
+
+Gunakan component terpisah agar mudah dikembangkan nanti.
+
+Setelah selesai:
+- Commit langsung ke GitHub.
+- Tambahkan Development Log baru di bagian paling bawah README.md.
+- Jangan menghapus isi README.md lama.
+- Jangan membuat README.md baru.
+- Jangan membuat file dokumentasi lain.
+- Laporkan file yang dibuat, file yang diubah, dan hash commit.
+
+
+```
 ```
 
 Nama Prompt: Website Phase 4 - Dashboard UI
