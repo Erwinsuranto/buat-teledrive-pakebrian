@@ -1,4 +1,34 @@
 # buat-teledrive-pakebrian
+
+
+```
+# Prompt: Telegram Bot - Phase 7 (Metadata Database)
+
+Lanjutkan pengembangan Telegram Bot.
+
+Fokus hanya pada metadata database.
+
+Target:
+- Setelah file berhasil dikirim ke Telegram Channel Database, simpan metadata ke database.
+- Simpan minimal:
+  - user_id
+  - message_id
+  - file_id
+  - file_unique_id
+  - file_name
+  - file_size
+  - file_type
+  - upload_date
+- Gunakan struktur yang mudah dikembangkan.
+- Jangan membuat website.
+- Jangan membuat dokumentasi baru.
+- Jangan membuat fitur Search atau My Files dulu.
+- Commit langsung ke GitHub dan tampilkan file yang diubah.
+
+
+
+
+```
 ```
 
 # Prompt: Telegram Bot - Phase 6 (Fallback & Conversation Flow)
