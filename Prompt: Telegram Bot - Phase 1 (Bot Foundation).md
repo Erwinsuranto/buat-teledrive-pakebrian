@@ -2,6 +2,31 @@
 
 ```
 
+# Prompt: Telegram Bot - Phase 10 (Download Link)
+
+Lanjutkan pengembangan Telegram Bot.
+
+Fokus hanya pada fitur Download Link.
+
+Target:
+
+- Setelah upload berhasil, buat downloadToken unik untuk setiap file.
+- Simpan downloadToken bersama metadata di MongoDB.
+- Tambahkan command /start <downloadToken>.
+- Jika token valid, bot mengambil metadata dari MongoDB lalu mengirim kembali file dari Telegram Channel Database ke user.
+- Jika token tidak valid, tampilkan pesan:
+❌ Link tidak valid atau sudah tidak tersedia.
+- Gunakan satu downloadToken yang nantinya juga akan dipakai oleh website, jangan membuat sistem token terpisah.
+- Jangan membuat website.
+- Jangan membuat dokumentasi baru.
+- Jangan mengubah fitur upload, My Files, atau Search yang sudah berjalan.
+- Commit langsung ke GitHub dan tampilkan file yang diubah.
+
+
+
+```
+```
+
 # Prompt: Telegram Bot - Phase 9 (Search Files)
 
 Lanjutkan pengembangan Telegram Bot.
