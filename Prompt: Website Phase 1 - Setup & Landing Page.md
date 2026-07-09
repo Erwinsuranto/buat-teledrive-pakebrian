@@ -1,4 +1,101 @@
 # Prompt website 
+```
+
+Nama Prompt: Website Phase 4 - Dashboard UI
+
+Tambahkan fitur berikut ke project Telegram Drive.
+
+ATURAN WAJIB
+
+1. Fokus hanya mengerjakan fitur yang diminta.
+2. Jangan mengubah Bot Telegram.
+3. Jangan mengubah sistem Upload Telegram Channel.
+4. Jangan mengubah MongoDB.
+5. Jangan membuat API.
+6. Jangan membuat autentikasi.
+7. Jangan membuat Download Page.
+8. Jangan membuat fitur tambahan di luar permintaan.
+9. Jangan membuat README.md baru.
+10. Gunakan hanya SATU README.md yang sudah ada.
+11. Jangan menghapus isi README.md yang lama.
+12. Setelah fitur selesai, tambahkan ringkasan perubahan di bagian paling bawah README.md pada section "Development Log".
+13. Jika "Development Log" belum ada, buat hanya SATU kali.
+14. Tambahkan log baru, jangan menghapus log sebelumnya.
+15. Jangan membuat docs/, roadmap.md, architecture.md, changelog.md, notes.md, atau file markdown lainnya.
+16. Gunakan struktur project yang sudah ada.
+17. Jika membuat file baru, buat seminimal mungkin.
+18. Pastikan project tetap build tanpa error.
+19. Commit langsung ke GitHub.
+20. Tampilkan daftar file yang dibuat atau diubah.
+21. Jangan menghapus kode yang sudah berjalan.
+
+FITUR YANG HARUS DIBUAT
+
+Buat Dashboard UI Telegram Drive.
+
+Sidebar:
+🏠 Dashboard
+📁 My Files
+📤 Upload
+🔍 Search
+⚙️ Settings
+🚪 Logout
+
+Dashboard berisi:
+
+- 📦 Total Files
+- 💾 Total Storage
+- 📥 Total Downloads
+- 📅 Last Upload
+
+Tambahkan:
+
+- Recent Files (placeholder)
+- Recent Activity (placeholder)
+
+Gunakan:
+
+- Telegram Blue Theme
+- Clean UI
+- Modern
+- Responsive
+- Mobile First
+- Rounded Card
+- Soft Shadow
+- Smooth Animation
+
+Gunakan data dummy (placeholder).
+
+Jangan mengambil data dari MongoDB.
+
+Jangan membuat backend.
+
+Jangan membuat API.
+
+Jangan membuat Download Page.
+
+Jangan membuat Login System.
+
+Fokus hanya membuat tampilan Dashboard yang nantinya akan dihubungkan ke backend.
+
+README.md
+
+Setelah selesai, tambahkan Development Log seperti contoh berikut tanpa menghapus log lama:
+
+## YYYY-MM-DD
+### Website Phase 4 - Dashboard UI
+
+- Dashboard UI dibuat.
+- Sidebar dibuat.
+- Statistik placeholder ditambahkan.
+- Recent Files placeholder ditambahkan.
+- Recent Activity placeholder ditambahkan.
+
+Commit langsung ke GitHub setelah selesai.
+
+
+
+```
 
 ```
 
