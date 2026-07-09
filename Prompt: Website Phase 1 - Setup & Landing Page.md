@@ -1,4 +1,130 @@
 # Prompt website
+# Prompt: Service Layer Implementation
+
+```
+
+# Prompt: Service Layer Implementation
+
+Lanjutkan pengembangan Telegram Drive.
+
+PENTING:
+
+Jangan mengubah:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- UI Website
+- Landing Page
+- Dashboard UI
+- API Route
+- Validation Layer
+- Auth/Login
+
+Fokus hanya mengimplementasikan Service Layer menggunakan Repository yang sudah selesai.
+
+JANGAN mengakses MongoDB secara langsung.
+
+Semua akses database WAJIB melalui Repository.
+
+Implementasikan service berikut:
+
+User Service
+- createUser()
+- getUserById()
+- getAllUsers()
+- updateUser()
+- deleteUser()
+
+File Service
+- createFile()
+- getFile()
+- getFileByToken()
+- getAllFiles()
+- updateFile()
+- deleteFile()
+
+Folder Service
+- createFolder()
+- getFolder()
+- getAllFolders()
+- updateFolder()
+- deleteFolder()
+
+Upload Service
+- createUploadHistory()
+- getUploadHistory()
+
+Download Service
+- createDownloadHistory()
+- getDownloadHistory()
+
+Gunakan:
+
+- async/await
+- TypeScript typing
+- Error handling
+- Return object yang konsisten
+
+Service hanya berisi business logic.
+
+Service tidak boleh:
+
+- mengakses MongoDB langsung
+- membuat API Route
+- membuat UI
+- mengubah Bot Telegram
+- mengubah Upload Handler
+
+Pastikan seluruh Service menggunakan Repository yang sudah dibuat.
+
+Pastikan project tetap build tanpa error.
+
+────────────────────────
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log baru di bagian PALING BAWAH README.md.
+
+WAJIB:
+
+- Jangan membuat README.md baru.
+- Jangan menghapus isi README.md lama.
+- Hanya menambahkan Development Log baru.
+- Format waktu:
+  DD MMM YYYY - HH:mm WIB
+
+Isi log:
+
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+3. Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan bagian berikut tetap TIDAK DISENTUH:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- UI Website
+- Dashboard
+- API Route
+- Validation Layer
+- Auth/Login
+
+
+
+```
 # Prompt: Repository Implementation (MongoDB)
 
 
