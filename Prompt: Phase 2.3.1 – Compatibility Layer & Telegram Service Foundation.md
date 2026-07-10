@@ -1,5 +1,71 @@
 
+# Prompt: Phase 2.3.4 – Upload Engine (Implement & Commit)
+```
 
+Lanjutkan langsung Phase 2.3.4 tanpa meminta konfirmasi.
+
+Gunakan seluruh fondasi Phase 2.3.3.
+
+Target:
+Membangun Upload Engine lengkap menggunakan abstraction yang sudah dibuat, tetapi belum terhubung ke Telegram API asli.
+
+Kerjakan:
+
+- Buat Upload Engine.
+- Implement Upload Pipeline.
+- Implement Upload Job Manager.
+- Implement Chunk Upload Interface.
+- Implement Progress Tracker.
+- Implement Upload Queue.
+- Implement Retry Upload.
+- Implement Upload Metadata Builder.
+- Implement Upload Result DTO.
+- Implement Upload Error Mapper.
+- Implement Upload Lifecycle.
+- Tambahkan Contract Test.
+- Audit dependency.
+- Rapikan export/index.ts bila perlu.
+
+Jangan:
+
+- Login Telegram.
+- Mengirim OTP.
+- Menggunakan Bot API.
+- Menghubungkan MTProto.
+- Upload file sungguhan.
+- Mengubah UI.
+- Mengubah API.
+- Mengubah Repository.
+
+Semua masih berupa engine dan abstraction agar implementasi Telegram asli nanti hanya mengganti adapter.
+
+Update README.md:
+
+- Upload Engine Architecture.
+- Upload Pipeline.
+- Upload Lifecycle.
+- Progress Phase 2.3.4.
+
+Setelah selesai:
+
+- Audit singkat.
+- Perbaiki issue kecil bila ada.
+- Jalankan typecheck bila memungkinkan.
+- Commit langsung.
+
+Output akhir:
+
+- Commit hash.
+- Ringkasan implementasi.
+- File dibuat.
+- File diubah.
+- Status kesiapan menuju Phase 2.3.5 (Download Engine).
+
+Jangan berhenti di tengah dan jangan meminta persetujuan. Selesaikan seluruh scope lalu commit.
+
+
+
+```
 
 # Prompt: Phase 2.3.3 – Real Telegram Transport Foundation (Implement & Commit)
 ```
