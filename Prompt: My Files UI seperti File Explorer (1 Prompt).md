@@ -1,6 +1,59 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
 
 
+# Prompt: Download Center
+```
+
+
+Lanjutkan pengembangan UI Telegram Drive dengan membuat Download Center yang modern, cepat, dan konsisten dengan seluruh aplikasi.
+
+Target:
+Menyediakan pusat pengelolaan download seperti aplikasi cloud storage profesional.
+
+Tambahkan:
+
+- Halaman Download Center.
+- Active Downloads.
+- Download Queue.
+- Download History.
+- Recent Downloads.
+- Pause Download.
+- Resume Download.
+- Cancel Download.
+- Retry Failed Download.
+- Progress Bar.
+- Download Speed (placeholder).
+- Estimated Time Remaining (placeholder).
+- Download Status:
+  - Waiting
+  - Downloading
+  - Completed
+  - Failed
+  - Cancelled
+- Multi Select.
+- Clear Completed.
+- Clear History.
+- Search Download History.
+- Filter berdasarkan status.
+- Sort berdasarkan tanggal, ukuran, dan nama.
+- Empty State.
+- Skeleton Loading.
+- Responsive untuk desktop, tablet, dan mobile.
+
+Gunakan komponen reusable yang sudah ada.
+
+Jangan mengubah backend, API, database, Telegram Bot, authentication, upload/download logic, maupun service.
+
+Update README.md dengan bagian "Download Center".
+
+Setelah selesai:
+- Ringkas perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan.
+- Lakukan visual audit agar Download Center memiliki kualitas setara aplikasi cloud storage modern.
+
+
+```
 # Prompt: Trash / Recycle Bin
 ```
 
