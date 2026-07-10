@@ -1,5 +1,60 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+# Prompt: File Preview & Details
+```
+Lanjutkan pengembangan UI Telegram Drive dengan menyempurnakan fitur File Preview dan File Details.
 
+Target:
+Membuat pengalaman membuka file terasa seperti Google Drive atau OneDrive.
+
+Tambahkan:
+
+- Preview gambar langsung.
+- Preview video dengan player.
+- Preview audio dengan player.
+- Preview PDF.
+- Preview dokumen (placeholder).
+- Preview arsip (ZIP/RAR) berupa informasi isi file.
+- Fullscreen Preview.
+- Zoom In / Zoom Out untuk gambar dan PDF.
+- Navigasi Previous / Next file.
+- Download Button.
+- Share Button (placeholder).
+- Copy Link (placeholder).
+- Favorite.
+- Rename.
+- Move.
+- Delete.
+- Metadata lengkap:
+  - Nama
+  - Ukuran
+  - Tipe File
+  - Created
+  - Updated
+  - Telegram File ID
+  - Channel
+  - Tags
+  - Status
+
+Gunakan Side Details Panel yang modern.
+
+Pastikan Preview dan Details tetap konsisten dengan My Files, Search, dan Upload.
+
+Gunakan kembali komponen reusable yang sudah dibuat.
+
+Jangan mengubah backend, API, database, Telegram Bot, authentication, upload logic, download logic, maupun service.
+
+Update README.md dengan bagian "File Preview & Details".
+
+Setelah selesai:
+- Jelaskan perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan.
+- Lakukan visual audit agar pengalaman Preview setara aplikasi cloud storage modern.
+
+
+
+
+```
 # Prompt: Upload Experience
 ```
 
