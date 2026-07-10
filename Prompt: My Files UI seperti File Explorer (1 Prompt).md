@@ -1,4 +1,318 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+# Prompt: Modern Application Navbar Redesign
+```
+Lakukan redesign total pada Navbar Telegram Drive agar terlihat seperti aplikasi cloud storage modern, bukan website biasa.
+
+## Tujuan
+
+Navbar harus memberikan kesan:
+
+- Professional
+- Clean
+- Modern
+- Premium
+- Productivity First
+
+Gunakan inspirasi UX dari:
+
+- Google Drive
+- Dropbox
+- OneDrive
+- GitHub
+- VS Code
+
+Jangan menyalin desain mereka secara langsung, tetapi gunakan prinsip UX yang sama.
+
+---
+
+## Layout
+
+Gunakan layout seperti ini.
+
+---------------------------------------------------------
+Telegram Drive
+
+[ Search ............................................. ]
+
+Home
+My Files
+Upload
+Search
+About
+Help
+
+(Login/Profile)
+---------------------------------------------------------
+
+Bukan menu yang memenuhi seluruh lebar layar.
+
+Gunakan container dengan max-width agar lebih rapi.
+
+---
+
+## Brand
+
+Logo Telegram Drive berada di kiri.
+
+Tampilkan:
+
+Logo
+
+Telegram Drive
+
+dengan typography modern.
+
+Jika layar kecil cukup tampilkan logo + nama.
+
+---
+
+## Navigation
+
+Menu:
+
+🏠 Home
+
+📁 My Files
+
+☁ Upload
+
+🔍 Search
+
+ℹ About
+
+❓ Help
+
+Jangan menggunakan icon yang terlalu besar.
+
+Gunakan icon outline yang konsisten.
+
+---
+
+## Active State
+
+Halaman aktif harus jelas.
+
+Misalnya:
+
+Background biru muda
+
+Text biru
+
+Border Radius
+
+Indicator kecil di bawah atau kiri.
+
+---
+
+## Hover
+
+Hover harus halus.
+
+Gunakan:
+
+Transition
+
+Background berubah sedikit
+
+Icon ikut berubah
+
+Cursor pointer
+
+Tidak boleh terlalu mencolok.
+
+---
+
+## Search
+
+Navbar memiliki Search Bar modern.
+
+Placeholder:
+
+Search files, folders, links...
+
+Search harus menjadi elemen utama navbar.
+
+Desktop:
+
+Search berada di tengah.
+
+Mobile:
+
+Search menjadi icon yang membuka search.
+
+---
+
+## Right Section
+
+Jika belum login:
+
+🔐 Login
+
+Jika sudah login:
+
+Avatar
+
+Nama User
+
+Dropdown:
+
+Profile
+
+Settings
+
+Logout
+
+Gunakan dropdown modern.
+
+---
+
+## Sticky Navbar
+
+Navbar tetap berada di atas saat halaman di-scroll.
+
+Tambahkan sedikit blur (backdrop blur).
+
+Background semi transparan.
+
+Shadow tipis.
+
+---
+
+## Responsive
+
+Desktop:
+
+Logo
+
+Search
+
+Menu
+
+User
+
+Tablet:
+
+Menu lebih ringkas.
+
+Mobile:
+
+Hamburger Menu.
+
+Search menjadi icon.
+
+Semua tetap nyaman digunakan.
+
+---
+
+## Visual
+
+Gunakan:
+
+Padding yang proporsional
+
+Spacing konsisten
+
+Border Radius modern
+
+Shadow tipis
+
+Glass effect ringan (jangan berlebihan)
+
+Tidak menggunakan warna yang terlalu ramai.
+
+---
+
+## UX
+
+Navbar harus terasa seperti aplikasi desktop modern.
+
+Fokus pada:
+
+Cepat
+
+Ringan
+
+Rapi
+
+Profesional
+
+Mudah digunakan.
+
+---
+
+## Accessibility
+
+Pastikan:
+
+Keyboard Navigation
+
+ARIA Label
+
+Focus State
+
+Kontras warna baik.
+
+---
+
+## Performance
+
+Navbar tidak boleh membuat halaman berat.
+
+Gunakan animasi ringan.
+
+Komponen reusable.
+
+---
+
+## README.md
+
+Update README.md.
+
+Tambahkan bagian:
+
+Modern Navbar
+
+Jelaskan:
+
+Layout baru
+
+Responsive
+
+Sticky Navbar
+
+Search
+
+Active State
+
+Dropdown User
+
+Accessibility
+
+---
+
+## Penjelasan
+
+Setelah selesai:
+
+1. Jelaskan perubahan desain.
+
+2. Jelaskan alasan UX yang dipilih.
+
+3. Sebutkan file yang diubah.
+
+4. Jelaskan bagaimana navbar ini siap untuk pengembangan fitur berikutnya.
+
+Jangan mengubah backend, API, database, autentikasi, upload, download, service, maupun bot.
+
+Fokus hanya pada redesign Navbar dan dokumentasi README.md.
+
+Sebelum selesai, lakukan visual audit untuk memastikan Navbar memiliki kualitas setara aplikasi cloud storage modern dan tidak terlihat seperti template website biasa.
+
+
+
+
+```
+
 # Prompt: My Files Explorer Enhancement
 ```
 
