@@ -1,3 +1,39 @@
+
+
+
+
+# 
+```
+
+The file picker opens successfully.
+
+The user can select a photo.
+
+However, after selecting the file, nothing happens.
+
+Investigate the upload frontend.
+
+Check:
+
+1. File input onChange handler.
+2. React state updates after file selection.
+3. Upload page navigation.
+4. Upload component lifecycle.
+5. JavaScript console errors.
+6. API request initiation.
+7. Network request execution.
+8. Form submission logic.
+
+Do not modify backend logic.
+
+Trace the complete frontend upload flow from clicking "Select File" until the upload request is sent.
+
+Fix the issue and verify that selecting a file immediately starts the expected upload workflow or displays the upload screen.
+
+
+
+```
+
 # 
 ```
 
