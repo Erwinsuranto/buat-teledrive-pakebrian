@@ -1,4 +1,75 @@
 
+# Siap menuju Phase 3.4 Password Reset
+```
+Lanjutkan langsung Phase 3.4 Password Reset.
+
+Jangan meminta konfirmasi.
+Jangan audit ulang repository.
+Jangan membaca ulang project.
+Repository GitHub tetap menjadi source of truth.
+Langsung buat branch baru dan commit setelah selesai.
+
+Target Phase 3.4:
+
+Implementasikan sistem Password Reset production-ready.
+
+Scope:
+
+- Password Reset Token Entity
+- Repository
+- Service
+- Controller
+- Forgot Password endpoint
+- Reset Password endpoint
+- Token generator
+- Token hash
+- Token expiry
+- Single-use token
+- Revoke token setelah digunakan
+- Rate limiter
+- Email provider abstraction
+- Mock mail provider
+- Email template abstraction
+- Security validation
+- Audit log hook
+- DTO
+- Validator
+- Mapper
+- Error mapper
+- Dependency Injection
+- Contract tests
+- Integration tests bila memungkinkan
+- Export/index
+- README
+
+Jangan mengubah:
+
+- UI
+- Telegram
+- Upload Engine
+- Download Engine
+- File Manager
+- Metadata Engine
+- Authentication yang sudah selesai selain bug kecil
+
+Jika menemukan bug kecil, perbaiki langsung.
+
+Jalankan workflow, typecheck, dan seluruh test.
+
+Jika semuanya hijau, langsung commit.
+
+Output akhir cukup berisi:
+
+- Commit hash
+- Ringkasan implementasi
+- File dibuat
+- File diubah
+- Status siap menuju Phase 3.5 User Dashboard & Profile
+
+
+
+
+```
 
 # Phase 3.3.
 ```
