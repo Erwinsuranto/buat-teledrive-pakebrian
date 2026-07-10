@@ -1,3 +1,64 @@
+
+
+# Prompt: Fix Build Until Success
+```
+
+
+You are continuing work on an existing Next.js + TypeScript repository.
+
+The repository has already undergone a major architecture refactor.
+
+Do NOT perform another architecture review.
+
+Do NOT redesign the project.
+
+Do NOT migrate anything.
+
+Your only objective is to restore a successful production build.
+
+Rules:
+
+- Never ask for confirmation.
+- Never stop after fixing one error.
+- Automatically continue until npm run build succeeds.
+- After fixing one build error, immediately run npm run build again.
+- If another error appears, fix it automatically.
+- Repeat until there are no TypeScript errors.
+- Preserve all existing features.
+- Do not remove functionality.
+- Do not modify unrelated files.
+
+Current status:
+- Previous build errors (missing exports and renamed types) have already been fixed.
+- The repository is now failing only because of remaining TypeScript compatibility issues introduced during refactoring.
+
+Continue fixing:
+- generic type mismatches
+- ServiceResult<T> incompatibilities
+- interface mismatches
+- renamed types
+- broken imports
+- repository return types
+- service return types
+
+Do not stop until:
+
+- npm run build exits successfully.
+- No TypeScript errors remain.
+- Next.js production build completes successfully.
+
+At the end:
+
+1. List every modified file.
+2. Explain every fix.
+3. Confirm that npm run build passes successfully.
+4. Report any warnings that remain (warnings are acceptable if they do not fail the build).
+
+
+```
+
+
+
 # Prompt: Fix All Remaining TypeScript Build Errors
 ```
 The previous build error has been fixed.
