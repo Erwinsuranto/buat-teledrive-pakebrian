@@ -1,4 +1,44 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+
+# Prompt: Upload Experience
+```
+
+Lanjutkan pengembangan UI Telegram Drive dengan menyempurnakan halaman Upload agar terlihat seperti aplikasi cloud storage modern.
+
+Target:
+- Pengalaman upload sederhana, cepat, dan profesional.
+- Konsisten dengan My Files dan Search.
+- Gunakan kembali komponen reusable yang sudah ada.
+
+Tambahkan:
+
+- Drag & Drop upload area.
+- Tombol "Choose Files" dan "Choose Folder".
+- Multiple file upload (mock).
+- Upload queue.
+- Progress bar untuk setiap file.
+- Pause, Resume, Cancel (placeholder).
+- Status Uploading, Completed, Failed, Waiting.
+- Informasi nama file, ukuran, dan estimasi waktu.
+- Empty state sebelum ada file.
+- Skeleton loading.
+- Notifikasi upload berhasil atau gagal (mock).
+- Responsive untuk desktop, tablet, dan mobile.
+- Gunakan animasi ringan.
+
+Jangan mengubah backend, API, database, Telegram Bot, autentikasi, upload logic, download logic, maupun service.
+
+Update README.md dengan bagian "Upload Experience".
+
+Setelah selesai:
+- Jelaskan perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Sebutkan komponen reusable yang digunakan.
+- Lakukan visual audit agar tampilan Upload memiliki kualitas yang sama dengan My Files dan Search.
+
+
+
+```
 # Prompt: Search Experience
 ```
 
