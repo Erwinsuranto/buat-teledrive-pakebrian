@@ -1,4 +1,65 @@
 # Prompt website
+# Prompt terakhir: Download Final Architecture Audit
+```
+
+Prompt: Download Final Architecture Audit
+
+Lanjutkan pengembangan Telegram Drive.
+
+Fokus kali ini adalah menyelesaikan arsitektur Download Foundation.
+
+Tugas:
+
+- Audit seluruh struktur Download Foundation yang sudah dibuat.
+- Pastikan semua util, types, entities, constants, helper, dan generator konsisten.
+- Rapikan import/export yang belum konsisten.
+- Hilangkan duplikasi bila ada.
+- Tambahkan dokumentasi singkat pada fungsi penting.
+- Pastikan seluruh pondasi siap dipakai untuk integrasi MongoDB, Repository, Service, API, Website, dan Bot Telegram pada tahap berikutnya.
+- Jangan menambah fitur baru.
+- Jangan mengubah alur aplikasi.
+- Jangan membuat business logic download.
+- Jangan menghubungkan ke MongoDB ataupun Bot.
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log BARU di bagian PALING BAWAH README.md.
+
+Jangan menghapus isi README lama.
+Jangan membuat README baru.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi:
+- Perubahan yang dibuat.
+- File dibuat.
+- File diubah.
+- Commit Hash.
+
+Laporkan:
+- File dibuat.
+- File diubah.
+- Hash Commit GitHub.
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Landing Page
+- Download Page
+- Auth/Login
+
+
+
+```
 # Prompt: Download Token Resolver & Link Builder
 ```
 
