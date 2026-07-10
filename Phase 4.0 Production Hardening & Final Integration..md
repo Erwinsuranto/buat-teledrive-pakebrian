@@ -1,5 +1,276 @@
 
 
+# Prompt: Production Readiness 100% Audit & Architecture Refactor
+```
+
+
+You are the lead software architect for this repository.
+
+Your task is NOT to rewrite the project.
+
+Your task is to transform the current release candidate into a production-ready repository while preserving every existing feature and behavior.
+
+Current audit summary:
+
+- Repository Health Score: 68/100
+- Code Quality: PASS
+- Performance: PASS
+- CI/CD: PASS
+- Typecheck: PASS
+- ESLint: PASS
+- Build: PASS
+- Tests: PASS
+
+Remaining issues are architectural.
+
+==================================================
+ABSOLUTE RULES
+==================================================
+
+DO NOT remove any existing feature.
+
+DO NOT break:
+
+- Telegram upload
+- Telegram download
+- My Files
+- Search
+- Download tokens
+- Authentication
+- Sessions
+- Admin panel
+- Website
+- APIs
+- Dashboard
+- Metadata
+- Verification
+- File sharing
+- Existing database
+
+Everything must continue working exactly as before.
+
+Never reduce functionality.
+
+Never replace working code only because you prefer another style.
+
+Only improve architecture.
+
+==================================================
+OBJECTIVES
+==================================================
+
+Reach production-ready architecture.
+
+Fix every issue reported by the audit.
+
+Keep backwards compatibility.
+
+Repository must remain fully functional after every commit.
+
+==================================================
+REQUIRED TASKS
+==================================================
+
+1. Remove duplicated legacy architecture.
+
+There are duplicated:
+
+- models
+- repositories
+- schemas
+- services
+
+Consolidate everything into ONE canonical backend architecture.
+
+No duplicated business logic.
+
+No duplicated persistence.
+
+No duplicated models.
+
+--------------------------------------------------
+
+2. Remove legacy scaffolding.
+
+Delete obsolete folders that are no longer used.
+
+Delete compatibility code only if it is truly unused.
+
+Remove obsolete ESLint configuration.
+
+Remove dead code.
+
+Remove abandoned files.
+
+--------------------------------------------------
+
+3. Production persistence.
+
+Replace all runtime in-memory state with durable persistence.
+
+Nothing important may disappear after server restart.
+
+All runtime state must survive restart.
+
+--------------------------------------------------
+
+4. Runtime integration.
+
+Connect every module to the canonical backend.
+
+Authentication
+
+Sessions
+
+Verification
+
+Dashboard
+
+Metadata
+
+Password reset
+
+Admin
+
+must all use the same architecture.
+
+--------------------------------------------------
+
+5. Telegram integration.
+
+Telegram Bot must use the same repository architecture.
+
+Do not allow separate database paths.
+
+No duplicate service layer.
+
+One persistence system only.
+
+--------------------------------------------------
+
+6. API consistency.
+
+Version every endpoint consistently.
+
+Avoid mixed API styles.
+
+Use one routing strategy.
+
+--------------------------------------------------
+
+7. Monitoring.
+
+Improve health checks.
+
+Improve logging.
+
+Improve telemetry abstraction.
+
+Prepare production monitoring.
+
+--------------------------------------------------
+
+8. Multi-instance readiness.
+
+Repository must support running multiple instances safely.
+
+Avoid inconsistent runtime state.
+
+Avoid singleton memory dependencies.
+
+--------------------------------------------------
+
+9. Release readiness.
+
+Improve deployment workflow.
+
+Improve migration workflow.
+
+Improve rollback safety.
+
+Improve startup validation.
+
+--------------------------------------------------
+
+10. Documentation.
+
+Update README.
+
+Update architecture documentation.
+
+Explain every important structural change.
+
+==================================================
+VALIDATION
+==================================================
+
+After every major refactor automatically execute:
+
+- npm install if needed
+- typecheck
+- eslint
+- build
+- unit tests
+- integration tests
+
+Fix every failure before continuing.
+
+==================================================
+SAFETY
+==================================================
+
+Never leave repository in broken state.
+
+Commit only working code.
+
+Preserve Git history.
+
+Do not remove configuration required by deployment.
+
+==================================================
+FINAL GOAL
+==================================================
+
+The repository should achieve:
+
+✔ Production-ready architecture
+
+✔ No duplicate persistence
+
+✔ No duplicate service layer
+
+✔ Durable storage
+
+✔ Unified backend
+
+✔ Unified Telegram integration
+
+✔ Clean folder structure
+
+✔ Stable startup
+
+✔ Stable deployment
+
+✔ Stable runtime
+
+✔ Backward compatibility
+
+✔ Zero feature regression
+
+At the end:
+
+1. Produce a detailed report of every change.
+2. Explain why each change was necessary.
+3. List every modified file.
+4. List every removed file.
+5. Confirm that all existing features still work.
+6. Run a final full validation.
+7. If any requirement cannot be completed, explain exactly why and what is blocking it.
+8. Do not stop until every possible architectural issue has been resolved without breaking functionality.
+
+
+```
+
 
 # Prompt: Final Production Audit & Stable Release Verification
 ```
