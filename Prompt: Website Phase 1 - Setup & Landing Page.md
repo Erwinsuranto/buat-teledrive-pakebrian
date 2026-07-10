@@ -1,4 +1,91 @@
 # Prompt website
+# Nama Prompt: My Files 6/6 - Final UI Integration & Production Ready
+```
+
+Nama Prompt: My Files 6/6 - Final UI Integration & Production Ready
+
+Lanjutkan pengembangan Telegram Drive.
+
+ATURAN WAJIB
+
+1. Fokus hanya menyelesaikan halaman My Files.
+2. Jangan mengubah Bot Telegram.
+3. Jangan mengubah Upload Handler.
+4. Jangan mengubah MongoDB.
+5. Jangan mengubah Repository Layer.
+6. Jangan mengubah Service Layer.
+7. Jangan mengubah API Layer.
+8. Jangan membuat Download Page.
+9. Jangan membuat Auth/Login.
+10. Jangan membuat README.md baru.
+11. Gunakan hanya README.md yang sudah ada.
+12. Tambahkan Development Log di bagian paling bawah README.md.
+13. Jangan membuat file dokumentasi lain.
+14. Commit langsung ke GitHub setelah selesai.
+
+TARGET
+
+Jadikan halaman My Files siap untuk integrasi backend pada tahap berikutnya.
+
+Kerjakan:
+
+- Audit seluruh komponen My Files.
+- Samakan style seluruh File Card dan Folder Card.
+- Samakan ukuran icon, font, spacing, padding, border radius, dan shadow.
+- Rapikan responsive Mobile, Tablet, dan Desktop.
+- Rapikan Grid View dan List View.
+- Rapikan Search, Filter, Sort, Breadcrumb, Toolbar, Preview Panel, Context Menu, dan File Detail Panel agar konsisten.
+- Tambahkan Empty State, Loading State, dan Error State yang konsisten.
+- Pastikan seluruh komponen reusable.
+- Hapus kode duplikat jika ada.
+- Rapikan import/export.
+- Tambahkan komentar seperlunya pada komponen penting.
+- Jangan membuat fetch API.
+- Jangan menghubungkan MongoDB.
+- Jangan membuat business logic.
+- Jangan mengubah desain Landing Page maupun Dashboard.
+
+Pastikan halaman My Files siap dihubungkan ke backend tanpa perlu mengubah struktur UI lagi.
+
+README.md
+
+Tambahkan Development Log baru di bagian paling bawah.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Status:
+✅ My Files Feature Completed (6/6)
+
+Isi:
+- Ringkasan perubahan
+- Audit UI selesai
+- Komponen dirapikan
+- File dibuat
+- File diubah
+- Commit Hash
+
+Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB
+- Repository
+- Service
+- API
+- Download Page
+- Auth/Login
+
+
+
+```
 # Nama Prompt: My Files 5/6 - Folder Navigation & Preview UI
 
 ```
