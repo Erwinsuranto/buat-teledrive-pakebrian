@@ -1,4 +1,63 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+# Prompt: My Files Explorer Enhancement
+```
+
+
+Tingkatkan halaman My Files agar terasa seperti file explorer modern (Google Drive / Windows Explorer), tanpa mengubah backend, API, database, autentikasi, upload, download, maupun struktur routing.
+
+Perbaiki hanya frontend.
+
+Tambahkan:
+
+1. View Switcher
+- List View
+- Grid View
+- Large Grid View
+- Simpan pilihan di localStorage.
+
+2. Context Menu
+Setiap folder dan file memiliki menu:
+- Open
+- Open in New Tab
+- Details
+- Rename
+- Favorite
+- Share
+- Copy Link
+- Move
+- Copy
+- Download
+- Delete
+
+Desktop menggunakan klik kanan.
+Mobile menggunakan long press.
+
+3. Details Panel
+Gunakan side panel kanan (bukan modal) berisi:
+- Nama
+- Jumlah file
+- Ukuran
+- Created
+- Updated
+- Folder ID
+- Telegram Channel
+- Visibility
+- Tags
+
+4. Folder Navigation
+Saat masuk folder:
+- Breadcrumb tetap tampil.
+- View Switcher tetap tersedia.
+- Search tetap tersedia.
+- Sort dan Filter tersedia.
+
+5. File Explorer Feel
+Gunakan spacing, hover, selected state, icon, dan animasi ringan agar terasa seperti file explorer modern.
+
+Jangan mengubah backend, MongoDB, API, auth, upload, download, service, maupun bot.
+
+
+```
 ```
 
 Tugas: Perubahan terakhir menyebabkan aplikasi Next.js gagal berjalan.
