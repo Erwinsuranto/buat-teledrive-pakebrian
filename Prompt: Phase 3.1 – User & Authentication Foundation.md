@@ -1,4 +1,80 @@
 
+
+# Phase 3.5 – User Dashboard & Profile.
+```
+Lanjutkan langsung Phase 3.5 User Dashboard & Profile.
+
+Jangan meminta konfirmasi.
+Jangan audit ulang repository.
+Repository GitHub tetap menjadi source of truth.
+Langsung buat branch baru dan commit setelah selesai.
+
+Target Phase 3.5:
+
+Implementasikan fondasi Dashboard User dan Profile yang siap dihubungkan dengan UI.
+
+Scope implementasi:
+
+- Current User Service
+- Dashboard Service
+- User Profile Service
+- Profile Controller
+- Dashboard Controller
+- Dashboard API
+- Profile API
+- Avatar abstraction
+- User statistics service
+- Storage usage service
+- Recent activity service
+- Favorite summary service
+- Shared files summary
+- Upload summary
+- Download summary
+- Account status
+- Session list API
+- Logout all sessions
+- Profile update
+- Change email preparation
+- Change password integration
+- DTO
+- Validator
+- Mapper
+- Error mapper
+- Dependency Injection
+- Repository integration
+- Contract tests
+- Integration tests bila memungkinkan
+- Export/index
+- README
+
+Jangan mengubah:
+
+- UI
+- Telegram
+- Upload Engine
+- Download Engine
+- Metadata Engine
+- File Manager
+
+Jika menemukan bug kecil pada Authentication, perbaiki langsung.
+
+Jalankan workflow, typecheck, contract test, dan integration test.
+
+Jika seluruh test hijau, langsung commit.
+
+Output akhir cukup:
+
+- Commit hash
+- Ringkasan implementasi
+- File dibuat
+- File diubah
+- Status siap menuju Phase 3.6 Admin Foundation
+
+
+
+
+```
+
 # Siap menuju Phase 3.4 Password Reset
 ```
 Lanjutkan langsung Phase 3.4 Password Reset.
