@@ -1,4 +1,71 @@
 
+
+# Prompt: Replace Mock Data With Real MongoDB Data
+```
+
+
+
+The upload workflow is now working correctly.
+
+Files are successfully uploaded to Telegram.
+
+Metadata is successfully stored in MongoDB.
+
+However, the website is still displaying mock/demo data.
+
+Current problems:
+
+- My Files still displays demo folders.
+- Newly created folders do not appear.
+- Newly uploaded files do not appear.
+- Folder selector and file listing are not using the same database source.
+
+Tasks:
+
+1. Remove every remaining mock folder implementation.
+
+2. Remove every remaining mock file implementation.
+
+3. My Files must load real folders from MongoDB.
+
+4. My Files must load real files from MongoDB.
+
+5. Newly created folders must immediately appear.
+
+6. Newly uploaded files must immediately appear.
+
+7. Dashboard statistics must use MongoDB.
+
+8. Search must search MongoDB.
+
+9. Download must use MongoDB metadata.
+
+10. Ensure every page uses the same backend services.
+
+11. Verify there is only one canonical data source.
+
+Do not create fake data.
+
+Do not add placeholder data.
+
+Do not hide errors.
+
+Find every page still using mock data and replace it with the real MongoDB implementation.
+
+Run npm run build.
+
+Verify:
+
+- Folder creation works.
+- Uploaded files appear.
+- Dashboard updates.
+- Search finds uploaded files.
+- Download works.
+
+Only finish when the website uses real MongoDB data everywhere.
+
+```
+
 # Prompt: Fix Folder Database Integration
 ```
 
