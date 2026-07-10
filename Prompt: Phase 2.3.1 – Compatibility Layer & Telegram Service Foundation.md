@@ -1,3 +1,70 @@
+
+# Prompt: Phase 2.3.7 – Metadata & Index Engine
+```
+
+Lanjutkan langsung Phase 2.3.7 tanpa meminta konfirmasi apa pun.
+
+Anggap repository GitHub saat ini sebagai source of truth. Lakukan audit singkat otomatis sebelum mulai tanpa meminta izin.
+
+Target:
+Membangun Metadata & Index Engine yang menjadi pusat metadata seluruh file. Semua masih menggunakan abstraction, belum menghubungkan Telegram API asli.
+
+Kerjakan:
+
+- Metadata Engine.
+- File Metadata Service.
+- Metadata Repository Contract.
+- Metadata Mapper.
+- Metadata Validator.
+- File Index Engine.
+- Index Builder.
+- Index Reader.
+- Index Writer.
+- Metadata Cache Interface.
+- Search Index Contract.
+- Folder Index Contract.
+- Favorite Index.
+- Recent Index.
+- Tag Index.
+- Metadata DTO.
+- Metadata Error Mapper.
+- Metadata Lifecycle.
+- Contract Test.
+- Rapikan export/index.ts bila diperlukan.
+
+Jangan:
+
+- Mengubah UI.
+- Mengubah API publik.
+- Login Telegram.
+- Menghubungkan Bot API atau MTProto.
+- Mengimplementasikan upload/download nyata.
+
+Update README.md:
+
+- Metadata Architecture.
+- Index Architecture.
+- Metadata Flow.
+- Progress Phase 2.3.7.
+
+Sesudah selesai:
+
+- Audit singkat.
+- Perbaiki issue kecil bila ada.
+- Jalankan typecheck bila memungkinkan.
+- Commit langsung tanpa meminta persetujuan.
+
+Output akhir:
+
+- Commit hash.
+- Ringkasan implementasi.
+- File dibuat.
+- File diubah.
+- Status kesiapan menuju Phase 2.3.8 (File Manager Core).
+
+
+
+```
 # Prompt: Phase 2.3.6 – Transfer & Share Engine
 ```
 
