@@ -1,5 +1,71 @@
 
+# Prompt: Phase 2.3.9 – Telegram Integration Foundation
+```
 
+
+Lanjutkan langsung Phase 2.3.9 tanpa meminta konfirmasi apa pun.
+
+Anggap repository GitHub saat ini sebagai source of truth. Audit singkat otomatis sebelum mulai tanpa meminta izin.
+
+Target:
+Membangun Telegram Integration Foundation menggunakan seluruh fondasi Phase 2.3.8. Tahap ini hanya menyiapkan integrasi dan dependency injection, belum melakukan login Telegram, upload, download, atau transfer nyata.
+
+Kerjakan:
+
+- Telegram Integration Layer.
+- Telegram Client Interface.
+- Telegram Adapter Factory.
+- Telegram Session Interface.
+- Telegram Authentication Contract.
+- Telegram Upload Adapter Contract.
+- Telegram Download Adapter Contract.
+- Telegram Message Adapter.
+- Telegram File Adapter.
+- Telegram Error Mapper.
+- Telegram Configuration Loader.
+- Telegram DI Registration.
+- Telegram Health Check Interface.
+- Telegram Capability Detector.
+- Telegram Lifecycle Manager.
+- Contract Test.
+- Rapikan export/index.ts bila diperlukan.
+
+Jangan:
+
+- Login Telegram.
+- Meminta OTP.
+- Menghubungkan MTProto.
+- Menghubungkan Bot API.
+- Upload atau download nyata.
+- Mengubah UI.
+- Mengubah API publik.
+
+Semua implementasi harus berupa interface, adapter, factory, dependency injection, dan abstraction agar implementasi Telegram asli nantinya cukup mengganti adapter.
+
+Update README.md:
+
+- Telegram Integration Architecture.
+- Dependency Flow.
+- Adapter Flow.
+- Progress Phase 2.3.9.
+
+Setelah selesai:
+
+- Audit singkat.
+- Perbaiki issue kecil bila ada.
+- Jalankan typecheck bila memungkinkan.
+- Commit langsung tanpa meminta persetujuan.
+
+Output akhir:
+
+- Commit hash.
+- Ringkasan implementasi.
+- File dibuat.
+- File diubah.
+- Status kesiapan menuju Phase 3.
+
+
+```
 # Prompt: Phase 2.3.8 – File Manager Core
 ```
 
