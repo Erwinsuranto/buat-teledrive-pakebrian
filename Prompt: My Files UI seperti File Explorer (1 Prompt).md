@@ -1,6 +1,57 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
 
 
+# Prompt: Storage Manager
+```
+
+Lanjutkan pengembangan UI Telegram Drive dengan membuat halaman Storage Manager yang modern, informatif, dan konsisten dengan seluruh aplikasi.
+
+Target:
+Memberikan pengguna gambaran penggunaan penyimpanan dan membantu mengelola ruang penyimpanan dengan mudah.
+
+Tambahkan:
+
+- Storage Overview Card.
+- Total Storage.
+- Used Storage.
+- Free Storage.
+- Circular/Linear Storage Progress.
+- Storage berdasarkan kategori:
+  - Images
+  - Videos
+  - Documents
+  - Audio
+  - Archives
+  - Others
+- Largest Files.
+- Recently Uploaded Files.
+- Recently Downloaded Files.
+- Duplicate Files (placeholder).
+- Trash Size.
+- Quick Cleanup (placeholder).
+- Storage Analytics Chart.
+- Search Files by Size.
+- Filter berdasarkan ukuran file.
+- Sort berdasarkan ukuran.
+- Empty State.
+- Skeleton Loading.
+- Responsive untuk desktop, tablet, dan mobile.
+
+Gunakan komponen reusable yang sudah ada.
+
+Jangan mengubah backend, API, database, Telegram Bot, authentication, upload/download logic, maupun service.
+
+Update README.md dengan bagian "Storage Manager".
+
+Setelah selesai:
+- Ringkas perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan.
+- Lakukan visual audit agar Storage Manager memiliki kualitas setara aplikasi cloud storage modern.
+
+
+
+```
 # Prompt: Activity & Timeline
 ```
 
