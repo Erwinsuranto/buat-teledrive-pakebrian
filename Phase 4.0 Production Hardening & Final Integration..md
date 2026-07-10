@@ -1,6 +1,61 @@
 
 
 
+# Phase 4.2 Stable Release belum boleh dimulai, karena AI menyatakan status CI/Workflow hijau belum dapat diverifikasi dari aksesnya.
+```
+
+Lanjutkan tanpa meminta konfirmasi.
+
+Jangan audit ulang repository.
+Jangan membuat fitur baru.
+Jangan mengubah arsitektur.
+
+Repository GitHub tetap menjadi source of truth.
+
+Fokus hanya pada verifikasi Release Candidate.
+
+1. Periksa seluruh GitHub Actions / CI Workflow.
+2. Pastikan:
+   - typecheck sukses
+   - lint sukses
+   - build sukses
+   - unit tests sukses
+   - contract tests sukses
+   - integration tests sukses
+   - workflow utama hijau
+3. Jika ada workflow gagal:
+   - identifikasi penyebab
+   - perbaiki source code atau workflow
+   - commit perbaikan
+   - jalankan ulang hingga seluruh workflow hijau.
+4. Jika seluruh workflow sudah hijau:
+   - tandai Release Candidate sebagai VERIFIED.
+   - buat branch Phase 4.2 Stable Release.
+   - update README.md dengan section:
+
+## Phase 4.2 Ready
+
+Berisi:
+- Status CI
+- Status Tests
+- Status Build
+- Status Workflow
+- Commit Hash terakhir
+- Tanggal verifikasi
+- Project Ready for Stable Release
+
+Output akhir cukup:
+
+- Status seluruh workflow
+- Workflow yang diperbaiki (jika ada)
+- Commit hash
+- README diperbarui
+- Apakah project sudah benar-benar siap memasuki Phase 4.2 Stable Release.
+
+
+
+```
+
 
 # Phase 4.1 Final QA & Release Candidate.
 ```
