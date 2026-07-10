@@ -1,4 +1,61 @@
 
+# Prompt: Continue Until Repository Is Fully Optimized
+```
+
+Continue from the latest commit.
+
+Do not stop.
+
+Do not ask for confirmation.
+
+Assume production migration approval has already been granted.
+
+If something cannot be verified because external production resources are unavailable (MongoDB deployment, Telegram credentials, backups, runtime environment, deployment topology), do NOT stop.
+
+Instead:
+
+- Complete every improvement that can be safely implemented inside the repository.
+- Refactor every remaining architectural issue.
+- Remove all obsolete code.
+- Remove all duplicated code.
+- Remove every unused file.
+- Improve dependency injection.
+- Improve repository structure.
+- Improve runtime architecture.
+- Improve API consistency.
+- Improve documentation.
+- Improve tests.
+- Improve health checks.
+- Improve deployment scripts.
+- Improve startup validation.
+- Improve rollback support.
+- Improve migration tooling.
+
+When an external resource is required, automatically create the necessary adapters, interfaces, validation code, migration scripts, and documentation so the repository is fully prepared.
+
+Never stop because external infrastructure is unavailable.
+
+Only exclude the final execution against production resources.
+
+Everything else must be completed automatically.
+
+At the end:
+
+- run all tests
+- run typecheck
+- run build
+- run lint
+- fix every failure
+- generate a complete report
+- list every remaining issue that requires real production access
+
+Everything that can be solved inside the repository must already be solved before stopping.
+
+
+
+```
+
+
 
 ```
 IMPORTANT EXECUTION RULES
