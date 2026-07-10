@@ -1,4 +1,461 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+
+# Prompt: Telegram Drive — Phase 1 UI Explorer Foundation
+```
+Lakukan pengembangan dan penyempurnaan UI Telegram Drive untuk menyelesaikan Phase 1: UI Explorer Foundation.
+
+## Tujuan
+
+Bangun fondasi UI yang modern, profesional, reusable, dan siap dihubungkan ke backend Telegram di tahap berikutnya.
+
+Target kualitas setara aplikasi cloud storage modern seperti:
+
+- Google Drive
+- Dropbox
+- OneDrive
+- Windows Explorer
+- VS Code Explorer
+
+Jangan menyalin desain mereka secara langsung, tetapi gunakan prinsip UX yang serupa.
+
+----------------------------------------------------------------
+
+RULES
+
+Jangan mengubah:
+
+- Backend
+- API
+- Database
+- MongoDB
+- Telegram Bot
+- Authentication
+- Upload Logic
+- Download Logic
+- Services
+- Business Logic
+- Routing yang sudah stabil
+
+Fokus hanya pada:
+
+Frontend
+UI
+UX
+Component Structure
+Documentation
+
+----------------------------------------------------------------
+
+DESIGN PRINCIPLES
+
+UI harus:
+
+- Clean
+- Modern
+- Minimal
+- Premium
+- Professional
+- Productivity First
+
+Hindari:
+
+- Tampilan seperti template demo.
+- Area kosong yang tidak memiliki fungsi.
+- Komponen dengan gaya berbeda-beda.
+- Warna berlebihan.
+- Padding tidak konsisten.
+
+Pastikan seluruh halaman terasa sebagai satu aplikasi.
+
+----------------------------------------------------------------
+
+1. NAVBAR
+
+Redesign Navbar.
+
+Harus memiliki:
+
+Logo Telegram Drive
+
+Nama aplikasi
+
+Search Bar
+
+Menu:
+
+Home
+
+My Files
+
+Upload
+
+Search
+
+About
+
+Help
+
+User Avatar
+
+Dropdown User
+
+Sticky Navbar
+
+Backdrop Blur ringan
+
+Shadow tipis
+
+Responsive
+
+Desktop
+
+Tablet
+
+Mobile
+
+Active Menu
+
+Hover Effect
+
+Keyboard Navigation
+
+Accessibility
+
+----------------------------------------------------------------
+
+2. PAGE HEADER
+
+Tambahkan Header modern.
+
+Isi:
+
+Judul Halaman
+
+Deskripsi singkat
+
+Statistics Cards:
+
+Folders
+
+Files
+
+Storage
+
+Favorites
+
+Gunakan layout yang ringkas.
+
+----------------------------------------------------------------
+
+3. TOOLBAR
+
+Tambahkan Toolbar Explorer.
+
+Isi:
+
+New Folder
+
+Upload
+
+Refresh
+
+Search
+
+Filter
+
+Sort
+
+View Switcher
+
+List
+
+Grid
+
+Large Grid
+
+Toolbar tetap berada di bawah Header.
+
+----------------------------------------------------------------
+
+4. EXPLORER WORKSPACE
+
+Perbaiki area utama.
+
+Support:
+
+List View
+
+Grid View
+
+Large Grid View
+
+Hover
+
+Selected
+
+Keyboard Focus
+
+Responsive
+
+----------------------------------------------------------------
+
+5. BREADCRUMB
+
+Contoh:
+
+Home
+
+>
+
+My Files
+
+>
+
+Folder
+
+>
+
+Sub Folder
+
+Breadcrumb selalu terlihat.
+
+----------------------------------------------------------------
+
+6. CONTEXT MENU
+
+Desktop:
+
+Klik kanan.
+
+Mobile:
+
+Long Press.
+
+Menu:
+
+Open
+
+Open in New Tab
+
+Preview
+
+Rename
+
+Favorite
+
+Share
+
+Copy Link
+
+Move
+
+Copy
+
+Download
+
+Delete
+
+Properties
+
+Backend belum perlu dibuat.
+
+Gunakan placeholder action.
+
+----------------------------------------------------------------
+
+7. DETAILS PANEL
+
+Gunakan Side Panel.
+
+Bukan modal.
+
+Isi:
+
+Preview
+
+Nama
+
+Jenis
+
+Ukuran
+
+Created
+
+Updated
+
+Folder ID
+
+Telegram Channel
+
+Visibility
+
+Tags
+
+Download Link
+
+----------------------------------------------------------------
+
+8. EMPTY STATE
+
+Buat Empty State untuk:
+
+Folder kosong
+
+Search kosong
+
+Belum ada upload
+
+Error
+
+Gunakan ilustrasi sederhana.
+
+----------------------------------------------------------------
+
+9. LOADING
+
+Gunakan Skeleton Loading.
+
+Bukan spinner biasa.
+
+----------------------------------------------------------------
+
+10. RESPONSIVE
+
+Desktop
+
+Tablet
+
+Mobile
+
+Tidak ada elemen yang rusak.
+
+----------------------------------------------------------------
+
+11. ANIMATION
+
+Hover
+
+Open Folder
+
+Context Menu
+
+Dropdown
+
+Details Panel
+
+Semua animasi ringan.
+
+----------------------------------------------------------------
+
+12. COMPONENT STRUCTURE
+
+Pisahkan komponen.
+
+Reusable.
+
+Mudah dikembangkan.
+
+Jangan membuat satu file yang sangat panjang.
+
+Gunakan struktur folder yang rapi.
+
+----------------------------------------------------------------
+
+13. CODE QUALITY
+
+Gunakan:
+
+Clean Code
+
+TypeScript yang baik
+
+Naming konsisten
+
+Komentar seperlunya
+
+Tidak ada duplikasi komponen.
+
+----------------------------------------------------------------
+
+14. README.md
+
+Update README.md.
+
+Tambahkan:
+
+# Phase 1 UI Explorer Foundation
+
+Jelaskan:
+
+- Navbar
+- Header
+- Toolbar
+- Explorer Workspace
+- View Mode
+- Breadcrumb
+- Context Menu
+- Details Panel
+- Empty State
+- Loading State
+- Responsive Design
+- Reusable Components
+
+Tambahkan juga roadmap bahwa seluruh UI sudah siap dihubungkan ke backend Telegram pada tahap berikutnya.
+
+----------------------------------------------------------------
+
+15. VISUAL AUDIT
+
+Sebelum menganggap pekerjaan selesai:
+
+Audit seluruh tampilan.
+
+Pastikan:
+
+- Tidak ada area kosong yang tidak memiliki tujuan.
+- Tidak ada komponen yang terlihat sementara.
+- Alignment konsisten.
+- Spacing konsisten.
+- Typography konsisten.
+- Warna konsisten.
+- Shadow konsisten.
+- Border Radius konsisten.
+- Responsive berjalan baik.
+
+Jika menemukan bagian yang terasa kurang profesional, perbaiki sebelum selesai.
+
+----------------------------------------------------------------
+
+16. FINAL REPORT
+
+Setelah selesai:
+
+Berikan laporan:
+
+1. Ringkasan perubahan.
+
+2. Alasan UX dan desain yang dipilih.
+
+3. Daftar file yang dibuat.
+
+4. Daftar file yang diubah.
+
+5. Komponen reusable yang dibuat.
+
+6. Bagian yang masih menggunakan placeholder.
+
+7. Bagian yang siap dihubungkan ke backend.
+
+8. Kendala yang ditemukan.
+
+9. Rekomendasi untuk Phase 2.
+
+Jangan berhenti di tengah pekerjaan. Selesaikan seluruh Phase 1 hingga konsisten dan siap menjadi fondasi untuk pengembangan berikutnya.
+
+
+
+
+```
 # Prompt: Modern Application Navbar Redesign
 ```
 Lakukan redesign total pada Navbar Telegram Drive agar terlihat seperti aplikasi cloud storage modern, bukan website biasa.
