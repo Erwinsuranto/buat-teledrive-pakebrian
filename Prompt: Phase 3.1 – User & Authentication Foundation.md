@@ -1,5 +1,100 @@
 
 
+# Lanjutkan langsung Phase 3.7 Admin File Management.
+```
+
+Lanjutkan langsung Phase 3.7 Admin File Management.
+
+Jangan meminta konfirmasi.
+Jangan audit ulang repository.
+Repository GitHub tetap menjadi source of truth.
+Langsung buat branch baru, implementasikan seluruh scope, jalankan seluruh test, lalu commit.
+
+Target:
+
+Implementasikan fondasi Admin File Management yang akan dipakai Dashboard Admin.
+
+Scope:
+
+- File Management Service
+- Admin File Controller
+- File List API
+- File Detail API
+- File Search
+- Filter
+- Sort
+- Pagination
+- Delete File
+- Restore File
+- Permanent Delete
+- Bulk Delete
+- Bulk Restore
+- Bulk Action
+- Favorite Management
+- Tag Management
+- Folder Management
+- Audit Log
+- Activity History
+- DTO
+- Validator
+- Mapper
+- Error Mapper
+- Dependency Injection
+- Repository Integration
+- Contract Tests
+- Integration Tests
+- Export/index
+- README
+
+Jangan mengubah:
+
+- UI
+- Telegram
+- Upload Engine
+- Download Engine
+- Authentication
+
+Jika menemukan bug kecil pada module sebelumnya, perbaiki langsung.
+
+Jalankan workflow, typecheck, contract test, integration test, lalu langsung commit.
+
+PENTING:
+
+Perbarui README.md sebagai changelog project.
+
+Tambahkan section baru:
+
+## Phase 3.7 - Admin File Management
+
+Isi minimal:
+
+- Tujuan phase.
+- Ringkasan implementasi.
+- File baru.
+- File diubah.
+- API baru.
+- Struktur folder baru.
+- Dependency yang ditambahkan.
+- Catatan kompatibilitas.
+- Commit hash.
+- Tanggal implementasi.
+- Status roadmap.
+- Next Phase: 3.8 Admin User Management.
+
+README harus tetap berisi seluruh histori phase sebelumnya (Phase 1, Phase 2, Phase 3.1, 3.2, 3.3, 3.4, 3.5, 3.6) dan hanya menambahkan section baru, bukan mengganti isi lama.
+
+Output akhir cukup:
+
+- Commit hash
+- Ringkasan implementasi
+- File dibuat
+- File diubah
+- README diperbarui
+- Status siap menuju Phase 3.8 Admin User Management
+
+
+
+```
 
 
 # Siap menuju Phase 3.6 Admin Foundation
