@@ -1,4 +1,87 @@
 # Prompt website
+# 
+```
+
+Nama Prompt: My Files 4/6 - Search, Filter & File Actions
+
+Lanjutkan pengembangan Telegram Drive.
+
+ATURAN WAJIB
+
+1. Fokus hanya pada halaman My Files.
+2. Jangan mengubah Bot Telegram.
+3. Jangan mengubah Upload Handler.
+4. Jangan mengubah MongoDB.
+5. Jangan mengubah Repository Layer.
+6. Jangan mengubah Service Layer.
+7. Jangan mengubah API Layer.
+8. Jangan membuat Download Page.
+9. Jangan membuat Auth/Login.
+10. Jangan membuat README.md baru.
+11. Gunakan README.md yang sudah ada dan tambahkan Development Log di bagian paling bawah.
+12. Jangan membuat file dokumentasi lain.
+13. Commit langsung ke GitHub setelah selesai.
+
+FITUR
+
+Tambahkan UI berikut pada halaman My Files:
+
+- Search Bar yang lebih lengkap (UI saja).
+- Filter:
+  - All Files
+  - Images
+  - Videos
+  - Documents
+  - Audio
+  - Archives
+- Sort:
+  - Name
+  - Upload Date
+  - File Size
+- Context Menu (UI saja) pada setiap File Card:
+  - Open
+  - Download
+  - Rename
+  - Move
+  - Share
+  - Delete
+- Multi Select Checkbox (UI saja).
+- Select All (UI saja).
+- Tampilan Grid dan List tetap sinkron.
+- Hover Effect.
+- Empty State yang lebih menarik.
+- Loading Skeleton yang lebih rapi.
+
+Gunakan mock data.
+
+Jangan mengambil data dari API.
+
+Jangan menghubungkan MongoDB.
+
+Pastikan build tetap tanpa error.
+
+README.md
+
+Tambahkan Development Log baru:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi:
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+Laporkan:
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan Bot Telegram, Upload Handler, MongoDB, Repository, Service, API, Download Page, dan Auth/Login tetap tidak disentuh.
+
+
+
+```
 # Tugas: Selesaikan My Files tahap 3 (Layout
 ```
 
