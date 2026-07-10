@@ -1,5 +1,40 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+```
 
+Tugas: Perubahan terakhir menyebabkan aplikasi Next.js gagal berjalan.
+
+Gejala:
+- Browser menampilkan "missing required error components, refreshing..."
+- Sebelumnya juga muncul "Cannot find module './682.js'".
+- Semua route (Home, Login, My Files) ikut gagal.
+
+Lakukan audit dan perbaikan.
+
+Periksa:
+- app/layout.tsx
+- app/error.tsx
+- app/global-error.tsx
+- app/not-found.tsx
+- template.tsx
+- globals.css
+- import CSS
+- semua perubahan terakhir pada My Files.
+
+Pastikan:
+1. Struktur App Router Next.js valid.
+2. Semua required error components tersedia.
+3. Tidak ada import yang rusak.
+4. Home, Login, My Files kembali normal.
+5. Jangan mengubah backend, Bot Telegram, MongoDB, Repository, Service, API, Download, maupun Auth.
+
+Setelah selesai:
+- Jalankan build audit.
+- Commit ke GitHub.
+- Laporkan penyebab error, file yang diperbaiki, dan hash commit.
+
+
+
+```
 
 # Tugas: Setelah perubahan UI My Files, seluruh website menjadi rusak.
 ```
