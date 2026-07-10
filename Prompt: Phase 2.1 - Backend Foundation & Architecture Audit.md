@@ -1,4 +1,54 @@
 # Phase 2 dimulai 
+# Prompt: Phase 2.2 – MongoDB Foundation
+```
+
+Phase 2.2 dimulai.
+
+Lanjutkan pengembangan backend Telegram Drive dengan membangun fondasi MongoDB berdasarkan arsitektur yang sudah diaudit.
+
+Target:
+Membangun layer database yang bersih, modular, scalable, dan siap digunakan oleh seluruh fitur Telegram Drive.
+
+Kerjakan:
+
+- Buat koneksi MongoDB yang reusable.
+- Buat database configuration.
+- Buat model/schema utama:
+  - User
+  - Folder
+  - File
+  - Share Link
+  - Activity
+  - Favorite
+  - Trash
+  - Upload Job
+  - Download History
+- Buat repository interface dan implementasinya.
+- Pisahkan model, repository, dan database layer dengan jelas.
+- Gunakan dependency injection bila struktur project mendukung.
+- Pastikan seluruh repository belum mengubah UI maupun business logic.
+- Belum perlu menghubungkan Telegram Bot.
+- Belum perlu membuat API endpoint.
+- Jangan menghapus mock data, cukup siapkan agar nanti mudah diganti.
+
+Update README.md:
+
+- MongoDB Architecture
+- Collection Structure
+- Repository Layer
+- Database Flow
+- Progress Phase 2
+
+Setelah selesai:
+
+- Jelaskan schema yang dibuat.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan hubungan antar collection.
+- Lakukan audit agar struktur database mudah dikembangkan untuk Telegram Drive.
+
+
+
+```
 ```
 
 Phase 2 dimulai.
