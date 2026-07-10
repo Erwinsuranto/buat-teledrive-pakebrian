@@ -1,4 +1,65 @@
 # Prompt website
+# Prompt: Download Token Generator
+```
+
+
+Prompt: Download Token Generator
+
+Lanjutkan pengembangan Telegram Drive.
+
+Fokus kali ini adalah membuat Download Token Generator.
+
+Tugas:
+
+- Buat util/helper khusus untuk menghasilkan downloadToken.
+- Gunakan generator yang aman dan menghasilkan token unik.
+- Token harus reusable.
+- Generator harus dapat dipanggil oleh Repository atau Service nanti.
+- Jangan hubungkan ke MongoDB.
+- Jangan hubungkan ke Upload Handler.
+- Jangan hubungkan ke API.
+- Jangan hubungkan ke Bot Telegram.
+- Jangan mengubah alur upload maupun download.
+- Pastikan kode modular dan mudah diuji.
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log BARU di bagian PALING BAWAH README.md.
+
+Jangan menghapus isi README lama.
+Jangan membuat README baru.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi:
+- Perubahan yang dibuat.
+- File dibuat.
+- File diubah.
+- Commit Hash.
+
+Laporkan:
+- File dibuat.
+- File diubah.
+- Hash Commit GitHub.
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Landing Page
+- Download Page
+- Auth/Login
+
+
+```
 
 # Prompt: Download Token Entity
 ```
