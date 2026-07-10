@@ -1,6 +1,52 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
 
 
+# Prompt: Favorites & Collections
+```
+Lanjutkan pengembangan UI Telegram Drive dengan membuat halaman Favorites & Collections yang modern, bersih, dan konsisten dengan seluruh aplikasi.
+
+Target:
+Memudahkan pengguna mengelompokkan dan mengakses file penting dengan cepat.
+
+Tambahkan:
+
+- Halaman Favorites.
+- Halaman Collections.
+- Add to Favorite.
+- Remove from Favorite.
+- Create Collection.
+- Rename Collection.
+- Delete Collection.
+- Add File to Collection.
+- Remove File from Collection.
+- Collection Cover.
+- Collection Description.
+- Favorite Filter.
+- Collection Search.
+- Sort Collection.
+- Drag & Drop file ke Collection (UI placeholder).
+- Empty State.
+- Skeleton Loading.
+- Responsive.
+- Animasi ringan.
+
+Gunakan komponen reusable yang sudah ada.
+
+Jangan mengubah backend, API, database, Telegram Bot, authentication, upload/download logic, maupun service.
+
+Update README.md dengan bagian "Favorites & Collections".
+
+Setelah selesai:
+
+- Ringkas perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan.
+- Lakukan visual audit agar Favorites & Collections memiliki kualitas setara aplikasi cloud storage modern.
+
+
+
+
+```
 # Prompt: Storage Manager
 ```
 
