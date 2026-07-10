@@ -1,4 +1,109 @@
 
+# Prompt: Ubah Seluruh Website ke Bahasa Indonesia
+```
+
+
+Convert the entire website UI to Bahasa Indonesia.
+
+Requirements:
+
+- Replace every visible English text with natural Indonesian.
+- Do not mix English and Indonesian.
+- Use consistent terminology across the entire application.
+
+Translate all:
+
+- Navigation
+- Buttons
+- Labels
+- Placeholders
+- Headings
+- Menus
+- Dialogs
+- Alerts
+- Toast notifications
+- Forms
+- Empty states
+- Validation messages
+- Error messages
+- Success messages
+- Loading messages
+- Pagination
+- Tooltips
+- Modals
+- Search page
+- Upload page
+- Download page
+- My Files
+- Admin Panel
+- Login
+- Register
+- Dashboard
+- Settings
+- Profile
+- File Preview
+- File Details
+
+Use professional and user-friendly Indonesian.
+
+Avoid machine-translated wording.
+
+Keep all existing functionality.
+
+Do not change backend logic.
+
+If possible, centralize all UI text into one translation system (i18n/localization) so future language changes are easy.
+
+Ensure no visible English text remains anywhere in the application except technical names, file extensions, API names, or developer-only logs.
+
+
+```
+
+# Judul: Redesign Search Page to Production UI
+```
+
+
+Completely redesign the Search page.
+
+This page currently looks like a design demo.
+
+Transform it into a real production Telegram Drive interface.
+
+Requirements:
+
+- Remove the large hero section.
+- Remove "Find anything fast".
+- Remove the long description.
+- Remove fake Recent suggestions.
+- Remove fake Suggestions.
+- Remove all placeholder chips.
+
+The page should immediately display:
+
+- compact search bar
+- storage summary
+- folders
+- files
+- quick filters
+- sorting
+- pagination/load more if needed
+
+Optimize for mobile first.
+
+Reduce vertical spacing.
+
+Show as many files as possible on one screen.
+
+Use a modern Telegram Drive / Google Drive style.
+
+Keep all existing functionality.
+
+Only redesign the UI.
+
+Do not modify backend logic.
+
+
+```
 
 # Prompt: Fix Build Until Success
 ```
