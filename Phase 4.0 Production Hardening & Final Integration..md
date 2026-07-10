@@ -1,3 +1,102 @@
+
+
+
+
+# Phase 4.1 Final QA & Release Candidate.
+```
+
+
+Lanjutkan langsung Phase 4.1 Final QA & Release Candidate.
+
+Jangan meminta konfirmasi.
+Jangan audit ulang seluruh repository.
+Jangan berhenti di tengah.
+Repository GitHub tetap menjadi source of truth.
+
+Buat branch baru.
+
+Target Phase 4.1:
+
+- Jalankan audit akhir seluruh backend.
+- Perbaiki seluruh warning.
+- Perbaiki seluruh error.
+- Hapus dead code.
+- Hapus unused imports.
+- Hapus duplicate implementation.
+- Rapikan folder bila diperlukan tanpa breaking change.
+- Verifikasi seluruh API contract.
+- Verifikasi seluruh Repository contract.
+- Verifikasi seluruh Service contract.
+- Verifikasi Authentication.
+- Verifikasi Upload Engine.
+- Verifikasi Download Engine.
+- Verifikasi Transfer Engine.
+- Verifikasi Metadata Engine.
+- Verifikasi File Manager.
+- Verifikasi Dashboard.
+- Verifikasi Admin.
+- Verifikasi Monitoring.
+- Verifikasi Telegram Integration.
+- Verifikasi Database.
+- Verifikasi Production Config.
+- Verifikasi Security Middleware.
+- Verifikasi Health Endpoint.
+- Verifikasi Logging.
+- Verifikasi Environment.
+- Verifikasi Export.
+
+Jalankan:
+
+- typecheck
+- lint
+- build
+- unit tests
+- contract tests
+- integration tests
+- workflow
+
+Perbaiki otomatis sampai seluruh workflow hijau.
+
+Setelah selesai:
+
+- Commit.
+- Update README.md.
+
+Tambahkan section baru:
+
+## Phase 4.1 - Final QA & Release Candidate
+
+Isi:
+
+- Ringkasan QA
+- Bug yang diperbaiki
+- Warning yang dihilangkan
+- File baru
+- File diubah
+- Hasil seluruh test
+- Build status
+- Workflow status
+- Commit hash
+- Status roadmap
+- Next Phase: 4.2 Stable Release
+
+README.md harus tetap menjadi changelog lengkap seluruh project dari Phase 2 sampai Phase 4.1 tanpa menghapus riwayat sebelumnya.
+
+Output akhir cukup:
+
+- Commit hash
+- Ringkasan implementasi
+- File dibuat
+- File diubah
+- README diperbarui
+- Semua test hijau
+- Build sukses
+- Status siap menuju Phase 4.2 Stable Release
+
+
+```
+
+
 # Phase 4.0 Production Hardening & Final Integration.
 ```
 Lanjutkan langsung Phase 4.0 Production Hardening & Final Integration.
