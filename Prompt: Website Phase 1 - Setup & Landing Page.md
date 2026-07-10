@@ -1,4 +1,67 @@
 # Prompt website
+# Prompt: Download Token Resolver & Link Builder
+```
+
+Prompt: Download Token Resolver & Link Builder
+
+Lanjutkan pengembangan Telegram Drive.
+
+Fokus kali ini adalah menyelesaikan pondasi fitur Download.
+
+Tugas:
+
+- Buat Download Token Resolver yang menerima downloadToken dan menyiapkan proses pencarian file di masa depan.
+- Buat Download Link Builder untuk menghasilkan URL download yang konsisten.
+- Resolver dan Link Builder hanya menyiapkan struktur, belum boleh terhubung ke MongoDB.
+- Jangan menghubungkan ke Repository Layer.
+- Jangan menghubungkan ke Service Layer.
+- Jangan menghubungkan ke API Route.
+- Jangan menghubungkan ke Bot Telegram.
+- Jangan mengubah Upload Handler.
+- Jangan mengubah Download Page.
+- Jangan mengubah Auth/Login.
+- Kode harus modular, reusable, dan siap dipakai pada tahap integrasi berikutnya.
+
+Setelah selesai:
+
+1. Commit langsung ke GitHub.
+
+2. Tambahkan Development Log BARU di bagian PALING BAWAH README.md.
+
+Jangan menghapus isi README lama.
+Jangan membuat README baru.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi:
+- Perubahan yang dibuat.
+- File dibuat.
+- File diubah.
+- Commit Hash.
+
+Laporkan:
+- File dibuat.
+- File diubah.
+- Hash Commit GitHub.
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Landing Page
+- Download Page
+- Auth/Login
+
+
+
+```
+
 # Prompt: Download Token Generator
 ```
 
