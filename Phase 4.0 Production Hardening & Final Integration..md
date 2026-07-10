@@ -1,5 +1,53 @@
 
 
+# 
+```
+
+
+Lanjutkan tanpa meminta konfirmasi.
+
+Jangan upgrade dependency apa pun kecuali benar-benar menjadi penyebab workflow gagal.
+
+Repository GitHub tetap menjadi source of truth.
+
+Tugas:
+
+1. Periksa seluruh GitHub Actions yang gagal.
+2. Identifikasi penyebab sebenarnya.
+3. Jika penyebab bukan dependency, jangan melakukan upgrade package.
+4. Perbaiki hanya akar masalah hingga seluruh workflow hijau.
+5. Jalankan ulang:
+   - typecheck
+   - lint
+   - build
+   - unit tests
+   - contract tests
+   - integration tests
+   - seluruh GitHub Actions
+6. Jika semua workflow berhasil:
+   - tandai README sebagai VERIFIED
+   - tambahkan bagian:
+     ## Release Candidate Verified
+     - CI: PASS
+     - Build: PASS
+     - Tests: PASS
+     - Workflow: PASS
+     - Verified Date
+     - Commit Hash
+   - buat branch `phase-4.2-stable-release`
+   - commit perubahan.
+
+Output akhir cukup:
+- Penyebab workflow gagal
+- Cara perbaikan
+- Commit hash
+- README diperbarui
+- Branch phase-4.2-stable-release dibuat
+- Status READY FOR STABLE RELEASE
+
+
+```
+
 
 # Phase 4.2 Stable Release belum boleh dimulai, karena AI menyatakan status CI/Workflow hijau belum dapat diverifikasi dari aksesnya.
 ```
