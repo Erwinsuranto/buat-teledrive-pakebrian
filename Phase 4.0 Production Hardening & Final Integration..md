@@ -1,4 +1,80 @@
 
+
+# Prompt: Repository Context Loading (GPT-5.6)
+```
+
+You are taking over an existing software project from another AI.
+
+Your first task is to completely understand this repository before making any code changes.
+
+Read the entire repository carefully.
+
+Analyze and understand:
+
+- Overall project purpose
+- Folder structure
+- Frontend architecture
+- Backend architecture
+- API routes
+- Database architecture
+- Telegram Bot integration
+- Authentication flow
+- Upload workflow
+- Download workflow
+- Search workflow
+- My Files workflow
+- Admin Panel
+- Dashboard
+- Services
+- Repositories
+- Models
+- Schemas
+- Utilities
+- Middleware
+- Environment variables
+- Build process
+- Deployment configuration
+- README and documentation
+- Package configuration
+- GitHub workflows
+
+Identify:
+
+- Completed features
+- Features still under development
+- Existing TODO/FIXME
+- Existing mock data
+- Existing technical debt
+- Existing bugs (if any)
+
+Rules:
+
+- Do NOT modify any code.
+- Do NOT refactor.
+- Do NOT optimize.
+- Do NOT create commits.
+- Do NOT delete files.
+- Do NOT install unnecessary dependencies.
+- Do NOT ask for confirmation.
+- Only understand the repository and build a complete mental model of the project.
+
+After finishing, generate a detailed report including:
+
+1. Project overview
+2. Architecture summary
+3. Folder structure summary
+4. Current application flow
+5. Completed features
+6. Features still under development
+7. Build status
+8. Production readiness
+9. Recommended next development priority
+
+Wait for my next instruction before making any code changes.
+
+
+
+```
 # Prompt: Ubah Seluruh Website ke Bahasa Indonesia
 ```
 
