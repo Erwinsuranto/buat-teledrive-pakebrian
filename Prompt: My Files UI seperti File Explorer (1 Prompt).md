@@ -1,4 +1,59 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+# Prompt: Settings & Preferences
+```
+
+Lanjutkan pengembangan UI Telegram Drive dengan membuat halaman Settings yang modern, bersih, dan konsisten dengan seluruh aplikasi.
+
+Target:
+Menyediakan pusat pengaturan pengguna yang siap dihubungkan ke backend pada tahap berikutnya.
+
+Tambahkan menu:
+
+- Profile
+- Appearance (Light, Dark, System)
+- Language
+- Notifications
+- Download Preferences
+- Upload Preferences
+- Privacy
+- Security
+- Connected Telegram Account
+- Connected Google Drive (placeholder)
+- Storage Information
+- Keyboard Shortcuts
+- About Application
+
+Tambahkan fitur UI:
+
+- Toggle Switch
+- Dropdown
+- Input Field
+- Save Button
+- Reset to Default
+- Confirmation Dialog
+- Success & Error Toast (mock)
+
+Gunakan komponen reusable yang sudah dibuat.
+
+Pastikan:
+- Responsive.
+- Desain konsisten dengan halaman lain.
+- Menggunakan spacing, typography, dan ikon yang sama.
+
+Jangan mengubah backend, API, database, authentication, Telegram Bot, upload logic, download logic, maupun service.
+
+Update README.md dengan bagian "Settings & Preferences".
+
+Setelah selesai:
+- Jelaskan perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Sebutkan komponen reusable yang digunakan.
+- Lakukan visual audit agar halaman Settings memiliki kualitas yang sama dengan halaman lainnya.
+
+
+
+```
+
 # Prompt: Dashboard & Home Experience
 ```
 
