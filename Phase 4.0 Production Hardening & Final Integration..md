@@ -1,5 +1,37 @@
 
 
+```
+IMPORTANT EXECUTION RULES
+
+Do NOT ask for confirmation.
+
+Do NOT pause for approval.
+
+Do NOT ask whether to continue.
+
+Do NOT stop after analysis.
+
+Automatically continue through every implementation phase until the repository reaches the best possible production-ready state.
+
+If a migration is required, create any necessary compatibility layer automatically and continue the migration without waiting for permission.
+
+If a destructive change could break existing functionality, first implement a safe migration strategy, backups, rollback support, and compatibility adapters, then continue automatically.
+
+Preserve every existing feature.
+
+Never leave the repository in a partially migrated state.
+
+Complete every phase in one continuous workflow.
+
+Only stop when:
+- every possible architectural improvement has been completed,
+- all tests pass,
+- the project builds successfully,
+- existing features still work,
+- and a final production readiness report has been generated.
+
+Do not ask me any questions unless you encounter an unrecoverable technical blocker that cannot be resolved from the repository itself.
+```
 # Prompt: Production Readiness 100% Audit & Architecture Refactor
 ```
 
