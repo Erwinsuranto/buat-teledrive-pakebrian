@@ -1,5 +1,74 @@
 
 
+# Phase 3.3.
+```
+
+
+Lanjutkan langsung Phase 3.3 Email Verification tanpa meminta konfirmasi apa pun.
+
+Repository GitHub adalah source of truth. Jangan audit ulang repository. Jangan membaca ulang seluruh project. Langsung lanjut dari branch Phase 3.2.
+
+Scope Phase 3.3:
+
+Implementasikan fondasi lengkap Email Verification.
+
+Kerjakan dalam satu branch dan commit akhir.
+
+Implementasikan:
+
+- Email Verification Service
+- Verification Token Entity
+- Repository
+- Service
+- Controller
+- HTTP Routes
+- Send Verification Email
+- Verify Email Endpoint
+- Resend Verification Endpoint
+- Token Expiration
+- One-time Token
+- Secure Random Token Generator
+- Rate Limit
+- Email Template Abstraction
+- Mail Provider Interface
+- Mock Mail Provider
+- Event Hook
+- DTO
+- Validator
+- Mapper
+- Error Mapper
+- Contract Test
+- Integration Test bila memungkinkan
+- Export
+- README
+
+Jangan mengubah:
+
+- UI
+- Telegram
+- Upload Engine
+- Download Engine
+- File Manager
+- Metadata Engine
+
+Gunakan dependency injection yang sudah ada.
+
+Jika menemukan bug kecil di Authentication, perbaiki langsung tanpa bertanya.
+
+Jalankan typecheck dan seluruh test.
+
+Jika lolos, langsung commit.
+
+Output akhir cukup:
+
+- Commit hash
+- Ringkasan implementasi
+- File dibuat
+- File diubah
+- Status siap menuju Phase 3.4 Password Reset
+
+
+```
 
 # Prompt: Phase 3.2 – Login & Register API
 ```
