@@ -1,3 +1,96 @@
+# Prompt: My Files UI Premium (Compact File Explorer)
+```
+
+
+Tugas: Rapikan tampilan halaman My Files agar benar-benar terasa seperti File Explorer modern (Windows Explorer, Google Drive, OneDrive), bukan hanya daftar folder besar.
+
+JANGAN mengubah:
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Landing Page
+- Download Page
+- Auth/Login
+- Backend
+- Routing
+
+Fokus HANYA pada UI My Files.
+
+Target perubahan:
+
+1. Kecilkan tinggi setiap Folder Card sekitar 40–50%.
+   - Dalam satu layar HP minimal terlihat 5–7 folder.
+   - Jangan ada card yang terlalu tinggi.
+
+2. Rapikan isi card:
+   Baris 1:
+   📁 Nama Folder
+   Baris 2:
+   Jumlah File • Total Size
+   Baris 3:
+   Last Updated
+
+Contoh:
+
+📁 Photos
+48 Files • 12.3 GB
+Updated 09 Jul 2026
+
+3. Perkecil icon folder agar proporsional.
+
+4. Perkecil tombol menu (⋮) dan letakkan sejajar dengan nama folder.
+
+5. Tambahkan preview isi folder.
+   Untuk folder Photos tampilkan 3 thumbnail kecil.
+   Untuk folder Documents tampilkan icon PDF/DOC.
+   Untuk Videos tampilkan preview video.
+   Semua menggunakan mock data.
+
+6. Tambahkan badge kecil apabila diperlukan:
+- Shared
+- Private
+- Favorite
+- Empty
+
+Badge harus kecil dan elegan.
+
+7. Tambahkan Floating Action Button (+) di kanan bawah.
+Saat ditekan tampilkan Bottom Sheet:
+- Upload File
+- New Folder
+- Import Link
+
+Belum perlu fungsi backend.
+
+8. Saat folder ditekan jangan pindah ke halaman kosong.
+Masuk ke halaman Folder Explorer mock yang menampilkan:
+- Breadcrumb
+Home > Photos
+- Daftar file
+- Mock data
+- Layout seperti File Explorer.
+
+9. Gunakan spacing yang lebih rapat.
+Target UI modern, minimalis, premium.
+
+10. Jangan menggunakan card besar yang memakan layar.
+
+11. Gunakan mock data saja.
+Backend sama sekali tidak boleh disentuh.
+
+12. Commit ke GitHub.
+
+Laporan:
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+
+```
+
 ```
 Tugas: Redesign halaman My Files agar tampil seperti File Explorer modern (Windows Explorer / Google Drive), tanpa mengubah backend, API, database, Bot Telegram, Upload Handler, MongoDB, Repository Layer, Service Layer, API Layer, Landing Page, Download Page, maupun Auth/Login.
 
