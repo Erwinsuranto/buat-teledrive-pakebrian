@@ -1,4 +1,61 @@
 
+# Prompt: Fix Folder Database Integration
+```
+
+The upload system is working correctly.
+
+Now fix the Folder integration.
+
+Current runtime error:
+
+Failed to fetch folders:
+Operation `folders.find()` buffering timed out after 10000ms.
+
+Tasks:
+
+1. Find the exact cause of the timeout.
+
+2. Verify MongoDB connection for the Folder model.
+
+3. Verify the Folder schema.
+
+4. Verify the Folder repository.
+
+5. Verify the Folder service.
+
+6. Verify the /api/folders endpoint.
+
+7. Verify database initialization order.
+
+8. Ensure Folder queries only run after MongoDB is connected.
+
+9. Remove any remaining mock folder implementation.
+
+10. The destination folder selector must load real folders from MongoDB.
+
+11. Creating a new folder must immediately save it into MongoDB.
+
+12. Newly created folders must immediately appear in the folder selector without refreshing the page.
+
+Do NOT create fake data.
+
+Do NOT hide the error.
+
+Find the real root cause.
+
+Run npm run build.
+
+Verify:
+
+- Folder list loads successfully.
+- New folder creation works.
+- Upload to selected folder works.
+- Build passes.
+
+
+
+```
+
 # Prompt: Fix TypeScript Set Iteration Build Error
 ```
 
