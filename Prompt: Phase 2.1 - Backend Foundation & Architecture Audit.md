@@ -1,5 +1,56 @@
 # Phase 2 dimulai 
 
+# Phase 2.2.8 – Legacy Migration Plan
+```
+
+Phase 2.2.8 dimulai.
+
+Jangan melakukan migrasi atau refactor besar.
+
+Tujuan:
+Membuat Migration Plan agar repository root, database bot, Service, API, dan Telegram dapat dipindahkan ke arsitektur baru secara bertahap tanpa merusak project.
+
+Kerjakan:
+
+- Audit seluruh consumer yang masih memakai repository atau database lama.
+- Buat dependency map:
+  - UI
+  - API
+  - Telegram Bot
+  - Service
+  - Repository
+  - Database
+- Identifikasi seluruh titik yang masih memakai persistence lama.
+- Kelompokkan menjadi:
+  - Aman dimigrasikan sekarang
+  - Perlu adapter sementara
+  - Berisiko tinggi
+- Tentukan urutan migrasi paling aman.
+- Jika diperlukan, usulkan Compatibility Layer atau Adapter agar kode lama tetap berjalan selama transisi.
+- Jangan memindahkan kode.
+- Jangan mengubah UI.
+- Jangan membuat Telegram Service.
+- Jangan membuat API baru.
+
+Update README.md dengan:
+
+- Legacy Dependency Map
+- Migration Strategy
+- Compatibility Plan
+- Recommended Migration Order
+
+Di akhir berikan:
+
+1. Daftar seluruh consumer legacy.
+2. Diagram sederhana dependency.
+3. Urutan migrasi.
+4. Risiko setiap tahap.
+5. Konfirmasi kapan project benar-benar siap masuk Phase 2.3.
+
+
+
+```
+
 # Phase 2.2.7 – Backend Validation & Migration
 ```
 
