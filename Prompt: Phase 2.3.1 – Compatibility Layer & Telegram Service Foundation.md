@@ -1,4 +1,70 @@
 
+# Prompt: Phase 2.3.5 – Download Engine
+```
+
+Lanjutkan langsung Phase 2.3.5 tanpa meminta konfirmasi.
+
+Gunakan seluruh fondasi dari Phase 2.3.4.
+
+Target:
+Membangun Download Engine lengkap dengan arsitektur yang sama seperti Upload Engine, namun masih menggunakan abstraction dan mock transport.
+
+Kerjakan:
+
+- Implement Download Engine.
+- Download Pipeline.
+- Download Job Manager.
+- Download Queue.
+- Download Progress Tracker.
+- Chunk Download Interface.
+- Resume Download.
+- Retry Download.
+- Download Metadata.
+- Download Result DTO.
+- Download Error Mapper.
+- Download Lifecycle.
+- Download History Contract.
+- Download Validator.
+- Download Factory.
+- Contract Test.
+- Rapikan export/index.ts bila diperlukan.
+
+Jangan:
+
+- Login Telegram.
+- Memakai Telegram API asli.
+- Menghubungkan MTProto.
+- Download file sungguhan.
+- Mengubah UI.
+- Mengubah API.
+- Mengubah Repository Layer.
+
+Semua implementasi tetap fail-closed dan siap diganti adapter Telegram asli pada fase berikutnya.
+
+Update README.md:
+
+- Download Engine Architecture.
+- Download Lifecycle.
+- Progress Phase 2.3.5.
+
+Setelah selesai:
+
+- Audit singkat.
+- Perbaiki issue kecil bila ada.
+- Jalankan typecheck bila memungkinkan.
+- Commit langsung tanpa menunggu persetujuan.
+
+Output akhir:
+
+- Commit hash.
+- Ringkasan implementasi.
+- File dibuat.
+- File diubah.
+- Status kesiapan menuju Phase 2.3.6 (Transfer & Share Engine).
+
+
+
+```
 # Prompt: Phase 2.3.4 – Upload Engine (Implement & Commit)
 ```
 
