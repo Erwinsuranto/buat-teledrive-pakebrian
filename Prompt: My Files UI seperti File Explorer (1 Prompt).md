@@ -1,4 +1,63 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+
+
+# Tugas: Setelah perubahan UI My Files, seluruh website menjadi rusak.
+```
+
+
+Tugas: Setelah perubahan UI My Files, seluruh website menjadi rusak.
+
+Gejala:
+- CSS hilang.
+- Navbar berubah menjadi link HTML.
+- Layout berantakan.
+- Muncul lingkaran hitam besar.
+- Setelah membuka My Files lalu kembali Home, Home ikut rusak.
+
+Cari penyebabnya dan perbaiki.
+
+Periksa:
+- layout.tsx
+- template.tsx
+- page.tsx
+- globals.css
+- import CSS
+- Tailwind
+- React hydration
+- tag HTML yang tidak tertutup
+- komponen My Files yang mungkin merusak layout global
+- portal/dialog yang tidak ditutup
+- overflow/body style yang tertinggal
+- z-index
+- position fixed
+- React Fragment
+
+Pastikan:
+- Home kembali normal.
+- My Files tetap normal.
+- Tidak ada CSS global yang berubah.
+- Tidak ada perubahan backend.
+- Tidak mengubah Bot Telegram.
+- Tidak mengubah MongoDB.
+- Tidak mengubah Upload Handler.
+- Tidak mengubah Repository.
+- Tidak mengubah Service.
+- Tidak mengubah API.
+- Tidak mengubah Download.
+- Tidak mengubah Auth.
+
+Commit ke GitHub.
+
+Laporkan:
+- Penyebab bug.
+- File yang diperbaiki.
+- Hash commit GitHub.
+
+
+```
+
+
+
 ```
 
 
