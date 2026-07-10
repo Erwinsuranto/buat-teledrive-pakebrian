@@ -1,4 +1,47 @@
 # Prompt website
+# File Manager Foundation
+```
+
+
+
+Tugas: Selesaikan pondasi File Manager.
+
+Tujuan:
+Ubah seluruh halaman File Manager dari placeholder menjadi struktur siap pakai TANPA menghubungkan ke MongoDB atau Bot Telegram.
+
+Kerjakan:
+
+1. Buat layout File Manager yang lengkap.
+2. Tambahkan:
+   - Breadcrumb
+   - Toolbar
+   - Search Box
+   - Sort
+   - Grid/List toggle
+   - Folder Card
+   - File Card
+   - Empty State
+   - Loading Skeleton
+   - Error State
+3. Buat reusable components.
+4. Gunakan data mock/static saja.
+5. Jangan ambil data dari API.
+6. Jangan mengubah UI Landing Page.
+7. Jangan menyentuh:
+   - Bot Telegram
+   - Upload Handler
+   - MongoDB
+   - Repository Layer
+   - Service Layer
+   - API Layer
+   - Download Page
+   - Auth/Login
+
+Laporkan:
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+```
 # Prompt terakhir: Download Final Architecture Audit
 ```
 
