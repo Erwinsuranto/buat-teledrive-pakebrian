@@ -1,4 +1,53 @@
 # Phase 2 dimulai 
+# Prompt: Phase 2.2.5 – Domain & Repository Implementation
+```
+
+Phase 2.2.5 dimulai.
+
+Lanjutkan pembangunan backend Telegram Drive dengan menyempurnakan Domain Layer dan Repository Layer berdasarkan arsitektur serta MongoDB Foundation yang telah dibuat.
+
+Target:
+Membuat fondasi data yang benar-benar siap digunakan oleh Telegram Service, API, dan UI tanpa mengubah tampilan aplikasi.
+
+Kerjakan:
+
+- Lengkapi seluruh Repository Interface.
+- Lengkapi implementasi Repository.
+- Audit seluruh Model dan Schema.
+- Pastikan relasi User, Folder, File, Share Link, Activity, Favorite, Trash, Upload Job, dan Download History sudah konsisten.
+- Tambahkan validation pada model.
+- Tambahkan mapper antara Database Model dan Domain Model bila diperlukan.
+- Pastikan seluruh business logic tetap berada di Service Layer, bukan Repository.
+- Siapkan Transaction Pattern bila nanti dibutuhkan.
+- Tambahkan unit test dasar untuk repository (jika project sudah mendukung testing).
+
+Jangan membuat API endpoint.
+
+Jangan menghubungkan Telegram.
+
+Jangan mengubah UI.
+
+Jangan menghapus mock data yang masih dipakai frontend.
+
+Update README.md:
+
+- Domain Layer
+- Repository Layer
+- Collection Relationship
+- Data Flow
+- Progress Phase 2
+
+Setelah selesai:
+
+- Jelaskan struktur Repository.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan relasi antar model.
+- Jelaskan kesiapan untuk Phase 2.3 Telegram Service.
+- Lakukan audit agar Repository siap digunakan seluruh project.
+
+
+
+```
 # Prompt: Phase 2.2 – MongoDB Foundation
 ```
 
