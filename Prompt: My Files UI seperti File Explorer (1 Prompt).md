@@ -1,4 +1,51 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+
+
+# Prompt: File Management Experience
+```
+
+Lanjutkan pengembangan UI Telegram Drive dengan menyempurnakan pengalaman File Management agar terasa seperti aplikasi cloud storage modern.
+
+Target:
+Membuat pengelolaan file cepat, mudah, dan konsisten di seluruh aplikasi.
+
+Tambahkan:
+
+- Multi Select (checkbox pada file/folder).
+- Select All.
+- Bulk Actions:
+  - Download
+  - Move
+  - Copy
+  - Delete
+  - Favorite
+  - Share
+- Drag & Drop untuk memindahkan file (UI saja).
+- Rename dengan inline editing.
+- Move dan Copy menggunakan dialog pemilihan folder.
+- Favorite dengan ikon bintang.
+- Trash (Recycle Bin) sebagai placeholder.
+- Restore File (placeholder).
+- Delete Permanently (placeholder).
+- Progress dialog untuk operasi file (mock).
+- Toast notification untuk setiap aksi.
+- Shortcut keyboard (Ctrl+A, Delete, F2, Ctrl+C, Ctrl+V sebagai placeholder UI).
+
+Pastikan semua fitur menggunakan komponen reusable yang sudah dibuat dan tampil konsisten dengan My Files, Search, Upload, Preview, dan Dashboard.
+
+Jangan mengubah backend, API, database, authentication, Telegram Bot, upload/download logic, maupun service.
+
+Update README.md dengan bagian "File Management".
+
+Setelah selesai:
+- Ringkas perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan.
+- Lakukan visual audit agar seluruh fitur File Management memiliki kualitas setara aplikasi cloud storage modern.
+
+
+
+```
 # Prompt: Settings & Preferences
 ```
 
