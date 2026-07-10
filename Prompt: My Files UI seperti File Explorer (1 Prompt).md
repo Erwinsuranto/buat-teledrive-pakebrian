@@ -1,4 +1,51 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+# Prompt: Dashboard & Home Experience
+```
+
+
+Lanjutkan pengembangan UI Telegram Drive dengan menyempurnakan halaman Home/Dashboard.
+
+Target:
+Membuat Dashboard terasa seperti halaman utama aplikasi cloud storage modern, bukan landing page biasa.
+
+Tambahkan:
+
+- Welcome Header yang dinamis.
+- Quick Statistics:
+  - Total Files
+  - Total Folders
+  - Storage Used
+  - Recent Uploads
+- Quick Actions:
+  - Upload File
+  - Upload Folder
+  - New Folder
+  - Search
+- Recent Files.
+- Recent Folders.
+- Favorites.
+- Recent Activity Timeline.
+- Storage Usage Card dengan progress bar.
+- Recent Downloads.
+- Empty State jika belum ada data.
+- Skeleton Loading.
+- Responsive untuk desktop, tablet, dan mobile.
+- Gunakan animasi ringan dan konsisten dengan halaman lainnya.
+
+Gunakan kembali komponen reusable yang sudah dibuat.
+
+Jangan mengubah backend, API, database, authentication, upload, download, Telegram Bot, routing, maupun service.
+
+Update README.md dengan bagian "Dashboard Experience".
+
+Setelah selesai:
+- Jelaskan perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Sebutkan komponen reusable yang digunakan.
+- Lakukan visual audit agar Dashboard memiliki kualitas yang sama dengan My Files, Search, Upload, dan Preview.
+
+
+```
 # Prompt: File Preview & Details
 ```
 Lanjutkan pengembangan UI Telegram Drive dengan menyempurnakan fitur File Preview dan File Details.
