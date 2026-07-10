@@ -1,5 +1,82 @@
 
 
+
+
+# Siap menuju Phase 3.6 Admin Foundation
+```
+
+Lanjutkan langsung Phase 3.6 Admin Foundation.
+
+Jangan meminta konfirmasi.
+Jangan audit ulang repository.
+Jangan membaca ulang project.
+Repository GitHub tetap menjadi source of truth.
+Langsung buat branch baru, implementasikan seluruh scope, jalankan test, lalu commit.
+
+Target:
+
+Membangun fondasi penuh sistem Admin yang nantinya dipakai Dashboard Admin website.
+
+Implementasikan:
+
+- Admin Entity
+- Admin Repository
+- Admin Service
+- Admin Controller
+- Admin API
+- Admin Session
+- Role Management
+- Permission Management (RBAC)
+- Policy Engine
+- Admin Middleware
+- Route Protection
+- Audit Log Service
+- Activity Log
+- Admin Profile
+- Admin Dashboard Summary
+- User Management Foundation
+- Statistics Service
+- Search & Filter Foundation
+- Pagination
+- DTO
+- Validator
+- Mapper
+- Error Mapper
+- Dependency Injection
+- Repository Integration
+- Contract Tests
+- Integration Tests bila memungkinkan
+- Export/index
+- README
+
+Jangan mengubah:
+
+- UI
+- Telegram
+- Upload Engine
+- Download Engine
+- File Manager
+- Metadata Engine
+- Authentication User
+
+Jika menemukan bug kecil pada Authentication atau Dashboard, perbaiki langsung tanpa bertanya.
+
+Pastikan seluruh workflow, typecheck, contract test, dan integration test berjalan hijau.
+
+Jika berhasil, langsung commit.
+
+Output akhir cukup:
+
+- Commit hash
+- Ringkasan implementasi
+- File dibuat
+- File diubah
+- Status siap menuju Phase 3.7 Admin File Management
+
+
+
+```
+
 # Phase 3.5 – User Dashboard & Profile.
 ```
 Lanjutkan langsung Phase 3.5 User Dashboard & Profile.
