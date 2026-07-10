@@ -1,7 +1,86 @@
 
 
 
+# Prompt: Phase 2.3.3 – Real Telegram Transport Foundation (Implement & Commit)
+```
 
+
+Phase 2.3.3 dimulai.
+
+Lanjutkan langsung tanpa meminta konfirmasi.
+
+Gunakan hasil Phase 2.3.2 sebagai fondasi.
+
+Target:
+Mengimplementasikan Real Telegram Transport Foundation sehingga Telegram Client siap dihubungkan ke library Telegram asli tanpa mengubah Service, Repository, UI, maupun API.
+
+Kerjakan:
+
+1. Audit seluruh Telegram Client Foundation.
+2. Implement Real Telegram Transport Interface.
+3. Hubungkan Transport dengan TelegramAdapter menggunakan Dependency Injection.
+4. Buat Session Storage abstraction.
+5. Buat Connection Lifecycle.
+6. Buat Authentication Lifecycle.
+7. Buat Transport State Manager.
+8. Buat Connection Pool Manager.
+9. Buat Retry Transport Layer.
+10. Buat Transport Error Mapper.
+11. Buat Transport Event Dispatcher.
+12. Buat Upload Transport Interface.
+13. Buat Download Transport Interface.
+14. Buat Delete Transport Interface.
+15. Buat Forward Transport Interface.
+16. Buat Metadata Transport Interface.
+17. Buat Health Monitoring.
+18. Tambahkan Contract Test.
+19. Audit dependency dan import.
+20. Rapikan export/index.ts bila diperlukan.
+
+Penting:
+
+- Belum login Telegram.
+- Belum mengirim OTP.
+- Belum menggunakan akun Telegram.
+- Belum upload file.
+- Belum download file.
+- Belum delete file.
+- Belum forward message.
+- Belum mengubah UI.
+- Belum mengubah API.
+- Belum mengubah Repository.
+- Belum mengubah Business Logic.
+
+Fokus hanya membangun pondasi Real Transport agar implementasi Telegram asli pada phase berikutnya cukup mengganti implementasi adapter tanpa refactor.
+
+Update README.md:
+
+- Real Transport Architecture
+- Connection Lifecycle
+- Session Lifecycle
+- Transport Layer
+- Dependency Flow
+- Progress Phase 2.3.3
+
+Setelah selesai:
+
+- Jalankan audit singkat.
+- Perbaiki issue kecil bila ditemukan.
+- Jalankan typecheck bila memungkinkan.
+- Commit seluruh perubahan.
+
+Tampilkan:
+
+- Commit hash.
+- Ringkasan implementasi.
+- File dibuat.
+- File diubah.
+- Status kesiapan menuju Phase 2.3.4 (Telegram Upload Engine).
+
+Jangan meminta konfirmasi. Selesaikan seluruh scope Phase 2.3.3 kemudian commit langsung.
+
+
+```
 # Prompt: Phase 2.3.2 – Telegram Client Core (Implement & Commit)
 ```
 
