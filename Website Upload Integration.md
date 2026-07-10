@@ -1,4 +1,85 @@
 
+# 
+```
+
+
+The upload workflow is working correctly.
+
+Do NOT modify backend logic.
+
+Do NOT modify Telegram integration.
+
+Do NOT modify MongoDB integration.
+
+Improve the upload experience.
+
+Requirements
+
+1. Add destination folder selection before upload.
+
+Users must be able to:
+
+- choose an existing folder
+- create a new folder
+- change destination before upload
+
+2. Optimize large batch uploads.
+
+If selected files <= 10
+
+Show:
+
+- thumbnail
+- filename
+- size
+- type
+
+If selected files > 10
+
+Do NOT render thumbnails.
+
+Display a compact list:
+
+- filename
+- extension
+- size
+- status
+
+This is required for better performance.
+
+3. Queue management
+
+Allow users to:
+
+- remove a single file
+- remove multiple selected files
+- clear the entire queue
+- cancel all uploads before they start
+
+4. Upload summary
+
+Display:
+
+Selected Files
+
+Uploading
+
+Completed
+
+Failed
+
+Remaining
+
+Total Size
+
+5. Preserve existing upload behavior.
+
+6. Verify that all features work on desktop and mobile.
+
+Do not modify unrelated features.
+
+
+```
 
 # 
 ```
