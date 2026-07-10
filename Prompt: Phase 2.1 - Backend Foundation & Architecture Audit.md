@@ -1,4 +1,46 @@
 # Phase 2 dimulai 
+
+# Prompt: Phase 2.2.6 – Verification & Integration Readiness
+```
+
+
+Phase 2.2.6 dimulai.
+
+Sebelum memulai Telegram Service, lakukan tahap verifikasi akhir terhadap Repository Layer dan MongoDB Foundation.
+
+Target:
+Memastikan fondasi backend benar-benar siap untuk integrasi Telegram tanpa menghasilkan technical debt.
+
+Kerjakan:
+
+- Jalankan typecheck seluruh project.
+- Jalankan integration test Repository dan MongoDB jika sudah tersedia.
+- Periksa seluruh dependency injection dan composition root.
+- Verifikasi seluruh Repository Contract telah digunakan dengan benar.
+- Pastikan tidak ada import langsung Mongoose Model dari Service Layer.
+- Pastikan seluruh mapper berjalan sesuai Domain Entity.
+- Audit kembali relasi antar repository.
+- Periksa tidak ada dependency cycle.
+- Periksa tidak ada duplicate repository.
+- Jangan mengubah UI.
+- Jangan membuat Telegram Service.
+- Jangan membuat API endpoint.
+
+Jika menemukan masalah:
+- Perbaiki hanya jika aman dan tidak mengubah arsitektur.
+- Jika perubahan besar diperlukan, hentikan dan jelaskan alasannya.
+
+Update README.md dengan bagian "Phase 2.2 Verification".
+
+Di akhir:
+
+1. Ringkasan hasil verifikasi.
+2. File yang diubah (jika ada).
+3. Hasil typecheck dan integration test.
+4. Konfirmasi apakah project 100% siap memasuki Phase 2.3 Telegram Service.
+
+
+```
 # Prompt: Phase 2.2.5 – Domain & Repository Implementation
 ```
 
