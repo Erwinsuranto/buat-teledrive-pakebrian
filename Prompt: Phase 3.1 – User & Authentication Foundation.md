@@ -1,4 +1,114 @@
 
+# Lanjutkan langsung Phase 3.9 Admin Monitoring & Analytics.
+```
+
+Lanjutkan langsung Phase 3.9 Admin Monitoring & Analytics.
+
+Jangan meminta konfirmasi.
+Jangan audit repository dari awal.
+Jangan berhenti di tengah.
+Repository GitHub tetap menjadi source of truth.
+
+Buat branch baru, implementasikan seluruh scope, jalankan seluruh workflow, commit, lalu update README.md.
+
+Target Phase 3.9:
+
+Bangun sistem Monitoring & Analytics lengkap untuk Dashboard Admin.
+
+Implementasikan:
+
+- Dashboard Overview
+- Total Users
+- Active Users
+- New Users Today
+- Total Files
+- Total Storage
+- Upload Today
+- Download Today
+- Active Sessions
+- Top Download Files
+- Top Upload Users
+- Recent Activities
+- Error Statistics
+- API Statistics
+- Request Statistics
+- Response Time
+- System Health
+- Storage Usage
+- Queue Status
+- Traffic Statistics
+- Daily Analytics
+- Weekly Analytics
+- Monthly Analytics
+- Charts Data API
+- Export Statistics
+- Filter
+- Search
+- Pagination
+- DTO
+- Repository
+- Services
+- Controllers
+- Validators
+- Error Mapper
+- Dependency Injection
+- Contract Tests
+- Integration Tests
+- Backend Exports
+
+Jangan mengubah:
+
+- Authentication
+- Telegram Integration
+- Upload Engine
+- Download Engine
+- User Dashboard
+- Admin User Management
+
+Jika menemukan bug kecil pada phase sebelumnya, perbaiki langsung.
+
+Jalankan:
+
+- typecheck
+- lint
+- contract tests
+- integration tests
+- workflow
+
+Jika semua hijau, langsung commit.
+
+README.md wajib ditambah section baru:
+
+## Phase 3.9 - Admin Monitoring & Analytics
+
+Berisi:
+
+- Tujuan phase
+- Ringkasan implementasi
+- File baru
+- File diubah
+- API baru
+- Struktur folder
+- Dependency baru
+- Commit hash
+- Tanggal implementasi
+- Status roadmap
+- Next Phase: 4.0 Production Hardening & Final Integration
+
+README adalah changelog utama project, jangan menghapus riwayat phase sebelumnya.
+
+Output akhir cukup:
+
+- Commit hash
+- Ringkasan implementasi
+- File dibuat
+- File diubah
+- README diperbarui
+- Status siap menuju Phase 4.0 Production Hardening & Final Integration
+
+
+
+```
 
 # Siap menuju Phase 3.8 Admin User Management
 ```
