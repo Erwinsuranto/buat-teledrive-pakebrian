@@ -1,5 +1,140 @@
 
 
+
+# Prompt: Final Production Audit & Stable Release Verification
+```
+You are working directly on this repository using GitHub MCP.
+
+Current status:
+
+- GitHub Actions are GREEN.
+- Typecheck: PASS
+- ESLint: PASS
+- Build: PASS
+- Tests: PASS
+- Dependency Audit: PASS
+- Release Candidate: PASS
+
+Your task is NOT to rewrite the project.
+
+Instead, perform a complete production-grade audit of the entire repository.
+
+Audit every important area including:
+
+1. Project architecture
+2. Folder structure
+3. Backend architecture
+4. Frontend architecture
+5. API routes
+6. Database models
+7. Services
+8. Repository layer
+9. Dependency Injection
+10. TypeScript types
+11. React components
+12. Next.js App Router
+13. Authentication
+14. Authorization
+15. File upload/download system
+16. Telegram integration
+17. Storage abstraction
+18. Error handling
+19. Logging
+20. Environment configuration
+21. Security
+22. Performance
+23. Scalability
+24. Maintainability
+25. Dead code
+26. Duplicate code
+27. Unused files
+28. Unused dependencies
+29. Circular dependencies
+30. Broken imports
+31. Workflow configuration
+32. CI/CD
+33. Release configuration
+34. Documentation
+35. Production readiness
+
+Rules:
+
+- Read the repository using GitHub MCP.
+- Verify actual code instead of making assumptions.
+- Do NOT modify working code without a real reason.
+- Do NOT introduce new features.
+- Do NOT refactor code that already passes unless there is a measurable benefit.
+- Do NOT change architecture unless a real issue exists.
+
+If you find problems:
+
+- Explain the root cause.
+- Estimate the impact.
+- Fix only real issues.
+- Commit only if code actually changes.
+- Push the fixes.
+- Wait for GitHub Actions.
+- Ensure all workflows remain GREEN.
+
+If no problems are found:
+
+Do NOT create unnecessary commits.
+
+Instead generate a production verification report containing:
+
+# Repository Health Score (0–100)
+
+## Architecture
+PASS / FAIL
+
+## Code Quality
+PASS / FAIL
+
+## Type Safety
+PASS / FAIL
+
+## Security
+PASS / FAIL
+
+## Performance
+PASS / FAIL
+
+## Maintainability
+PASS / FAIL
+
+## CI/CD
+PASS / FAIL
+
+## Documentation
+PASS / FAIL
+
+## Technical Debt
+
+List every remaining issue ranked by:
+
+Critical
+High
+Medium
+Low
+
+If there are none, explicitly write "None".
+
+Finally answer with:
+
+- Overall Production Readiness Score
+- Remaining Risks
+- Recommended Next Phase
+- Whether the repository is suitable as the foundation for long-term development
+- Whether you recommend creating the Stable Release branch now
+
+Only claim "Production Ready" if the repository truly meets production-quality standards after verification.
+
+
+
+```
+
+
+
 # Prompt: Fix All TypeScript Errors Until GitHub Actions Pass
 ```
 You are working directly on this repository using GitHub MCP.
