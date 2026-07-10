@@ -1,5 +1,52 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
 
+
+
+# Prompt: Notification Center
+```
+
+Lanjutkan pengembangan UI Telegram Drive dengan membuat Notification Center yang modern, ringan, dan konsisten dengan seluruh aplikasi.
+
+Target:
+Menyediakan pusat notifikasi yang siap dihubungkan ke backend pada tahap berikutnya.
+
+Tambahkan:
+
+- Notification Bell di Navbar.
+- Badge jumlah notifikasi yang belum dibaca.
+- Dropdown Notification Panel.
+- Halaman "Notifications".
+- Kategori:
+  - Upload
+  - Download
+  - Share
+  - System
+  - Security
+- Mark as Read.
+- Mark All as Read.
+- Delete Notification.
+- Empty State.
+- Skeleton Loading.
+- Filter berdasarkan kategori.
+- Search Notification.
+- Timestamp (Today, Yesterday, Earlier).
+- Toast Notification untuk aksi penting.
+
+Pastikan desain mengikuti tema Telegram Drive dan menggunakan komponen reusable yang sudah ada.
+
+Jangan mengubah backend, API, database, Telegram Bot, authentication, upload/download logic, maupun service.
+
+Update README.md dengan bagian "Notification Center".
+
+Setelah selesai:
+- Ringkas perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan.
+- Lakukan visual audit agar Notification Center memiliki kualitas setara aplikasi cloud storage modern.
+
+
+
+```
 # Prompt: Sharing & Link Management
 ```
 
