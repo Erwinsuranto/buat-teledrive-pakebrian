@@ -1,4 +1,71 @@
+# Prompt: Phase 2.3.6 – Transfer & Share Engine
+```
 
+Lanjutkan langsung Phase 2.3.6 tanpa meminta persetujuan.
+
+Gunakan seluruh fondasi Phase 2.3.5.
+
+Target:
+Membangun Transfer & Share Engine lengkap menggunakan abstraction yang sudah ada. Semua masih fail-closed, belum memakai Telegram API asli.
+
+Kerjakan:
+
+- Transfer Engine.
+- Share Engine.
+- Share Link Service.
+- Share Token Generator.
+- Token Validator.
+- Expired Link Handler.
+- Download Permission Checker.
+- Public/Private Visibility Policy.
+- File Ownership Policy.
+- Share Metadata.
+- Share DTO.
+- Transfer History.
+- Transfer Queue.
+- Transfer Retry.
+- Transfer Lifecycle.
+- Transfer Error Mapper.
+- Transfer Factory.
+- Contract Test.
+- Rapikan seluruh export/index.ts bila diperlukan.
+
+Jangan:
+
+- Login Telegram.
+- Menghubungkan Bot API.
+- Menggunakan MTProto.
+- Membuat upload/download nyata.
+- Mengubah UI.
+- Mengubah API publik.
+- Mengubah Repository lama.
+
+Update README.md:
+
+- Transfer Engine.
+- Share Engine.
+- Share Token Flow.
+- Transfer Lifecycle.
+- Progress Phase 2.3.6.
+
+Sesudah selesai:
+
+- Audit singkat.
+- Perbaiki issue kecil.
+- Jalankan typecheck bila memungkinkan.
+- Commit langsung.
+
+Output akhir cukup:
+
+- Commit hash.
+- Ringkasan implementasi.
+- File dibuat.
+- File diubah.
+- Status siap menuju Phase 2.3.7 (Metadata & Index Engine).
+
+
+
+```
 # Prompt: Phase 2.3.5 – Download Engine
 ```
 
