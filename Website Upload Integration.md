@@ -1,5 +1,65 @@
 
 
+# 
+```
+
+
+The upload functionality is now working correctly.
+
+Do NOT modify backend logic.
+
+Do NOT modify Telegram integration.
+
+Do NOT modify MongoDB integration.
+
+Improve the upload user experience.
+
+Requirements:
+
+1. After selecting files, DO NOT upload immediately.
+
+2. Show an upload confirmation screen.
+
+Display:
+
+- Thumbnail (if image)
+- File name
+- File size
+- File type
+- Destination folder (if applicable)
+
+Buttons:
+
+- Cancel
+- Upload
+
+Only start uploading after the user presses "Upload".
+
+During upload:
+
+- Show progress bar
+- Percentage
+- Current status
+- Remaining queue
+
+After upload succeeds:
+
+Show a success screen with:
+
+- File name
+- File size
+- Upload time
+- Telegram message ID
+- Open File
+- Copy Link
+- Upload Another File
+
+Keep all existing upload functionality.
+
+Only improve the user experience.
+
+
+```
 
 
 # 
