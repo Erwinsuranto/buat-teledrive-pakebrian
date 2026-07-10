@@ -1,4 +1,89 @@
 # Prompt website
+# Nama Prompt: Search 1/5 - Search UI Foundation
+```
+
+Nama Prompt: Search 1/5 - Search UI Foundation
+
+Lanjutkan pengembangan Telegram Drive.
+
+ATURAN WAJIB
+
+1. Fokus hanya mengerjakan fitur Search.
+2. Jangan mengubah Bot Telegram.
+3. Jangan mengubah Upload Handler.
+4. Jangan mengubah MongoDB.
+5. Jangan mengubah Repository Layer.
+6. Jangan mengubah Service Layer.
+7. Jangan mengubah API Layer.
+8. Jangan membuat Download Page.
+9. Jangan membuat Auth/Login.
+10. Jangan membuat README.md baru.
+11. Gunakan hanya README.md yang sudah ada.
+12. Tambahkan Development Log di bagian paling bawah README.md.
+13. Jangan membuat file dokumentasi lain.
+14. Commit langsung ke GitHub setelah selesai.
+
+TARGET
+
+Bangun pondasi halaman Search yang siap dihubungkan ke backend pada tahap berikutnya.
+
+Kerjakan:
+
+- Buat halaman Search modern.
+- Tambahkan Search Header.
+- Tambahkan Search Input.
+- Tambahkan tombol Search (UI saja).
+- Tambahkan tombol Clear.
+- Tambahkan Search History (mock data).
+- Tambahkan Recent Search (mock data).
+- Tambahkan Empty Search State.
+- Tambahkan No Result State.
+- Tambahkan Loading Skeleton.
+- Gunakan mock data.
+- Jangan mengambil data dari API.
+- Jangan menghubungkan MongoDB.
+- Jangan membuat business logic.
+- Gunakan reusable components.
+- Responsive untuk Mobile, Tablet, dan Desktop.
+- Gunakan style yang konsisten dengan Dashboard dan My Files.
+
+README.md
+
+Tambahkan Development Log baru di bagian paling bawah.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Status:
+Search Feature Progress 1/5
+
+Isi:
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB
+- Repository
+- Service
+- API
+- Download Page
+- Auth/Login
+
+
+
+```
 # Nama Prompt: My Files 6/6 - Final UI Integration & Production Ready
 ```
 
