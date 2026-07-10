@@ -1,4 +1,38 @@
 
+# Prompt: Fix TypeScript Set Iteration Build Error
+```
+
+
+Fix the current TypeScript build failure.
+
+Current error:
+
+Type 'Set<string>' can only be iterated through when using '--downlevelIteration' or with a '--target' of 'es2015' or higher.
+
+Requirements:
+
+1. Do NOT change tsconfig.json only to silence the error.
+2. Do NOT enable downlevelIteration unless it is already required by the project.
+3. Fix the implementation instead.
+4. Replace unsupported Set iteration with a compatible implementation.
+5. Preserve the existing upload functionality.
+6. Preserve multi-select.
+7. Preserve remove selected files.
+8. Preserve clear queue.
+9. Preserve destination folder selection.
+10. Do not modify unrelated files.
+
+After fixing:
+
+- Run npm run build.
+- Verify the build completes successfully.
+- Verify upload still works.
+- List every modified file.
+- Explain what was changed and why.
+
+
+```
+
 # 
 ```
 
