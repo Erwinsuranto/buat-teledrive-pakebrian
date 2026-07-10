@@ -1,4 +1,51 @@
-# 
+# Prompt: Fix All Remaining TypeScript Build Errors
+```
+The previous build error has been fixed.
+
+Now continue fixing ALL remaining TypeScript build errors automatically.
+
+Current error:
+
+components/file/list-view.tsx
+
+imports
+
+DriveFile
+
+from
+
+@/types/file
+
+but that type is no longer exported.
+
+Tasks:
+
+1. Find where DriveFile was moved, renamed or replaced.
+
+2. Restore compatibility.
+
+3. Update every broken import across the repository.
+
+4. Search the entire repository for all references to DriveFile.
+
+5. Fix every broken type import.
+
+6. Run npm run build again.
+
+7. If another TypeScript error appears, immediately fix it and continue automatically.
+
+8. Repeat until npm run build finishes successfully with exit code 0.
+
+9. Do not stop after fixing one error.
+
+10. Do not modify unrelated features.
+
+11. At the end provide:
+- modified files
+- deleted files
+- build result
+- confirmation that npm run build completed successfully.
+```
 ```
 The project is failing because of a real TypeScript build error.
 
