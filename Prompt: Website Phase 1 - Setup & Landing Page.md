@@ -1,5 +1,92 @@
 # Prompt website
-# 
+# Nama Prompt: My Files 5/6 - Folder Navigation & Preview UI
+
+```
+
+
+Nama Prompt: My Files 5/6 - Folder Navigation & Preview UI
+
+Lanjutkan pengembangan Telegram Drive.
+
+ATURAN WAJIB
+
+1. Fokus hanya pada halaman My Files.
+2. Jangan mengubah Bot Telegram.
+3. Jangan mengubah Upload Handler.
+4. Jangan mengubah MongoDB.
+5. Jangan mengubah Repository Layer.
+6. Jangan mengubah Service Layer.
+7. Jangan mengubah API Layer.
+8. Jangan membuat Download Page.
+9. Jangan membuat Auth/Login.
+10. Jangan membuat README.md baru.
+11. Gunakan hanya README.md yang sudah ada.
+12. Tambahkan Development Log di bagian paling bawah README.md.
+13. Jangan membuat file dokumentasi lain.
+14. Commit langsung ke GitHub setelah selesai.
+
+FITUR
+
+Sempurnakan UI My Files dengan:
+
+- Folder Navigation.
+- Breadcrumb yang dapat berubah sesuai folder.
+- Folder Card lebih modern.
+- File Preview Card.
+- Preview Panel (UI saja).
+- Thumbnail Placeholder untuk:
+  - Image
+  - Video
+  - Audio
+  - PDF
+  - Document
+  - Archive
+- File Detail Panel:
+  - Nama File
+  - Jenis File
+  - Ukuran
+  - Tanggal Upload
+  - Status
+- Hover Animation ringan.
+- Smooth Transition ringan.
+- Responsive untuk HP, Tablet, Desktop.
+- Gunakan mock data.
+- Jangan mengambil data dari API.
+- Jangan menghubungkan MongoDB.
+- Jangan membuat business logic.
+
+Pastikan build tetap tanpa error.
+
+README.md
+
+Tambahkan Development Log baru dengan format:
+
+DD MMM YYYY - HH:mm WIB
+
+Isi:
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+Laporkan:
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB
+- Repository
+- Service
+- API
+- Download Page
+- Auth/Login
+
+
+```
 ```
 
 Nama Prompt: My Files 4/6 - Search, Filter & File Actions
