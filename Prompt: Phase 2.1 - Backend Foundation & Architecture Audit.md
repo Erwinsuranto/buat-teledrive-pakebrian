@@ -4,6 +4,64 @@
 
 Phase 2.2.5 dimulai.
 
+Gunakan hasil audit Repository Layer sebagai acuan implementasi.
+
+Tujuan:
+Menyelesaikan seluruh temuan High Priority pada Domain Layer dan Repository Layer sebelum memulai Telegram Service.
+
+Kerjakan:
+
+- Lengkapi Repository khusus:
+  - FileRepository
+  - FolderRepository
+  - UploadJobRepository
+  - ShareLinkRepository
+  - ActivityRepository
+  - FavoriteRepository
+  - TrashRepository
+  - UserRepository
+
+- Jadikan Domain Entity sebagai sumber kebenaran, bukan Mongoose Model.
+
+- Pisahkan Domain Entity, Database Model, Repository, dan Service agar tidak saling bergantung langsung.
+
+- Tambahkan mapper Domain ↔ Database bila diperlukan.
+
+- Pastikan Repository tidak pernah mengembalikan Mongoose Document ke Service Layer.
+
+- Rapikan dependency direction sesuai hasil audit.
+
+- Hilangkan duplikasi struktur antara root dan backend jika memungkinkan tanpa merusak project.
+
+- Tambahkan validasi, index, dan repository contract yang diperlukan.
+
+- Jangan mengubah UI.
+
+- Jangan membuat API.
+
+- Jangan menghubungkan Telegram.
+
+- Jangan menghapus mock data frontend.
+
+Update README.md mengenai perubahan Repository Layer.
+
+Di akhir pekerjaan:
+
+1. Sebutkan seluruh masalah audit yang berhasil diperbaiki.
+2. Sebutkan file yang dibuat dan diubah.
+3. Lakukan audit ulang singkat.
+4. Berikan penilaian apakah project sudah siap masuk ke Phase 2.3 Telegram Service.
+
+Jika masih ada blocker High Priority, hentikan implementasi dan jelaskan apa yang masih harus diselesaikan terlebih dahulu.
+
+
+
+```
+# Prompt: Phase 2.2.5 – Domain & Repository Implementation
+```
+
+Phase 2.2.5 dimulai.
+
 Lanjutkan pembangunan backend Telegram Drive dengan menyempurnakan Domain Layer dan Repository Layer berdasarkan arsitektur serta MongoDB Foundation yang telah dibuat.
 
 Target:
