@@ -1,5 +1,104 @@
 
 
+# Prompt: Fix All TypeScript Errors Until GitHub Actions Pass
+```
+You are working directly on this repository using GitHub MCP.
+
+Goal:
+Fix ALL TypeScript errors until GitHub Actions "Release Candidate Verification" passes successfully.
+
+DO NOT stop after fixing only one file.
+DO NOT create temporary workarounds.
+DO NOT use "any", "@ts-ignore", "skipLibCheck", "eslint-disable", or disable strict mode.
+Keep the architecture intact.
+
+The current failing workflow is Typecheck.
+
+Known failing files include:
+
+- app/files/[id]/page.tsx
+- backend/src/persistence/mappers/index.ts
+- services/file.service.ts
+- services/download.service.ts
+- services/folder.service.ts
+- services/upload.service.ts
+- services/user.service.ts
+- components/file/file-card.tsx
+- components/file/list-view.tsx
+- components/upload/upload-experience.tsx
+- types/file.ts
+
+Known errors include:
+
+1. TS2305
+Missing exported member.
+Verify imports and exports.
+Do not rename APIs unless necessary.
+
+2. TS2339
+Properties like "_id" and "__v" do not exist.
+Update mapper types to match the current Mongo document types instead of forcing casts.
+
+3. TS2322
+ServiceResult generic types no longer match returned values.
+Update ServiceResult interfaces and service return types consistently.
+
+4. TS2604 / TS2786
+React component type errors involving Icon components.
+Update imports and JSX typing so components use valid React component types.
+
+5. TS7053
+Invalid object indexing.
+Use proper keyof types instead of unsafe indexing.
+
+Requirements:
+
+- Read every affected file using GitHub MCP.
+- Trace the real source of each error.
+- Fix root causes instead of patching symptoms.
+- Update related interfaces and types where necessary.
+- Keep API compatibility.
+- Do not remove functionality.
+
+After finishing:
+
+1. Run typecheck.
+2. Fix every remaining error.
+3. Run lint.
+4. Fix every lint issue.
+5. Run build.
+6. If any new TypeScript errors appear, continue fixing automatically.
+7. Repeat until all gates pass.
+
+Only when ALL of the following succeed:
+
+- Typecheck
+- Lint
+- Build
+
+then:
+
+- Commit changes with a descriptive message.
+- Push to the current branch.
+- Wait for GitHub Actions.
+- If GitHub Actions still fails, read the new errors, continue fixing automatically, commit again, and repeat until GitHub Actions is completely green.
+
+Do NOT stop after the first commit.
+
+Final output should contain only:
+
+- Root causes fixed
+- Files modified
+- Final commit hash
+- GitHub Actions status
+- Remaining issues (if any)
+
+
+
+
+```
+
+
 # 
 ```
 
