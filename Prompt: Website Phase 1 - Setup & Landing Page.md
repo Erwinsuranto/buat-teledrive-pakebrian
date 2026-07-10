@@ -1,4 +1,53 @@
 # Prompt website
+# Tugas: Selesaikan My Files tahap 3 (Layout
+```
+
+
+Tugas: Selesaikan My Files tahap 3 (Layout & Navigation).
+
+Tujuan:
+Ubah halaman My Files dari placeholder menjadi File Manager yang siap dipakai, tetapi masih menggunakan mock data (belum MongoDB).
+
+Kerjakan:
+
+1. Ganti placeholder dengan layout File Manager.
+2. Tambahkan Header:
+   - Judul "My Files"
+   - Breadcrumb (Home / My Files)
+3. Tambahkan Toolbar:
+   - Search Box (belum berfungsi)
+   - Tombol New Folder (placeholder)
+   - Tombol Refresh (placeholder)
+   - Toggle Grid/List (UI saja)
+4. Tambahkan area daftar file menggunakan mock data minimal:
+   - 3 Folder
+   - 5 File
+5. Card harus menampilkan:
+   - Icon
+   - Nama
+   - Ukuran
+   - Tanggal
+6. Semua tombol hanya UI, jangan panggil API.
+7. Gunakan reusable component jika memungkinkan.
+8. Responsive untuk mobile dan desktop.
+
+JANGAN sentuh:
+- Bot Telegram
+- Upload Handler
+- MongoDB Connection
+- Repository Layer
+- Service Layer
+- API Layer
+- Download Page
+- Auth/Login
+
+Laporkan:
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+
+```
 # File Manager Foundation
 ```
 
