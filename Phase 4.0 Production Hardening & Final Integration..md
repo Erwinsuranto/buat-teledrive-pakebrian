@@ -1,3 +1,58 @@
+# 
+```
+The project is failing because of a real TypeScript build error.
+
+Do NOT perform any architecture refactoring.
+
+Do NOT migrate anything.
+
+Do NOT optimize unrelated files.
+
+Your only task is to restore a successful build.
+
+Current error:
+
+app/files/[id]/page.tsx
+
+imports
+
+getFoundationFileById
+
+from
+
+@/services/file.service
+
+but that function is no longer exported.
+
+Tasks:
+
+1. Find where getFoundationFileById was moved, renamed or removed.
+
+2. Restore compatibility.
+
+3. Either:
+   - export the correct function again, OR
+   - update every import to the new API.
+
+4. Search the entire repository for every reference to getFoundationFileById.
+
+5. Fix every broken import automatically.
+
+6. Run npm run build repeatedly until it succeeds.
+
+7. Do not stop after fixing only one error.
+
+8. Continue fixing every build error until the build finishes successfully.
+
+9. Do not modify unrelated functionality.
+
+10. At the end report every modified file.
+
+
+
+
+```
+
 
 # Prompt: Continue Until Repository Is Fully Optimized
 ```
