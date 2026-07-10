@@ -1,5 +1,54 @@
 # Phase 2 dimulai 
 
+# Phase 2.2.7 – Backend Validation & Migration
+```
+
+
+Phase 2.2.7 dimulai.
+
+Selesaikan seluruh High Priority blocker sebelum memulai Telegram Service.
+
+Target:
+Project harus benar-benar siap secara teknis untuk memasuki Phase 2.3.
+
+Kerjakan:
+
+- Pastikan seluruh typecheck lulus tanpa error.
+- Buat dan jalankan integration test untuk Repository MongoDB.
+- Verifikasi CRUD utama:
+  - User
+  - Folder
+  - File
+  - Activity
+  - ShareLink
+  - UploadJob
+  - DownloadHistory
+- Audit seluruh repository legacy di root.
+- Migrasikan persistence lama ke Repository Layer baru bila aman.
+- Pastikan tidak ada dependency lama yang masih dipakai.
+- Pastikan seluruh wiring menggunakan Composition Root.
+- Jangan mengubah UI.
+- Jangan membuat Telegram Service.
+- Jangan membuat API endpoint.
+
+Update README.md dengan bagian:
+
+- Backend Validation
+- MongoDB Integration Test
+- Legacy Migration
+- Readiness Report
+
+Di akhir:
+
+1. Hasil typecheck.
+2. Hasil integration test.
+3. File yang diubah.
+4. Legacy yang berhasil dimigrasikan.
+5. Konfirmasi apakah seluruh High Priority blocker telah selesai.
+6. Jika semua lulus, nyatakan project siap memasuki Phase 2.3 Telegram Service.
+
+
+```
 # Prompt: Phase 2.2.6 – Verification & Integration Readiness
 ```
 
