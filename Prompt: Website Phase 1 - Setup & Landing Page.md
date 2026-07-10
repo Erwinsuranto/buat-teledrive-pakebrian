@@ -1,4 +1,109 @@
 # Prompt website
+# Nama Prompt: Search 3/5 - Search Result Layout
+```
+
+Nama Prompt: Search 3/5 - Search Result Layout
+
+Lanjutkan pengembangan Telegram Drive.
+
+ATURAN WAJIB
+
+1. Fokus hanya mengerjakan fitur Search.
+2. Jangan mengubah Bot Telegram.
+3. Jangan mengubah Upload Handler.
+4. Jangan mengubah MongoDB.
+5. Jangan mengubah Repository Layer.
+6. Jangan mengubah Service Layer.
+7. Jangan mengubah API Layer.
+8. Jangan membuat Download Page.
+9. Jangan membuat Auth/Login.
+10. Jangan membuat README.md baru.
+11. Gunakan hanya README.md yang sudah ada.
+12. Tambahkan Development Log di bagian paling bawah README.md.
+13. Jangan membuat file dokumentasi lain.
+14. Commit langsung ke GitHub setelah selesai.
+
+TARGET
+
+Sempurnakan tampilan hasil pencarian agar menyerupai File Manager modern.
+
+Kerjakan:
+
+- Buat Search Result Container.
+- Tampilkan hasil menggunakan mock data.
+- Tambahkan:
+  - Grid View
+  - List View
+- Setiap hasil menampilkan:
+  - Thumbnail/Icon
+  - Nama File
+  - Jenis File
+  - Ukuran
+  - Folder
+  - Tanggal Upload
+  - Status
+- Tambahkan Badge:
+  - Image
+  - Video
+  - Document
+  - Audio
+  - Archive
+- Tambahkan indikator Favorite (UI saja).
+- Tambahkan Context Menu (UI saja):
+  - Open
+  - Preview
+  - Download
+  - Share
+  - Rename
+  - Delete
+- Tambahkan Pagination (UI saja).
+- Tambahkan Total Result.
+- Tambahkan Search Time (contoh: 0.03 seconds menggunakan mock data).
+- Tambahkan Empty Result yang lebih menarik.
+- Tambahkan Loading Result Skeleton.
+- Gunakan reusable component.
+- Responsive untuk Mobile, Tablet, dan Desktop.
+- Jangan menggunakan API.
+- Jangan menghubungkan MongoDB.
+- Jangan membuat business logic.
+
+README.md
+
+Tambahkan Development Log baru di bagian paling bawah.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Status:
+Search Feature Progress 3/5
+
+Isi:
+- Ringkasan perubahan
+- File dibuat
+- File diubah
+- Commit Hash
+
+Laporkan:
+
+- File dibuat.
+- File diubah.
+- Hash Commit GitHub.
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB
+- Repository
+- Service
+- API
+- Download Page
+- Auth/Login
+
+
+
+```
 # Nama Prompt: Search 2/5 - Filter & Category UI
 ```
 
