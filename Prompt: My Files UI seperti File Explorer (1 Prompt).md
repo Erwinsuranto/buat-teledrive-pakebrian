@@ -1,7 +1,52 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
 
 
+# Prompt: Activity & Timeline
+```
 
+Lanjutkan pengembangan UI Telegram Drive dengan membuat halaman Activity & Timeline yang modern dan konsisten dengan seluruh aplikasi.
+
+Target:
+Menyediakan riwayat aktivitas pengguna yang nantinya dapat terhubung ke backend Telegram.
+
+Tambahkan:
+
+- Activity Timeline.
+- Recent Uploads.
+- Recent Downloads.
+- Recent Shares.
+- File Renamed.
+- File Moved.
+- File Deleted.
+- Folder Created.
+- Favorite Added.
+- Login Activity.
+- Search Activity.
+- Filter berdasarkan jenis aktivitas.
+- Search Activity.
+- Timeline berdasarkan Today, Yesterday, This Week, Earlier.
+- Detail aktivitas melalui side panel.
+- Empty State.
+- Skeleton Loading.
+- Infinite Scroll atau Load More (mock).
+
+Gunakan desain Timeline yang modern, mudah dibaca, dan konsisten dengan tema Telegram Drive.
+
+Gunakan kembali komponen reusable yang sudah dibuat.
+
+Jangan mengubah backend, API, database, Telegram Bot, authentication, upload/download logic, routing, maupun service.
+
+Update README.md dengan bagian "Activity & Timeline".
+
+Setelah selesai:
+- Ringkas perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan.
+- Lakukan visual audit agar halaman Activity memiliki kualitas setara aplikasi cloud storage modern.
+
+
+
+```
 # Prompt: Notification Center
 ```
 
