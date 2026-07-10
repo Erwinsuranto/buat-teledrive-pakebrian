@@ -1,5 +1,104 @@
 # Prompt website
+
+```
+
+Nama Prompt: Search 5/5 - Final Search UI Audit & Production Ready
+
+Lanjutkan pengembangan Telegram Drive.
+
+ATURAN WAJIB
+
+1. Fokus hanya menyelesaikan fitur Search.
+2. Jangan mengubah Bot Telegram.
+3. Jangan mengubah Upload Handler.
+4. Jangan mengubah MongoDB.
+5. Jangan mengubah Repository Layer.
+6. Jangan mengubah Service Layer.
+7. Jangan mengubah API Layer.
+8. Jangan membuat Download Page.
+9. Jangan membuat Auth/Login.
+10. Jangan membuat README.md baru.
+11. Gunakan hanya README.md yang sudah ada.
+12. Tambahkan Development Log di bagian paling bawah README.md.
+13. Jangan membuat file dokumentasi lain.
+14. Commit langsung ke GitHub setelah selesai.
+
+TARGET
+
+Selesaikan seluruh UI Search agar siap dihubungkan ke backend pada tahap berikutnya.
+
+Kerjakan:
+
+- Audit seluruh komponen Search.
+- Samakan style Search Header, Search Input, Search Result, Filter Panel, Preview Panel, Context Menu, Toolbar, Empty State, Loading State, dan Error State.
+- Rapikan ukuran icon, typography, spacing, padding, border radius, shadow, dan warna agar konsisten dengan Dashboard dan My Files.
+- Pastikan Grid View dan List View konsisten.
+- Pastikan responsive untuk Mobile, Tablet, dan Desktop.
+- Tambahkan animasi ringan dan halus pada:
+  - Search Result
+  - Filter Panel
+  - Preview Panel
+  - Context Menu
+- Pastikan animasi tetap ringan dan tidak mengurangi performa.
+- Hapus kode duplikat bila ada.
+- Rapikan import/export.
+- Pastikan seluruh komponen reusable.
+- Tambahkan komentar seperlunya pada komponen penting.
+- Jangan menggunakan API.
+- Jangan menghubungkan MongoDB.
+- Jangan membuat business logic.
+
+Pastikan halaman Search siap dihubungkan ke backend tanpa perlu mengubah struktur UI lagi.
+
+README.md
+
+Tambahkan Development Log baru di bagian paling bawah.
+
+Format:
+
+DD MMM YYYY - HH:mm WIB
+
+Status:
+✅ Search Feature Completed (5/5)
+
+Isi:
+- Ringkasan perubahan
+- Audit UI selesai
+- Komponen dirapikan
+- File dibuat
+- File diubah
+- Commit Hash
+
+Laporkan:
+
+- File dibuat
+- File diubah
+- Hash Commit GitHub
+
+Pastikan bagian berikut TIDAK disentuh:
+
+- Bot Telegram
+- Upload Handler
+- MongoDB
+- Repository
+- Service
+- API
+- Download Page
+- Auth/Login
+
+
+
+```
 # Nama Prompt: Search 4/5 - Search Interaction & Preview UI
+
+# 
+```
+
+
+
+
+
+```
 ```
 
 
