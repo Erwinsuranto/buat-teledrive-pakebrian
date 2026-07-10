@@ -1,4 +1,68 @@
 
+
+# Prompt: Phase 2.3.8 – File Manager Core
+```
+
+
+Lanjutkan langsung Phase 2.3.8 tanpa meminta konfirmasi apa pun.
+
+Anggap repository GitHub saat ini sebagai source of truth. Audit singkat otomatis sebelum mulai tanpa meminta izin.
+
+Target:
+Membangun File Manager Core yang menjadi pusat seluruh operasi file. Gunakan seluruh fondasi dari Phase 2.3.7. Semua implementasi masih fail-closed dan belum memakai Telegram API asli.
+
+Kerjakan:
+
+- FileManager Core.
+- File Service Orchestrator.
+- Folder Service.
+- Move Service.
+- Copy Service.
+- Rename Service.
+- Delete Service.
+- Restore Service.
+- Favorite Service.
+- Tag Service.
+- Recent Activity Service.
+- File Operation DTO.
+- File Operation Validator.
+- File Operation Error Mapper.
+- File Operation Factory.
+- Operation History.
+- Contract Test.
+- Rapikan export/index.ts bila diperlukan.
+
+Jangan:
+
+- Mengubah UI.
+- Mengubah API publik.
+- Login Telegram.
+- Menghubungkan MTProto atau Bot API.
+- Upload atau download nyata.
+
+Update README.md:
+
+- File Manager Core Architecture.
+- Operation Flow.
+- Progress Phase 2.3.8.
+
+Setelah selesai:
+
+- Audit singkat.
+- Perbaiki issue kecil bila ada.
+- Jalankan typecheck bila memungkinkan.
+- Commit langsung tanpa meminta persetujuan.
+
+Output akhir:
+
+- Commit hash.
+- Ringkasan implementasi.
+- File dibuat.
+- File diubah.
+- Status kesiapan menuju Phase 2.3.9 (Telegram Integration Foundation).
+
+
+```
 # Prompt: Phase 2.3.7 – Metadata & Index Engine
 ```
 
