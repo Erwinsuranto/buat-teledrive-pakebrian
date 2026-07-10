@@ -1,5 +1,108 @@
 
 
+# Siap menuju Phase 3.8 Admin User Management
+```
+
+Lanjutkan langsung Phase 3.8 Admin User Management.
+
+Jangan meminta konfirmasi.
+Jangan audit ulang repository.
+Repository GitHub tetap menjadi source of truth.
+Langsung buat branch baru, implementasikan seluruh scope, jalankan workflow dan test, lalu commit.
+
+Target:
+
+Membangun sistem penuh Admin User Management yang nantinya digunakan Dashboard Admin.
+
+Implementasikan:
+
+- User List API
+- User Detail API
+- User Search
+- Filter
+- Sort
+- Pagination
+- User Statistics
+- User Status
+- Suspend User
+- Unsuspend User
+- Ban User
+- Unban User
+- Delete User
+- Restore User
+- Permanent Delete
+- User Role Assignment
+- Permission Assignment
+- Session Management
+- Force Logout User
+- Storage Usage
+- Upload Statistics
+- Download Statistics
+- Recent Activity
+- Audit Log
+- DTO
+- Validator
+- Mapper
+- Error Mapper
+- Dependency Injection
+- Repository Integration
+- Contract Tests
+- Integration Tests
+- Export/index
+- README
+
+Jangan mengubah:
+
+- UI
+- Telegram
+- Upload Engine
+- Download Engine
+- Authentication
+- File Manager User
+
+Jika menemukan bug kecil pada modul sebelumnya, perbaiki langsung.
+
+Jalankan typecheck, workflow, contract test, integration test.
+
+Jika seluruh test hijau, langsung commit.
+
+PENTING:
+
+Perbarui README.md.
+
+Tambahkan section baru:
+
+## Phase 3.8 - Admin User Management
+
+Isi:
+
+- Tujuan phase.
+- Ringkasan implementasi.
+- File baru.
+- File diubah.
+- API baru.
+- Struktur folder.
+- Dependency baru.
+- Commit hash.
+- Tanggal implementasi.
+- Status roadmap.
+- Next Phase: 3.9 Admin Monitoring & Analytics.
+
+Jangan menghapus changelog phase sebelumnya. README harus menjadi dokumentasi lengkap seluruh perkembangan project dari Phase 1 hingga phase terbaru.
+
+Output akhir cukup:
+
+- Commit hash
+- Ringkasan implementasi
+- File dibuat
+- File diubah
+- README diperbarui
+- Status siap menuju Phase 3.9 Admin Monitoring & Analytics
+
+
+
+```
+
 # Lanjutkan langsung Phase 3.7 Admin File Management.
 ```
 
