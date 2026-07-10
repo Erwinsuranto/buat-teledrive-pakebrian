@@ -1,6 +1,52 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
 
 
+# Prompt: Trash / Recycle Bin
+```
+
+
+
+Lanjutkan pengembangan UI Telegram Drive dengan membuat halaman Trash / Recycle Bin yang modern dan konsisten dengan seluruh aplikasi.
+
+Target:
+Menyediakan tempat sementara untuk file dan folder yang dihapus sebelum dihapus permanen.
+
+Tambahkan:
+
+- Halaman Trash.
+- Daftar file dan folder yang dihapus.
+- Search.
+- Filter.
+- Sort.
+- Restore File.
+- Restore Folder.
+- Delete Permanently.
+- Empty Trash.
+- Multi Select.
+- Bulk Restore.
+- Bulk Delete.
+- Countdown sebelum file dihapus otomatis (placeholder).
+- Status Deleted Date.
+- Original Location.
+- Preview sebelum Restore.
+- Empty State.
+- Skeleton Loading.
+- Confirmation Dialog sebelum Delete Permanently.
+- Responsive untuk desktop, tablet, dan mobile.
+
+Gunakan komponen reusable yang sudah ada.
+
+Jangan mengubah backend, API, database, Telegram Bot, authentication, upload/download logic, maupun service.
+
+Update README.md dengan bagian "Trash / Recycle Bin".
+
+Setelah selesai:
+- Ringkas perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan.
+- Lakukan visual audit agar halaman Trash memiliki kualitas setara aplikasi cloud storage modern.
+
+```
 # Prompt: Favorites & Collections
 ```
 Lanjutkan pengembangan UI Telegram Drive dengan membuat halaman Favorites & Collections yang modern, bersih, dan konsisten dengan seluruh aplikasi.
