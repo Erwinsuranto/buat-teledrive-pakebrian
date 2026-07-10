@@ -1,5 +1,42 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
+# Prompt: Search Experience
+```
 
+Lanjutkan pengembangan UI Telegram Drive dengan menyempurnakan halaman Search agar memiliki pengalaman pencarian seperti aplikasi cloud storage modern.
+
+Target:
+- Search terasa cepat, bersih, dan profesional.
+- Konsisten dengan komponen Explorer yang sudah dibuat.
+- Gunakan kembali komponen reusable yang sudah ada, jangan membuat duplikasi.
+
+Tambahkan:
+
+- Search bar yang lebih besar dan menjadi fokus halaman.
+- Live search (mock data).
+- Recent searches.
+- Search suggestions.
+- Filter berdasarkan jenis file (Image, Video, Document, Archive, Audio, Folder).
+- Sort (Name, Date, Size, Type).
+- View mode mengikuti My Files (List, Grid, Large Grid).
+- Highlight kata yang dicari.
+- Empty state jika hasil tidak ditemukan.
+- Skeleton loading saat pencarian.
+- Details panel dan context menu tetap dapat digunakan pada hasil pencarian.
+- Breadcrumb dan toolbar tetap konsisten.
+
+Jangan mengubah backend, API, database, authentication, upload, download, bot, maupun service.
+
+Update README.md dengan bagian "Search Experience".
+
+Setelah selesai:
+- Jelaskan perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Jelaskan komponen reusable yang digunakan kembali.
+- Lakukan visual audit agar tampilan Search memiliki kualitas yang sama dengan My Files.
+
+
+
+```
 # Prompt: Telegram Drive — Phase 1 UI Explorer Foundation
 ```
 Lakukan pengembangan dan penyempurnaan UI Telegram Drive untuk menyelesaikan Phase 1: UI Explorer Foundation.
