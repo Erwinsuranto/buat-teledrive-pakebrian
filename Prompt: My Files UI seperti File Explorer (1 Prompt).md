@@ -1,6 +1,53 @@
 # Prompt: My Files UI Premium (Compact File Explorer)
 
+# Prompt: Sharing & Link Management
+```
 
+Lanjutkan pengembangan UI Telegram Drive dengan membuat fitur Sharing & Link Management yang modern dan konsisten dengan seluruh aplikasi.
+
+Target:
+Membuat proses berbagi file dan folder menjadi mudah serta siap dihubungkan ke backend Telegram pada tahap berikutnya.
+
+Tambahkan:
+
+- Share Dialog modern.
+- Copy Download Link.
+- Generate Temporary Link (placeholder).
+- Generate Permanent Link (placeholder).
+- QR Code Preview (placeholder).
+- Share ke Telegram (placeholder).
+- Share ke WhatsApp (placeholder).
+- Link Expiration (placeholder).
+- Link Password (placeholder).
+- Download Counter.
+- View Counter.
+- Share History.
+- Link Status (Active, Expired, Disabled).
+- Revoke Link.
+- Regenerate Link.
+- Favorite Share Link.
+
+Gunakan dialog dan komponen yang konsisten dengan desain Telegram Drive.
+
+Pastikan:
+- Responsive.
+- Mudah digunakan.
+- Animasi ringan.
+- Menggunakan komponen reusable yang sudah ada.
+
+Jangan mengubah backend, API, database, Telegram Bot, authentication, upload/download logic, maupun service.
+
+Update README.md dengan bagian "Sharing & Link Management".
+
+Setelah selesai:
+- Jelaskan perubahan.
+- Sebutkan file yang dibuat dan diubah.
+- Sebutkan komponen reusable yang digunakan.
+- Lakukan visual audit agar pengalaman berbagi file memiliki kualitas setara aplikasi cloud storage modern.
+
+
+
+```
 # Prompt: File Management Experience
 ```
 
