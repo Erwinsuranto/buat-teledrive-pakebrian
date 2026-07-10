@@ -1,6 +1,92 @@
+
+
+
+
+# Prompt: Phase 2.3.2 – Telegram Client Core (Implement & Commit)
+```
+
+Phase 2.3.2 dimulai.
+
+Lanjutkan langsung tanpa meminta konfirmasi.
+
+Gunakan hasil Phase 2.3.1 sebagai fondasi.
+
+Target:
+Membangun Telegram Client Core yang nantinya menjadi implementasi nyata dari TelegramAdapter.
+
+Kerjakan:
+
+- Audit seluruh Compatibility Layer yang sudah dibuat.
+- Implement Telegram Client Interface sebagai implementasi TelegramAdapter.
+- Siapkan Session Manager.
+- Siapkan Connection Manager.
+- Siapkan Authentication Contract.
+- Siapkan File Upload Pipeline.
+- Siapkan File Download Pipeline.
+- Siapkan Delete Pipeline.
+- Siapkan Forward Pipeline.
+- Siapkan Metadata Reader.
+- Siapkan Health Check.
+- Siapkan Retry Manager.
+- Siapkan Error Handler.
+- Siapkan Progress Callback.
+- Siapkan Client Factory.
+- Tambahkan seluruh DTO yang diperlukan.
+- Tambahkan Mapper bila diperlukan.
+- Tambahkan Contract Test untuk Telegram Client.
+
+Semua implementasi masih berupa foundation.
+
+Jangan login Telegram.
+
+Jangan menghubungkan MTProto.
+
+Jangan menggunakan Telegram Bot API.
+
+Jangan mengirim file.
+
+Jangan download file.
+
+Jangan mengubah UI.
+
+Jangan mengubah API.
+
+Jangan mengubah Repository.
+
+Jangan mengubah Business Logic.
+
+Pastikan seluruh dependency tetap melalui TelegramAdapter dan Dependency Injection.
+
+Rapikan export/index.ts bila diperlukan.
+
+Update README.md:
+
+- Telegram Client Architecture
+- Client Lifecycle
+- Upload Pipeline
+- Download Pipeline
+- Session Management
+- Progress Phase 2.3.2
+
+Setelah selesai:
+
+- Audit singkat struktur.
+- Perbaiki issue kecil bila ditemukan.
+- Jalankan typecheck bila memungkinkan.
+- Commit seluruh perubahan.
+- Tampilkan:
+  - Commit hash
+  - Ringkasan implementasi
+  - File dibuat
+  - File diubah
+  - Status kesiapan menuju Phase 2.3.3 (Real Telegram Integration)
+
+Jangan meminta konfirmasi. Selesaikan seluruh scope Phase 2.3.2 kemudian commit langsung.
+
+
+
+```
 # Prompt: Phase 2.3.1 – Compatibility Layer & Telegram Service Foundation
-
-
 
 ```
 Phase 2.3.1 dimulai.
