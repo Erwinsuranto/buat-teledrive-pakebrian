@@ -1,6 +1,55 @@
 
 
+# Saya sarankan satu prompt saja untuk menyelesaikan semua
+```
 
+
+Title: Complete My Files UI and Actions
+
+Current status:
+- Real folders and files load correctly from the backend.
+- Folder navigation works.
+- Dropdown menu appears.
+
+Remaining issues:
+
+1. Image thumbnail
+- Display real image thumbnails for image files.
+- Use backend preview/thumbnail endpoint if available.
+- Fallback to file icon only when preview is unavailable.
+
+2. File actions
+- Open button must work.
+- Download button must work.
+- Rename, Move and Delete must execute their existing backend actions.
+
+3. Dropdown menu
+- On mobile the dropdown is clipped.
+- Render the dropdown above other content.
+- Prevent parent containers from clipping it (overflow/z-index).
+- Ensure every action is visible and scrollable if necessary.
+
+4. Mobile usability
+- Verify every button is tappable.
+- Remove any overlay blocking touch events.
+- Test on Android browsers.
+
+5. Folder view
+- When entering a folder, keep the folder state consistent.
+- Do not display misleading "0 folders" if the user is inside a folder.
+- Show proper breadcrumb navigation.
+
+6. Build
+- Run build.
+- Fix all TypeScript errors.
+- Verify every action manually before committing.
+
+Do not redesign the UI.
+Keep the existing design.
+Only complete the missing functionality.
+
+
+```
 # Prompt
 ```
 
