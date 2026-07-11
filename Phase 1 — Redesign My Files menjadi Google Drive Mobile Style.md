@@ -1,4 +1,84 @@
 
+
+
+# prompt
+```
+
+
+STOP.
+
+Do not claim the feature is complete.
+
+I have manually tested the production build.
+
+The implementation still contains production bugs.
+
+Fix these before merging PR #28.
+
+HIGH PRIORITY
+
+1. Folder creation is broken.
+
+Current error:
+
+crypto.randomUUID is not a function
+
+Do not use crypto.randomUUID directly.
+
+Implement a cross-browser ID generator.
+
+Use:
+
+globalThis.crypto?.randomUUID?.()
+
+If unavailable, use a UUID library or a deterministic fallback.
+
+Folder creation must work on:
+
+- Android Chrome
+- Chromium
+- Desktop Chrome
+- Firefox
+
+2. Drawer/Menu overlaps page content.
+
+Fix layout stacking.
+
+Correct all z-index values.
+
+Drawer must never overlap page incorrectly.
+
+3. Header spacing is broken.
+
+Safe area and top spacing must be correct.
+
+4. Floating Action Button overlaps file cards.
+
+Reposition FAB.
+
+5. Grid layout is still inconsistent.
+
+6. Search/header/breadcrumb spacing must match Google Drive.
+
+7. Run manual browser verification after every fix.
+
+Do not mark COMPLETE until I can:
+
+- create folders
+- switch list/grid
+- preview files
+- copy links
+- open context menu
+- use upload queue
+
+without any runtime errors.
+
+Continue using PR #28.
+Do not create another PR.
+Merge only after all GitHub checks pass and these bugs are fixed.
+
+
+```
 # 
 ```
 
