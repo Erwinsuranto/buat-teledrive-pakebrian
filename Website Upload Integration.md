@@ -1,4 +1,51 @@
 
+# Prompt: Complete Build & Workflow Repair
+```
+Do not only inspect logs or perform an audit.
+
+From now on, directly repair this repository.
+
+Primary goal:
+
+- Every GitHub Actions workflow must finish with SUCCESS.
+- npm run build must pass.
+- npm run typecheck must pass.
+- npm run lint must pass.
+
+Rules:
+
+1. Do not stop after finding the first error.
+2. Fix every file responsible for build failures.
+3. For every "Module not found" error, determine the real cause:
+   - moved file
+   - deleted file
+   - renamed file
+   - incorrect import path
+   Do not create placeholder or dummy components if the real file already exists.
+4. Fix all TypeScript errors using the correct types.
+5. Fix all React and Next.js implementation errors.
+6. Run the build again after each repair.
+7. Continue fixing every new error that appears.
+8. Repeat until every workflow passes.
+9. Do not stop to ask for approval after each fix.
+10. Modify the repository directly.
+
+After everything is fixed:
+
+- Run npm run build
+- Run npm run lint
+- Run npm run typecheck
+- Verify all GitHub Actions are SUCCESS.
+- Commit all changes.
+- Push to the current branch.
+
+Do not stop until the entire workflow is green.
+
+
+
+
+```
+
 # Prompt: Fix Canonical Repository (Missing Modules)
 ```
 
