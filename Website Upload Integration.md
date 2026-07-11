@@ -1,4 +1,51 @@
 
+# Prompt: Fix FolderCard After MockFolder Refactor
+```
+
+
+The production build fails because components/file/folder-card.tsx still uses an old MockFolder API.
+
+Current MockFolder is:
+
+type MockFolder = {
+  id: string;
+  name: string;
+  kind: 'folder' | 'shared' | 'empty';
+  fileCount: number;
+  totalSize: string;
+  created: string;
+  updated: string;
+  badge?: 'Shared' | 'Private' | 'Favorite' | 'Empty';
+};
+
+The component still references removed fields and legacy kinds:
+
+- folder.previews
+- folder.kind === 'photos'
+- folder.kind === 'videos'
+- folder.kind === 'archive'
+
+Those no longer exist.
+
+Update FolderCard to match the new MockFolder model.
+
+Requirements:
+- Remove every reference to previews.
+- Remove every comparison with photos/videos/archive.
+- Keep the visual layout as close as possible.
+- Render a simple icon according to:
+  - folder
+  - shared
+  - empty
+- Preserve FolderBadge.
+- Make the file compile with strict TypeScript.
+- Do not use any `any` casts.
+- Run npm run build and ensure there are zero TypeScript errors.
+- Commit only the necessary changes.
+
+
+```
+
 # Prompt: Complete Build & Workflow Repair
 ```
 Do not only inspect logs or perform an audit.
