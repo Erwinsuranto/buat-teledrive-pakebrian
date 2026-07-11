@@ -1,7 +1,386 @@
 
 
 
+# mengubah UX My Files menjadi setara aplikasi cloud storage modern
+```
 
+# Phase 5 – Professional File Explorer UX (Google Drive + Windows Explorer + MEGA)
+
+Lakukan redesign total pada halaman My Files agar terasa seperti aplikasi cloud storage profesional.
+
+Jangan hanya memperbaiki komponen lama.
+
+Buat pengalaman pengguna baru yang menggabungkan kelebihan Google Drive, Windows File Explorer, dan MEGA.
+
+## Target
+
+Ini adalah File Explorer utama untuk Telegram Drive.
+
+Prioritaskan UX, kemudahan penggunaan, performa, dan konsistensi.
+
+Backend, MongoDB, Telegram Bot, API, database schema, upload pipeline, dan autentikasi TIDAK BOLEH diubah.
+
+Semua perubahan hanya pada frontend.
+
+---
+
+# 1. Dua Mode Tampilan
+
+Tambahkan tombol View Switch di kanan atas.
+
+Mode:
+
+• List View (Default)
+• Grid View
+
+Pilihan user harus diingat (localStorage).
+
+---
+
+# 2. List View
+
+Default menggunakan List View.
+
+Jangan memakai card besar.
+
+Gunakan layout seperti MEGA atau Windows Explorer.
+
+Setiap file tampil sebagai satu baris.
+
+Kolom:
+
+Icon
+Nama
+Ukuran
+Folder
+Tanggal Upload
+Favorite (jika ada)
+Share Status (jika ada)
+
+Contoh:
+
+🖼 IMG-20260710.jpg
+36 KB • Foto • Today
+
+📄 Invoice.pdf
+2.3 MB • Yesterday
+
+🎬 Movie.mp4
+1.8 GB • Today
+
+Tidak menggunakan thumbnail besar.
+
+Gunakan icon berdasarkan tipe file.
+
+---
+
+# 3. Grid View
+
+Grid View digunakan untuk melihat thumbnail.
+
+Gunakan layout seperti Google Drive.
+
+Thumbnail besar.
+
+Nama file.
+
+Ukuran.
+
+Tanggal.
+
+Hover effect.
+
+Lazy loading.
+
+Responsive.
+
+---
+
+# 4. Preview
+
+Klik kiri (desktop)
+
+atau
+
+Tap (mobile)
+
+langsung membuka preview.
+
+Bukan membuka menu.
+
+Preview wajib mendukung:
+
+Image
+
+Video
+
+Audio
+
+PDF
+
+Text
+
+Office document (placeholder bila viewer belum tersedia)
+
+Preview fullscreen.
+
+Zoom.
+
+Swipe.
+
+Keyboard navigation.
+
+Download.
+
+Close.
+
+---
+
+# 5. Context Menu
+
+Desktop:
+
+Klik kanan.
+
+Mobile:
+
+Long Press.
+
+Hapus seluruh tombol tiga titik pada setiap file.
+
+Context Menu harus berisi:
+
+Open
+
+Open in New Tab
+
+Copy Link
+
+Download
+
+Rename
+
+Move
+
+Copy
+
+Favorite
+
+Details
+
+Delete
+
+Gunakan menu modern seperti Google Drive.
+
+---
+
+# 6. Details Panel
+
+Saat memilih Details,
+
+munculkan panel seperti Windows Explorer.
+
+Data:
+
+Nama
+
+Ukuran
+
+Tipe File
+
+Folder
+
+Owner
+
+Upload Date
+
+Modified Date
+
+Telegram File ID
+
+Hash (jika ada)
+
+Download Link
+
+Copy Link
+
+Thumbnail
+
+Semua informasi tersusun rapi.
+
+---
+
+# 7. Folder
+
+Folder tampil berbeda dari file.
+
+Klik folder:
+
+langsung masuk folder.
+
+Breadcrumb otomatis berubah.
+
+Back bekerja.
+
+Tidak reload halaman.
+
+---
+
+# 8. Thumbnail
+
+Thumbnail hanya muncul pada Grid View.
+
+List View hanya memakai icon.
+
+Image.
+
+Video.
+
+PDF cover.
+
+Fallback icon.
+
+Lazy load.
+
+---
+
+# 9. Search
+
+Search realtime.
+
+Folder dan file ikut difilter.
+
+Highlight keyword.
+
+---
+
+# 10. Responsive
+
+Desktop.
+
+Tablet.
+
+Mobile.
+
+Semua menu tidak boleh saling bertabrakan.
+
+Tidak boleh overflow.
+
+Tidak boleh terpotong.
+
+---
+
+# 11. Accessibility
+
+Keyboard navigation.
+
+Focus state.
+
+ARIA.
+
+Screen reader.
+
+---
+
+# 12. Animasi
+
+Gunakan animasi halus.
+
+Open preview.
+
+Context menu.
+
+Hover.
+
+Selection.
+
+Tidak berlebihan.
+
+---
+
+# 13. Performa
+
+Virtual scrolling bila file banyak.
+
+Lazy rendering.
+
+Image lazy loading.
+
+Optimasi re-render.
+
+---
+
+# 14. QA
+
+Sebelum push:
+
+npm run lint
+
+npm run typecheck
+
+npm run build
+
+Jalankan website.
+
+Uji manual seluruh fitur.
+
+Pastikan:
+
+PASS Folder
+
+PASS Preview
+
+PASS Grid View
+
+PASS List View
+
+PASS Context Menu
+
+PASS Copy Link
+
+PASS Download
+
+PASS Rename
+
+PASS Move
+
+PASS Delete
+
+PASS Favorite
+
+PASS Details Panel
+
+PASS Search
+
+PASS Responsive
+
+PASS Mobile
+
+PASS Desktop
+
+PASS Thumbnail
+
+PASS Accessibility
+
+PASS Performance
+
+Jika ada bug,
+
+perbaiki terlebih dahulu.
+
+Jangan push sebelum seluruh fitur benar-benar bekerja.
+
+Buat Pull Request.
+
+Merge hanya setelah semua GitHub checks hijau.
+
+Jangan berhenti di tengah proses.
+
+Teruskan sampai implementasi selesai tanpa meminta konfirmasi selama hanya mengubah frontend My Files.
+
+
+
+```
 # Prompt
 ```
 
