@@ -2,6 +2,56 @@
 
 # 
 ```
+
+
+Do not start the Authentication phase yet.
+
+Authentication will be implemented later.
+
+Continue with all remaining frontend and user experience phases that do not require changing:
+
+- Authentication
+- Database schema
+- Backend APIs
+
+Continue improving Telegram Drive until the My Files experience is production-ready.
+
+Complete in order:
+
+Phase 2
+- File and folder interactions
+- Bottom sheet actions
+- Mobile usability
+- Touch interactions
+
+Phase 3
+- Real thumbnails
+- Preview viewer
+- Image viewer
+- PDF viewer
+- Video player
+
+Phase 4
+- Performance
+- Lazy loading
+- Infinite scrolling
+- Responsive improvements
+
+Phase 5
+- Polish
+- Animations
+- Accessibility
+- UX refinements
+
+Automatically continue between phases without asking for confirmation.
+
+Only stop if backend APIs, database schema, or authentication must change.
+
+
+```
+
+# 
+```
 Do not start the Authentication phase yet.
 
 Authentication will be implemented later.
