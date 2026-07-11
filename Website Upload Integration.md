@@ -1,4 +1,85 @@
 
+# 
+```
+
+Prompt: Full Repository Repair, Audit & Workflow Verification
+
+Your task is to fully stabilize this repository.
+
+Do NOT stop after fixing the first error.
+
+Continue fixing every compilation, runtime, TypeScript, React, Next.js and architecture issue until the repository reaches a successful production build.
+
+Rules:
+
+- Do NOT ask for confirmation.
+- Do NOT create a new branch.
+- Do NOT create a Pull Request.
+- Work directly on the current branch.
+- Preserve all existing functionality.
+- Never bypass errors using any, ts-ignore, disabled type checking or fake implementations.
+
+Perform a complete repository audit.
+
+Audit:
+
+- TypeScript
+- Next.js
+- React
+- Server Actions
+- API Routes
+- MongoDB integration
+- Telegram integration
+- Upload workflow
+- Folder workflow
+- Search
+- Preview
+- Download
+- Authentication
+- GitHub Actions
+- Build workflow
+- ESLint
+- Dead code
+- Legacy mock data
+- Broken imports
+- Runtime errors
+- File Explorer architecture
+
+Whenever an error is found:
+
+1. Fix it.
+2. Run npm run build.
+3. If another error appears, continue automatically.
+4. Repeat until npm run build exits successfully.
+
+After the build succeeds:
+
+- Audit the repository again.
+- Verify Upload.
+- Verify Folder creation.
+- Verify Folder selection.
+- Verify MongoDB synchronization.
+- Verify Search.
+- Verify Preview.
+- Verify Download.
+- Verify File Explorer.
+
+Ensure MongoDB is the canonical data source and the website correctly displays the stored folders and files.
+
+Final report must include:
+
+- Every modified file
+- Why it was changed
+- Build result
+- Remaining warnings
+- Audit summary
+- Workflow verification summary
+- Latest commit hash
+
+
+
+```
+
 # Prompt: Fix Folder Type Migration Build Error
 ```
 
