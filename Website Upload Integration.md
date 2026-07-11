@@ -1,5 +1,47 @@
 
 
+# 
+```
+
+Title: Replace My Files Mock Data with Real API
+
+The routing is already fixed.
+
+Current issue:
+- components/my-files/my-files-ui.tsx imports:
+  currentFolder,
+  myFilesFiles,
+  myFilesFolders,
+  myFilesMenuActions
+  from "./my-files-data"
+
+This is mock/demo data.
+
+Backend already works:
+GET /api/folders
+returns:
+{
+  "success": true,
+  "data": [...]
+}
+
+Tasks:
+1. Remove the dependency on my-files-data.ts for folders and files.
+2. Fetch folders from /api/folders using React state and useEffect.
+3. Display real folders from the API.
+4. When a folder is selected, load its files from the backend instead of mock data.
+5. Keep the existing UI and styling unchanged.
+6. Remove any remaining mock-only logic that prevents real data from rendering.
+7. Build the project and fix all TypeScript errors.
+8. Commit the changes.
+
+Do not redesign the UI.
+Do not replace components.
+Only connect the existing UI to the backend APIs.
+
+
+
+```
 # Prompt: Fix My Files Route
 ```
 
