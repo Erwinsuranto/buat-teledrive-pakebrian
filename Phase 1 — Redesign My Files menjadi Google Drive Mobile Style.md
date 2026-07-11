@@ -1,3 +1,45 @@
+
+
+# Phase 2
+```
+
+Workflow Instructions
+
+Complete each phase in order.
+
+After finishing a phase:
+
+1. Run a full build.
+2. Fix every TypeScript error.
+3. Fix every lint issue.
+4. Verify existing functionality still works.
+5. Commit changes.
+
+If there are no blocking issues:
+
+Automatically continue to the next phase.
+
+Do NOT stop after every phase asking for confirmation.
+
+Only stop and request confirmation if:
+
+- A backend API must change.
+- A database schema must change.
+- Authentication must change.
+- Existing functionality would become incompatible.
+- A design decision cannot be made automatically.
+- A production risk requires user approval.
+
+Otherwise, continue implementing the roadmap until all phases are completed.
+
+At the end, create a single Pull Request containing all completed phases and provide:
+- Summary of completed work
+- Screenshots
+- Remaining improvements (if any)
+
+
+
+```
 # Phase 1 — Redesign My Files menjadi Google Drive Mobile Style
 ```
 
