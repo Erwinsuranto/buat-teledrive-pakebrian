@@ -1,5 +1,303 @@
+# Telegram Drive - My Files QA & Production Fix (Post PR #24)
+
+# 
+```
 
 
+Context
+
+PR #24 sudah merged.
+Phase 2–5 sudah selesai.
+Semua GitHub checks hijau.
+
+Sekarang fokus HANYA pada penyempurnaan My Files.
+
+Jangan mengubah backend API, database schema, authentication, Telegram Bot, upload pipeline, atau endpoint yang sudah berjalan.
+
+Semua perbaikan harus berada di frontend dan integrasi frontend dengan API yang sudah ada.
+
+==================================================
+
+TARGET
+
+My Files harus terasa seperti Google Drive modern.
+
+Bukan sekadar mirip tampilannya, tetapi juga pengalaman pengguna.
+
+Semua fitur harus benar-benar dapat digunakan.
+
+==================================================
+
+PERBAIKI SELURUH BUG
+
+Open file
+
+Download file
+
+Thumbnail image
+
+Thumbnail video
+
+Thumbnail PDF
+
+Responsive mobile
+
+Responsive tablet
+
+Responsive desktop
+
+Bottom Sheet mobile
+
+Overflow menu
+
+Long filename
+
+Lazy loading
+
+Infinite scrolling
+
+Loading state
+
+Error state
+
+Empty state
+
+Refresh state
+
+Folder navigation
+
+Breadcrumb
+
+Selection state
+
+==================================================
+
+FILE CARD
+
+Hilangkan model card lama.
+
+Gunakan layout modern seperti Google Drive.
+
+Card harus sederhana.
+
+Thumbnail besar.
+
+Nama file.
+
+Ukuran file.
+
+Tanggal upload.
+
+Tidak ada icon atau elemen yang membingungkan.
+
+==================================================
+
+MENU AKSI
+
+Jangan gunakan dropdown kecil.
+
+Pada mobile gunakan Bottom Sheet.
+
+Pada desktop gunakan Context Menu.
+
+Semua tombol wajib berfungsi.
+
+Open
+
+Preview
+
+Download
+
+Rename
+
+Move
+
+Delete
+
+Details
+
+Share
+
+==================================================
+
+THUMBNAIL
+
+Image
+
+Tampilkan thumbnail asli.
+
+Video
+
+Gunakan thumbnail video.
+
+PDF
+
+Gunakan preview halaman pertama.
+
+File lain
+
+Gunakan icon sesuai tipe file.
+
+==================================================
+
+OPEN
+
+Open harus benar-benar membuka file.
+
+Image
+
+Preview viewer.
+
+Video
+
+Video player.
+
+PDF
+
+PDF viewer.
+
+Audio
+
+Audio player.
+
+Text
+
+Viewer.
+
+==================================================
+
+DOWNLOAD
+
+Download harus benar-benar mengunduh file.
+
+Tidak boleh placeholder.
+
+==================================================
+
+PREVIEW
+
+Gunakan modal fullscreen.
+
+Support pinch zoom image.
+
+Support keyboard desktop.
+
+Support swipe mobile.
+
+Support ESC.
+
+Support next previous.
+
+==================================================
+
+FOLDER
+
+Folder dapat ditekan.
+
+Masuk folder.
+
+Kembali folder.
+
+Breadcrumb berjalan.
+
+Jumlah file benar.
+
+==================================================
+
+SEARCH
+
+Realtime.
+
+Cepat.
+
+Tanpa refresh.
+
+==================================================
+
+PERFORMANCE
+
+Optimalkan render.
+
+Kurangi re-render.
+
+Gunakan lazy loading.
+
+Gunakan memo bila diperlukan.
+
+==================================================
+
+ACCESSIBILITY
+
+Keyboard navigation.
+
+ARIA.
+
+Focus state.
+
+==================================================
+
+CODE QUALITY
+
+Refactor bila diperlukan.
+
+Hapus placeholder.
+
+Hapus dead code.
+
+Hapus duplicate component.
+
+Jangan membuat technical debt.
+
+==================================================
+
+TESTING
+
+Setelah coding selesai WAJIB:
+
+- Build
+- Type check
+- Lint
+- Jalankan semua test
+- Perbaiki semua error
+- Pastikan GitHub Checks hijau
+
+==================================================
+
+OUTPUT
+
+Jangan berhenti di tengah.
+
+Kerjakan semua bug di atas dalam satu Pull Request.
+
+Commit bila diperlukan.
+
+Push ke branch.
+
+Buat Pull Request.
+
+Merge jika seluruh checks hijau.
+
+==================================================
+
+IMPORTANT
+
+Jangan berhenti meminta konfirmasi.
+
+Jangan bertanya "lanjut?"
+
+Jangan membuat roadmap baru.
+
+Jangan membuat placeholder baru.
+
+Jangan memberi contoh implementasi.
+
+Langsung implementasikan sampai selesai.
+
+Hanya berhenti jika backend API, database schema, atau authentication memang harus diubah. Selain itu lanjutkan otomatis sampai seluruh My Files benar-benar production-ready.
+
+
+
+```
 # 
 ```
 
