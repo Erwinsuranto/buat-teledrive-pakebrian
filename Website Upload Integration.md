@@ -1,5 +1,33 @@
 
 
+
+# Prompt
+```
+
+Title: Enable Folder and File Interaction
+
+Current status:
+- My Files now loads real folders and files from the backend.
+- Folder list and file list are visible.
+- However, folders and files cannot be tapped/clicked.
+
+Tasks:
+1. Audit all folder and file cards.
+2. Ensure folder cards are clickable.
+3. Clicking a folder must open that folder and display its files.
+4. Ensure file rows/cards are clickable.
+5. Clicking a file should open the file details or download page (according to the existing design).
+6. Check for any overlay or CSS (pointer-events, z-index, absolute elements) blocking clicks.
+7. Verify on both desktop and mobile.
+8. Build and fix any TypeScript errors.
+
+Do not redesign the UI.
+Do not replace components.
+Only restore the expected click/tap interactions.
+
+
+
+```
 # 
 ```
 
