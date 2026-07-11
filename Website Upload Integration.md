@@ -1,4 +1,27 @@
 
+
+# 
+```
+
+
+The latest GitHub Actions build for PR #15 still fails.
+
+Do not stop at the first error.
+
+Audit the entire repository for missing module imports.
+
+For every "Module not found: Can't resolve ..." error:
+- determine whether the component was renamed, moved, or deleted,
+- update imports or recreate the missing component if appropriate,
+- remove stale imports only if they are no longer needed,
+- run the build again,
+- repeat until there are zero "Module not found" errors and all required GitHub Actions checks pass.
+
+Do not finish until every required workflow is green.
+
+
+```
+
 # Prompt: Fix FolderCard After MockFolder Refactor
 ```
 
