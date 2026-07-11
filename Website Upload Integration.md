@@ -1,6 +1,29 @@
 
 
+# Prompt: Fix My Files Route
+```
 
+Audit the Next.js routing for the My Files page.
+
+Current findings:
+- app/my-files/page.tsx is only a placeholder that renders:
+  "Your folders and files will appear here."
+- components/my-files/my-files-page.tsx already contains the real My Files implementation and exports:
+  export function MyFilesPage()
+
+Tasks:
+1. Replace the placeholder route in app/my-files/page.tsx.
+2. Import the real component from components/my-files/my-files-page.tsx.
+3. Render that component as the default page.
+4. Verify all imports compile.
+5. Run npm run build and fix any TypeScript or import errors.
+6. Commit the changes.
+
+Do not modify the My Files UI implementation unless required to fix compilation.
+
+
+
+```
 #
 #Prompt: Fix MongoDB connection for Next.js API
 
