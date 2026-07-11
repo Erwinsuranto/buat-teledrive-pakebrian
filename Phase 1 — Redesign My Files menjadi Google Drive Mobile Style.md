@@ -1,3 +1,56 @@
+
+
+
+
+# Prompt
+```
+
+Do not merge PR #28 yet.
+
+One required check is still failing:
+
+My Files runtime verification / browser-runtime
+
+Find the root cause and fix it.
+
+Requirements:
+
+- Do not bypass, disable, or ignore the failing test.
+- Fix the real runtime problem.
+- Run the browser runtime verification until it passes.
+- Ensure all GitHub checks are green.
+- Verify manually in Chromium after the fix.
+
+Re-test all My Files features:
+
+✓ Open folder
+✓ Open file
+✓ Preview image
+✓ Preview video
+✓ Preview PDF
+✓ Preview audio
+✓ Preview text
+✓ Copy Link
+✓ Download
+✓ Rename
+✓ Move
+✓ Delete
+✓ Favorite
+✓ Create Folder
+✓ Search
+✓ Thumbnail
+✓ Mobile
+✓ Desktop
+
+Do not create another PR.
+
+Continue working on PR #28 until every check passes.
+
+Merge only after all GitHub checks are green.
+
+
+
+```
 # Prompt
 ```
 
