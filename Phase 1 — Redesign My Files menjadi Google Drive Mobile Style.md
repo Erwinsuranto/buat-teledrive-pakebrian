@@ -1,5 +1,28 @@
 
 
+
+# 
+```
+Wait until ALL GitHub checks are green.
+
+Do not create another PR.
+
+When Chromium verification finishes:
+
+1. Merge PR #28 into main.
+2. Verify merge succeeded.
+3. Confirm the commit SHA now exists on origin/main.
+4. Do not stop after merge.
+5. Perform a final visual QA against the specification.
+6. Report every implemented feature and every remaining issue.
+7. Only say COMPLETE when the production-ready implementation matches the specification.
+
+If any GitHub check fails, fix it on the same PR instead of creating a new one.
+
+
+
+
+```
 # Langkah berikutnya
 ```
 
