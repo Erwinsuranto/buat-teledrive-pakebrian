@@ -1,5 +1,41 @@
 
 
+
+#
+#Prompt: Fix MongoDB connection for Next.js API
+
+```
+
+
+Audit the entire repository and fix the root cause of the MongoDB timeout affecting the Next.js API.
+
+Current findings:
+
+- backend/src/database/mongodb.connection.ts exports connectMongoDB().
+- repositories/file.repository.ts calls FileModel.find() directly.
+- app/api/files/route.ts calls fileService.getAllFiles().
+- No file inside app/, services/, or lib/ calls connectMongoDB().
+- GET /api/files returns:
+  Operation `files.find()` buffering timed out after 10000ms.
+- GET /api/folders works correctly.
+- npm run build passes successfully.
+
+Requirements:
+
+1. Find the correct place where connectMongoDB() should be initialized for the Next.js application.
+2. Ensure every API route using MongoDB establishes a connection before any repository query.
+3. Do NOT duplicate connection logic.
+4. Reuse the existing backend/src/database/mongodb.connection.ts implementation if possible.
+5. Keep connection singleton-safe.
+6. Update imports if necessary.
+7. Run npm run build.
+8. Test:
+   curl http://localhost:3000/api/files
+   curl http://localhost:3000/api/folders
+9. Continue fixing until /api/files returns JSON data instead of a timeout.
+10. Commit only the required changes.
+```
+
 # 
 ```
 
