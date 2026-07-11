@@ -1,0 +1,386 @@
+// ==UserScript==
+// @name         Abu Layan Pro IDs Switcher
+// @namespace    https://chatgpt.com/
+// @version      5.0.1
+// @description  Auto-join multiple workspace IDs with session management. Configurable UI with save/load functionality.
+// @author       https://t.me/Ablayann
+// @match        https://chatgpt.com/*
+// @run-at       document-idle
+// @grant        none
+// ==/UserScript==
+
+(function () {
+  "use strict";
+
+  // ===================== Default Configuration =====================
+  const DEFAULTS = {
+    workspaceIds: `cf8e512d-1f3b-4603-950c-3d9758a8b435
+ff598c4d-ccaf-40c1-bfaa-cb94565764b1
+42822f8a-b530-4649-97ea-83aac42ecf6d
+696cc59b-a475-44b0-b206-4e03593e658f
+1e595494-2426-4946-b688-58ba75604bcc
+eb6642e8-b4a6-4652-9c18-67099f2781cc
+a0a16bc9-e1b1-45f0-b269-812b53f60121
+8064da55-e484-4ba0-a0bc-db05ee84462b
+4fdf7f85-38d1-4eea-aeb9-f50939ffb9d8
+e1fbfed6-86a4-49b0-868d-17c396358d57
+b49cd6d8-b52d-4c21-93d7-89cc19b5e18e
+7bf3a2ce-3298-40b0-ac9b-3c922a5a91a6
+444437a7-c08b-423e-a2c8-65c17383ba24`,
+    intervalMs: 1500,
+    maxRetries: 3,
+    retryBackoffMs: 5000,
+    sessionPollMs: 20000,
+    panelWidth: 420,
+  };
+
+  const STORE_KEY = "alpro_config_v5";
+  
+  function loadConfig() {
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (_) {}
+    return Object.assign({}, DEFAULTS, saved);
+  }
+  
+  function saveConfig(cfg) {
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(cfg)); } catch (_) {}
+  }
+
+  let CONFIG = loadConfig();
+
+  // ---------- State ----------
+  const STATE = {
+    at: "",
+    session: null,
+    deviceId: crypto.randomUUID(),
+    autoRan: false,
+    running: false,
+  };
+
+  // ---------- /api/auth/session ----------
+  async function fetchSession() {
+    const res = await fetch("/api/auth/session", {
+      headers: { accept: "*/*" },
+      credentials: "include",
+    });
+    if (!res.ok) throw new Error(`session HTTP ${res.status}`);
+    return res.json();
+  }
+
+  function decodeJwt(at) {
+    try {
+      const p = at.split(".")[1];
+      const j = JSON.parse(atob(p.replace(/-/g, "+").replace(/_/g, "/")));
+      const auth = j["https://api.openai.com/auth"] || {};
+      const prof = j["https://api.openai.com/profile"] || {};
+      return {
+        account_id: auth.chatgpt_account_id || "",
+        email: prof.email || "",
+        plan_type: auth.chatgpt_plan_type || "",
+        exp: j.exp || 0,
+      };
+    } catch (_) { return {}; }
+  }
+
+  function fmtExp(exp) {
+    if (!exp) return "?";
+    const min = Math.round((exp * 1000 - Date.now()) / 60000);
+    if (min > 60) return `${Math.round(min/60)}h left`;
+    return `${min}m left`;
+  }
+
+  async function refreshSession() {
+    try {
+      const s = await fetchSession();
+      const at = s.accessToken || "";
+      if (at && at !== STATE.at) {
+        STATE.at = at;
+        STATE.session = s;
+        const info = decodeJwt(at);
+        log(`Access Token updated: ${info.email || "?"}`, "ok");
+        updateUserBar(info, "ok");
+        onATReady();
+      } else if (!at) {
+        updateUserBar(null, "warn");
+      }
+    } catch (e) {
+      log(`Session fetch failed: ${e.message}`, "warn");
+      updateUserBar(null, "err");
+    }
+  }
+
+  // ---------- API Requests ----------
+  async function sendOne(wsId, route, attempt) {
+    attempt = attempt || 0;
+    const url = `/backend-api/accounts/${wsId}/invites/${route}`;
+    const headers = {
+      accept: "*/*",
+      authorization: "Bearer " + STATE.at,
+      "content-type": "application/json",
+      "oai-device-id": STATE.deviceId,
+      "oai-language": navigator.language || "en-US",
+    };
+    log(`→ POST /accounts/${wsId.slice(0,8)}/invites/${route} (attempt ${attempt+1})`);
+    try {
+      const res = await fetch(url, {
+        method: "POST", headers, body: "", mode: "cors", credentials: "include",
+      });
+      const text = await res.text();
+      if (res.ok) {
+        log(`✓ ${wsId.slice(0,8)} HTTP ${res.status}: ${text.slice(0,100)}`, "ok");
+        return true;
+      }
+      log(`✗ ${wsId.slice(0,8)} HTTP ${res.status}: ${text.slice(0,180)}`, "warn");
+      if (res.status === 401 || res.status === 403) {
+        log("Access token expired, refreshing session...", "warn");
+        STATE.at = "";
+        await refreshSession();
+        if (attempt < CONFIG.maxRetries) {
+          await sleep(2000);
+          return sendOne(wsId, route, attempt + 1);
+        }
+        return false;
+      }
+      if (attempt < CONFIG.maxRetries) {
+        await sleep(CONFIG.retryBackoffMs * (attempt + 1));
+        return sendOne(wsId, route, attempt + 1);
+      }
+      return false;
+    } catch (e) {
+      log(`Network error: ${e.message}`, "err");
+      if (attempt < CONFIG.maxRetries) {
+        await sleep(CONFIG.retryBackoffMs);
+        return sendOne(wsId, route, attempt + 1);
+      }
+      return false;
+    }
+  }
+
+  function parseWorkspaceIds() {
+    // Get unique IDs only (remove duplicates)
+    const ids = CONFIG.workspaceIds.split(/[\n,]+/).map(s => s.trim()).filter(Boolean);
+    return [...new Set(ids)];
+  }
+
+  async function runAll(route) {
+    if (STATE.running) { log("Already running, please wait", "warn"); return; }
+    if (!STATE.at) {
+      log("No valid AT, refreshing session...", "warn");
+      await refreshSession();
+      if (!STATE.at) { log("Still no AT, please login to chatgpt.com first", "err"); return; }
+    }
+    const ids = parseWorkspaceIds();
+    if (!ids.length) { log("No workspace IDs configured", "err"); return; }
+
+    STATE.running = true;
+    setBtns(false);
+    log(`Processing ${ids.length} unique workspace(s) (${route})`, "info");
+    let ok = 0;
+    for (const ws of ids) {
+      const r = await sendOne(ws, route);
+      if (r) ok++;
+      if (ids.length > 1) await sleep(CONFIG.intervalMs);
+    }
+    log(`Complete: ${ok}/${ids.length} successful`, ok === ids.length ? "ok" : "warn");
+    STATE.running = false;
+    setBtns(true);
+  }
+
+  function onATReady() {
+    if (!STATE.autoRan) {
+      STATE.autoRan = true;
+      runAll("request");
+    }
+  }
+
+  function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+  // ---------- UI ----------
+  let panelBody, userBarEl, reqBtnEl, accBtnEl, wsInputEl, saveBtnEl, dirty = false;
+
+  function setBtns(enabled) {
+    [reqBtnEl, accBtnEl].forEach(b => {
+      if (b) { b.disabled = !enabled; b.style.opacity = enabled ? "1" : "0.5"; }
+    });
+  }
+
+  function updateUserBar(info, status) {
+    if (!userBarEl) return;
+    const c = { ok: "#2f855a", warn: "#b7791f", err: "#c53030" };
+    if (info && info.email) {
+      userBarEl.innerHTML =
+        `<span style="color:${c.ok}">●</span> <b>${info.email}</b> · ${info.plan_type||"?"} · ` +
+        `<code style="background:#edf2f7;padding:1px 4px;border-radius:3px;font-size:11px">${(info.account_id||"").slice(0,8)}</code> · ` +
+        `<span style="color:#718096">${fmtExp(info.exp)}</span>`;
+    } else {
+      const msg = status === "err" ? "Session failed, please login" : "No AT detected, waiting for login...";
+      userBarEl.innerHTML = `<span style="color:${c[status]||c.warn}">●</span> ${msg}`;
+    }
+  }
+
+  function markDirty() {
+    dirty = true;
+    if (saveBtnEl) {
+      saveBtnEl.textContent = "Save *";
+      saveBtnEl.style.background = "#d69e2e";
+      saveBtnEl.style.color = "#fff";
+    }
+  }
+
+  function markClean() {
+    dirty = false;
+    if (saveBtnEl) {
+      saveBtnEl.textContent = "Saved";
+      saveBtnEl.style.background = "#38a169";
+      saveBtnEl.style.color = "#fff";
+    }
+    setTimeout(() => {
+      if (!dirty && saveBtnEl) {
+        saveBtnEl.textContent = "Save";
+        saveBtnEl.style.background = "#edf2f7";
+        saveBtnEl.style.color = "#4a5568";
+      }
+    }, 1500);
+  }
+
+  function buildPanel() {
+    const css = `
+      .al-panel{position:fixed;top:14px;right:14px;width:${CONFIG.panelWidth}px;
+        background:#fff;border:1px solid #e2e8f0;border-radius:14px;
+        box-shadow:0 12px 32px rgba(0,0,0,.16);z-index:99999;
+        font:13px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1a202c;overflow:hidden}
+      .al-head{padding:11px 16px;background:linear-gradient(135deg,#2b6cb0,#1a365d);color:#fff;
+        display:flex;justify-content:space-between;align-items:center}
+      .al-title{font-weight:700;font-size:14px;letter-spacing:.3px;display:flex;align-items:center;gap:8px}
+      .al-title svg{width:18px;height:18px;fill:#fff}
+      .al-ver{font-size:10px;opacity:.85;background:rgba(255,255,255,.2);padding:2px 8px;border-radius:10px;font-weight:500}
+      .al-sub{padding:9px 16px;background:#f7fafc;border-bottom:1px solid #edf2f7;font-size:12px;color:#4a5568;min-height:22px}
+      .al-sec{padding:12px 16px;border-bottom:1px solid #edf2f7}
+      .al-label{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#718096;
+        margin-bottom:6px;font-weight:600;letter-spacing:.4px;text-transform:uppercase}
+      .al-label .al-count{font-size:10px;color:#a0aec0;font-weight:400;text-transform:none;letter-spacing:0}
+      .al-ta{width:100%;box-sizing:border-box;border:1px solid #e2e8f0;border-radius:8px;
+        padding:8px 10px;font:12px/1.5 monospace;color:#2d3748;background:#fff;transition:.15s;min-height:70px;resize:vertical}
+      .al-ta:focus{outline:0;border-color:#3182ce;box-shadow:0 0 0 3px rgba(49,130,206,.12)}
+      .al-save-row{display:flex;justify-content:flex-end;margin-top:8px}
+      .al-body{padding:10px 16px;max-height:36vh;overflow:auto}
+      .al-foot{padding:10px 16px;border-top:1px solid #edf2f7;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+      .al-line{padding:3px 0;word-break:break-all;border-bottom:1px dashed #f1f5f9;font-size:12px}
+      .al-line:last-child{border-bottom:0}
+      .al-info{color:#2b6cb0}.al-ok{color:#2f855a}.al-warn{color:#b7791f}.al-err{color:#c53030}
+      .al-btn{cursor:pointer;border:0;border-radius:7px;padding:7px 14px;font-size:12px;font-weight:500;transition:.15s}
+      .al-btn-primary{background:#3182ce;color:#fff}.al-btn-primary:hover{background:#2b6cb0}
+      .al-btn-green{background:#38a169;color:#fff}.al-btn-green:hover{background:#2f855a}
+      .al-btn-ghost{background:#edf2f7;color:#4a5568}.al-btn-ghost:hover{background:#e2e8f0}
+      .al-btn:disabled{cursor:not-allowed;opacity:.5}
+      .al-hint{font-size:11px;color:#a0aec0;padding:6px 0 0 0;line-height:1.5}
+      .al-status-badge{display:inline-block;padding:1px 8px;border-radius:10px;font-size:10px;font-weight:600}
+    `;
+    const style = document.createElement("style");
+    style.textContent = css;
+    document.head.appendChild(style);
+
+    const p = document.createElement("div");
+    p.className = "al-panel";
+    p.innerHTML = `
+      <div class="al-head">
+        <span class="al-title">
+          <svg viewBox="0 0 24 24"><path d="M15 4l6 6-10 10H5v-6L15 4zm-1 1L7 12l5 5 7-7-5-5z"/></svg>
+          Abu Layan Pro IDs Switcher
+        </span>
+        <span class="al-ver">v5.0.1</span>
+      </div>
+      <div class="al-sub" id="al-user">No AT detected, waiting for login...</div>
+
+      <div class="al-sec">
+        <label class="al-label">
+          <span>Workspace IDs</span>
+          <span class="al-count" id="al-count">0 IDs</span>
+        </label>
+        <textarea class="al-ta" id="al-ws" placeholder="One ID per line&#10;acfb4e38-524c-4dc8-b4cf-fb3d0ce28b25"></textarea>
+        <div class="al-save-row">
+          <button class="al-btn al-btn-ghost" id="al-save" style="padding:5px 14px">Save</button>
+        </div>
+        <div class="al-hint">Auto-join multiple workspaces. Request = send join request, Accept = accept pending invite.</div>
+      </div>
+
+      <div class="al-body" id="al-body"></div>
+
+      <div class="al-foot">
+        <button class="al-btn al-btn-ghost" id="al-refresh">Refresh AT</button>
+        <button class="al-btn al-btn-green" id="al-accept">Accept</button>
+        <button class="al-btn al-btn-primary" id="al-run">Request</button>
+      </div>
+    `;
+    document.body.appendChild(p);
+
+    panelBody = p.querySelector("#al-body");
+    userBarEl = p.querySelector("#al-user");
+    reqBtnEl = p.querySelector("#al-run");
+    accBtnEl = p.querySelector("#al-accept");
+    wsInputEl = p.querySelector("#al-ws");
+    saveBtnEl = p.querySelector("#al-save");
+    const countEl = p.querySelector("#al-count");
+
+    // Fill saved values
+    wsInputEl.value = CONFIG.workspaceIds;
+    const updateCount = () => {
+      const n = wsInputEl.value.split(/[\n,]+/).map(s=>s.trim()).filter(Boolean).length;
+      countEl.textContent = `${n} ID${n !== 1 ? 's' : ''}`;
+    };
+    updateCount();
+
+    // Edit triggers dirty state
+    wsInputEl.addEventListener("input", () => {
+      markDirty();
+      updateCount();
+    });
+
+    // Save
+    saveBtnEl.addEventListener("click", () => {
+      CONFIG.workspaceIds = wsInputEl.value;
+      saveConfig(CONFIG);
+      markClean();
+      log("Workspace IDs saved", "ok");
+    });
+
+    // Buttons
+    reqBtnEl.addEventListener("click", () => runAll("request"));
+    accBtnEl.addEventListener("click", () => runAll("accept"));
+    p.querySelector("#al-refresh").addEventListener("click", async () => {
+      log("Manual session refresh...", "info");
+      await refreshSession();
+    });
+  }
+
+  function log(msg, level) {
+    const styles = { info: "al-info", ok: "al-ok", warn: "al-warn", err: "al-err" };
+    const time = new Date().toLocaleTimeString();
+    console.log("%c[ALPro]", "color:#2b6cb0;font-weight:bold", msg);
+    if (panelBody) {
+      const line = document.createElement("div");
+      line.className = `al-line ${styles[level] || "al-info"}`;
+      line.textContent = `[${time}] ${msg}`;
+      panelBody.appendChild(line);
+      panelBody.scrollTop = panelBody.scrollHeight;
+    }
+  }
+
+  // ---------- Boot ----------
+  function boot() {
+    buildPanel();
+    log("Abu Layan Pro IDs Switcher loaded v5.0.1", "info");
+    const uniqueIds = parseWorkspaceIds();
+    log(`Configured with ${uniqueIds.length} unique workspace IDs (${CONFIG.workspaceIds.split(/[\n,]+/).filter(Boolean).length} total entries)`, "info");
+    log("Request = send join request · Accept = accept invite", "info");
+    refreshSession();
+    setInterval(refreshSession, CONFIG.sessionPollMs);
+    window.addEventListener("focus", () => { if (!STATE.running) refreshSession(); });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+})();
