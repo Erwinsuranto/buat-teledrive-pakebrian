@@ -1,6 +1,84 @@
 
 
+# Langkah berikutnya
+```
 
+
+STOP.
+
+Do not investigate deployment or runtime anymore.
+
+The production server is already running the latest commit.
+
+The missing features are NOT a deployment problem.
+They are missing implementation.
+
+Continue working from the current codebase.
+
+Implement all remaining My Files features until they exist in production.
+
+Required:
+
+1. Two view modes
+   - List View (default, similar to MEGA mobile)
+   - Grid View (thumbnail cards)
+
+2. View switch button beside Search.
+
+3. List View
+   - file icon only
+   - filename
+   - size
+   - modified date
+   - copy-link icon
+   - three-dot menu on right
+
+4. Grid View
+   - real image thumbnails
+   - video thumbnails
+   - file type icons
+
+5. Single click/tap:
+   Open preview.
+
+6. Desktop:
+   Right click opens context menu.
+
+7. Mobile:
+   Long press opens context menu.
+
+8. Context menu:
+   Open
+   Download
+   Copy Link
+   Rename
+   Move
+   Delete
+   Favorite
+   Details
+
+9. Folder creation must work.
+
+10. Upload queue must work.
+
+11. Search.
+
+12. Breadcrumb navigation.
+
+13. No overlapping UI.
+
+14. Responsive desktop/tablet/mobile.
+
+Do not create mock UI.
+
+Implement the real production code.
+
+Commit only after manual verification.
+
+Push to the same PR until every feature is finished.
+
+
+```
 # mengubah UX My Files menjadi setara aplikasi cloud storage modern
 ```
 
