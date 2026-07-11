@@ -1,5 +1,36 @@
 
+# 
+```
 
+Do not wait indefinitely.
+
+Check the current status of the remaining Chromium verification.
+
+If it has failed:
+- investigate the failure,
+- fix it on the same PR (#28),
+- push the fix,
+- rerun the failed check.
+
+If it is still running:
+- report the current progress,
+- wait until it finishes.
+
+As soon as all GitHub checks are green:
+1. Merge PR #28 into main.
+2. Verify origin/main contains the merge commit.
+3. Confirm the merge SHA.
+4. Tell me to run:
+   git pull
+   npm run build
+   npm start (or restart the process)
+
+Do not create a new PR.
+Continue using PR #28 until it is merged successfully.
+
+
+
+```
 
 # 
 ```
