@@ -1,4 +1,66 @@
 
+# Prompt: Fix Folder Type Migration Build Error
+```
+
+
+Prompt: Fix Folder Type Migration
+
+The build is failing because folder-card.tsx still depends on the legacy MockFolder model while the repository is being migrated to the real MongoDB folder model.
+
+Current error:
+
+components/file/folder-card.tsx
+
+Type error:
+This comparison appears to be unintentional because the types
+
+"folder" | "shared" | "empty"
+
+and
+
+"photos"
+
+have no overlap.
+
+Requirements:
+
+1. Do NOT silence TypeScript.
+
+2. Do NOT use "as any".
+
+3. Do NOT disable type checking.
+
+4. Do NOT reintroduce old MockFolder types just to make the build pass.
+
+5. Replace every remaining MockFolder dependency with the canonical MongoDB folder model.
+
+6. Remove obsolete folder.kind comparisons such as:
+
+folder.kind === "photos"
+
+if those values no longer exist.
+
+7. Search the entire repository for:
+
+- MockFolder
+- kind === "photos"
+- kind === "videos"
+- kind === "documents"
+- any remaining mock folder implementation
+
+Replace them with the current folder architecture.
+
+Run:
+
+npm run build
+
+The build must complete successfully.
+
+Report every modified file and explain why it was changed.
+
+
+```
+
 
 # Prompt: Replace Mock Data With Real MongoDB Data
 ```
