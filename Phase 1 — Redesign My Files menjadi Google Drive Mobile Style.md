@@ -1,5 +1,74 @@
 
+# Prompt untuk Codex
+```
 
+
+
+Continue working on the existing repository.
+
+DO NOT create a new branch.
+DO NOT create a new Pull Request.
+Continue working on the current production branch/PR only.
+
+Current production blockers:
+
+1. Fix runtime error:
+   crypto.randomUUID is not a function
+   Folder creation must work on all supported browsers by using a compatible UUID implementation or a safe fallback.
+
+2. Verify Create Folder actually creates a real folder through the existing backend API.
+   No mock implementation.
+
+3. Fix all overlay and z-index problems.
+   Drawer, dialog, preview, context menu and bottom sheet must never overlap incorrectly.
+
+4. Implement production My Files UI.
+
+- List View (default)
+  - Similar to Windows Explorer / MEGA.
+  - Small file icon.
+  - Filename.
+  - File size.
+  - Modified date.
+  - Copy Link button.
+  - Three-dot menu.
+  - Single click opens preview.
+
+- Grid View
+  - Thumbnail cards.
+  - Images show thumbnails.
+  - Videos show preview.
+  - Documents show proper icons.
+
+5. Desktop:
+   Right-click opens context menu.
+
+6. Mobile:
+   Long press opens bottom action sheet.
+
+7. Verify:
+   - Folder creation
+   - Open preview
+   - Copy Link
+   - Download
+   - Rename
+   - Delete
+   - Move
+   - Search
+   - Grid/List switch
+
+8. Run build.
+9. Run browser verification.
+10. Commit only after manual verification.
+11. Merge only after every GitHub check is green.
+
+Output:
+- Root cause
+- Files changed
+- Manual verification results
+- PASS/FAIL for every feature
+
+```
 
 # prompt
 ```
