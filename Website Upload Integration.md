@@ -1,4 +1,34 @@
 
+# Prompt: Fix Canonical Repository (Missing Modules)
+```
+
+
+Jangan membuat komponen, file, atau placeholder baru kecuali benar-benar tidak ada.
+
+Lakukan audit terhadap seluruh repository dan perbaiki semua error "Module not found" dengan menggunakan struktur repository yang sudah ada.
+
+Tugas:
+
+1. Cari seluruh file yang dipindahkan, dihapus, atau diubah namanya.
+2. Perbaiki semua import path yang salah.
+3. Pulihkan struktur canonical repository.
+4. Pastikan semua halaman Explorer, Upload, Activity, Favorites, Trash, Folder, dan My Files kembali menggunakan komponen yang benar.
+5. Jangan menghapus fitur apa pun.
+6. Jangan mengubah UI atau desain.
+7. Jangan membuat mock component atau dummy component.
+8. Jalankan npm run build setiap selesai memperbaiki satu kelompok error.
+9. Ulangi sampai npm run build berhasil tanpa error.
+10. Commit seluruh perubahan ke branch yang sedang digunakan.
+
+Di akhir tampilkan:
+- Ringkasan perbaikan
+- Daftar file yang diubah
+- Hasil build terakhir
+- Error yang tersisa (jika masih ada)
+
+
+```
+
 # 
 ```
 
