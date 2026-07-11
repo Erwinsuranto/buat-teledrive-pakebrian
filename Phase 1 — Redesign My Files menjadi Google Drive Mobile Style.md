@@ -1,3 +1,64 @@
+
+# Prompt lanjutan
+```
+
+
+Production UX Fix - Google Drive Interaction
+
+Jangan ubah backend, database, authentication, Telegram Bot, upload pipeline, atau API.
+
+Fokus hanya pada My Files UI/UX.
+
+Perbaiki seluruh interaction agar mengikuti pola Google Drive modern.
+
+1. Klik kiri pada file wajib langsung membuka Preview.
+
+2. Desktop:
+- Right click membuka Context Menu.
+- Tidak menggunakan tombol tiga titik lagi.
+
+3. Mobile:
+- Tap membuka Preview.
+- Long press membuka Bottom Sheet.
+
+4. Context Menu / Bottom Sheet wajib berisi:
+
+Open
+Copy Link
+Download
+Rename
+Move
+Favorite
+Delete
+Details
+
+5. Implementasikan Copy Link menggunakan share/download URL yang sudah tersedia.
+
+6. Perbaiki seluruh z-index sehingga Drawer, Context Menu, Modal, Bottom Sheet, Search Overlay, dan Header tidak saling bertabrakan.
+
+7. Perbaiki thumbnail:
+- image thumbnail
+- video thumbnail
+- pdf preview
+- fallback icon bila preview gagal
+
+8. Semua Preview harus fullscreen dengan tombol Close dan Download.
+
+9. Hilangkan seluruh interaction yang membingungkan.
+
+10. Setelah selesai:
+- build
+- lint
+- typecheck
+- test
+- push
+- buat PR
+- merge bila seluruh checks hijau.
+
+Jangan berhenti sebelum seluruh interaction My Files benar-benar terasa seperti Google Drive modern.
+
+
+```
 # Telegram Drive - My Files QA & Production Fix (Post PR #24)
 
 # 
