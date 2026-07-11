@@ -1,4 +1,33 @@
 
+
+# 
+```
+
+Root cause found from GitHub Actions.
+
+The browser-runtime job is failing because the production app crashes while trying to connect to MongoDB.
+
+Error:
+
+MongooseServerSelectionError
+connect ECONNREFUSED 127.0.0.1:27017
+
+Fix the real production code and GitHub Actions.
+
+Requirements:
+
+- Find every place where MongoDB is initialized.
+- Do not hardcode mongodb://127.0.0.1:27017.
+- Use process.env.MONGODB_URI.
+- If browser-runtime does not require MongoDB, prevent the connection during startup.
+- If browser-runtime requires MongoDB, configure a MongoDB service in GitHub Actions.
+- Keep using PR #28.
+- Do not create another PR.
+- Commit, push, rerun Actions, and merge only after all checks are green.
+
+
+
+```
 # Prompt untuk Codex
 ```
 
