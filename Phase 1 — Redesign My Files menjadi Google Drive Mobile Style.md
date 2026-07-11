@@ -1,4 +1,106 @@
+# Prompt
+```
 
+
+Production Audit & Fix - My Files
+
+PR #26 sudah merged tetapi implementasi di production tidak sesuai.
+
+Lakukan audit penuh pada seluruh fitur My Files.
+
+Jangan menganggap pekerjaan selesai hanya karena build, lint, typecheck, atau CI hijau.
+
+Verifikasi dengan menjalankan aplikasi dan memastikan semua fitur benar-benar bekerja.
+
+Temukan dan perbaiki seluruh masalah berikut.
+
+1.
+Klik folder harus benar-benar membuka folder.
+
+2.
+Klik file harus membuka preview.
+
+3.
+Preview harus bekerja untuk:
+- Image
+- Video
+- PDF
+- Audio
+- Text
+
+4.
+Copy Link harus bekerja.
+
+5.
+Download harus bekerja.
+
+6.
+Rename harus bekerja.
+
+7.
+Move harus bekerja.
+
+8.
+Delete harus bekerja.
+
+9.
+Favorite harus bekerja.
+
+10.
+Create Folder harus bekerja.
+
+Bug saat ini:
+
+crypto.randomUUID is not a function
+
+Jangan gunakan crypto.randomUUID apabila environment tidak mendukung.
+
+Gunakan solusi yang kompatibel dengan browser lama maupun Node:
+
+- crypto.randomUUID bila tersedia
+- fallback ke nanoid atau uuid
+- atau fallback internal yang aman
+
+Folder wajib dapat dibuat tanpa error.
+
+11.
+
+Pastikan thumbnail muncul.
+
+12.
+
+Pastikan tidak ada overlay, drawer, modal, atau menu yang saling bertabrakan.
+
+13.
+
+Pastikan seluruh perubahan benar-benar terlihat di production.
+
+Jika ada cache Next.js, build cache, service worker, hydration, stale deployment, atau routing yang menyebabkan perubahan tidak muncul, perbaiki juga.
+
+Jangan berhenti sampai perubahan benar-benar muncul saat website dijalankan.
+
+Sebelum membuat PR lakukan:
+
+npm run lint
+
+npm run typecheck
+
+npm run build
+
+jalankan website
+
+uji seluruh fitur secara manual
+
+baru push
+
+buat PR
+
+merge jika seluruh checks hijau.
+
+Output akhir wajib berisi checklist PASS/FAIL untuk setiap fitur yang telah diuji secara langsung, bukan hanya berdasarkan pembacaan kode.
+
+
+```
 # Prompt lanjutan
 ```
 
