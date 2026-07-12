@@ -5,6 +5,35 @@
 
 
 
+
+# 
+```
+
+Jangan berhenti karena dugaan blocker GitHub Actions.
+
+Pastikan dulu penyebabnya dengan memeriksa log workflow.
+
+Jika workflow yang bermasalah:
+- perbaiki file .github/workflows jika memang ada kesalahan konfigurasi,
+- rerun workflow,
+- atau commit kosong untuk memicu ulang CI bila diperlukan.
+
+Jika benar-benar karena quota GitHub Actions atau layanan GitHub sedang bermasalah:
+- jangan mengubah kode aplikasi,
+- jangan mengulang implementasi,
+- jangan membuat audit baru,
+- simpan seluruh perubahan di branch PR saat ini,
+- laporkan secara singkat bukti bahwa kegagalan terjadi sebelum checkout/test sehingga bukan disebabkan kode.
+
+Jika setelah rerun seluruh CI hijau:
+- merge PR ke main,
+- lanjutkan penyempurnaan UI yang masih kurang (font mobile, halaman Upload, halaman Download, dan link download).
+
+Jangan mengulang audit repository. Fokus menyelesaikan implementasi.
+
+
+
+```
 # 
 ```
 
