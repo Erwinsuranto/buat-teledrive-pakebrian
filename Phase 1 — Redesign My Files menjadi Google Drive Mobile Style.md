@@ -5,6 +5,46 @@
 
 
 
+# Prompt 
+```
+
+Sekarang buat roadmap implementasi berdasarkan hasil audit.
+
+Jangan langsung mengubah kode.
+
+Kelompokkan semua fitur yang belum ada menjadi:
+
+Phase 5
+Phase 5.1
+Phase 5.2
+Phase 6
+Phase 7
+Phase Enterprise
+
+Urutkan dari yang paling penting untuk production.
+
+Pastikan roadmap membuat Telegram Drive mendekati Google Drive dan MEGA.
+
+Tambahkan juga fitur UX yang masih kurang seperti:
+- Multi Select
+- Bulk Actions
+- Sort & Filter
+- Folder ZIP Download
+- Recent
+- Favorites
+- Tags
+- Detail Panel
+- Breadcrumb Navigation
+- File Details
+- Drag & Drop Desktop
+- Shared With Me
+- Team Drive
+
+Setelah roadmap selesai, pilih SATU fitur paling prioritas dan jelaskan alasannya. Jangan mengubah kode dulu.
+
+
+
+```
 # 
 ```
 
