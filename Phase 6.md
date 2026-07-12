@@ -6,6 +6,42 @@
 
 # 
 ```
+Roadmap telah dilaporkan selesai 100%.
+
+Jangan mengimplementasikan fitur baru.
+
+Lakukan audit akhir repository secara independen.
+
+Periksa:
+
+- apakah seluruh roadmap benar-benar sudah selesai;
+- apakah masih ada TODO/FIXME/HACK;
+- apakah masih ada endpoint yang belum dipakai;
+- apakah ada kode mati (dead code);
+- apakah ada mock, dummy data, atau temporary workaround;
+- apakah ada regression dibanding main;
+- apakah seluruh API terdokumentasi;
+- apakah database migration konsisten;
+- apakah README, CHANGELOG, dokumentasi, dan environment sudah sinkron;
+- apakah seluruh GitHub Actions benar-benar hijau;
+- apakah masih ada PR yang belum merge;
+- apakah masih ada branch feature yang belum dibersihkan;
+- apakah repository production-ready.
+
+Jangan mengubah kode kecuali menemukan bug nyata.
+
+Jika tidak menemukan masalah, tulis dengan jelas:
+
+"Repository telah diaudit dan dinyatakan production-ready."
+
+Jika menemukan masalah, buat daftar prioritas berdasarkan tingkat keparahan tanpa langsung memperbaikinya.
+
+
+
+
+```
+# 
+```
 
 Enterprise adalah phase terakhir.
 
