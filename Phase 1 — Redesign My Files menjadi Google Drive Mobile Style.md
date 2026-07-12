@@ -3,6 +3,118 @@
 
 
 
+
+# Prompt 29 – Final Production List View (MEGA Style)
+```
+
+Create a NEW branch from origin/main named feature/my-files-ui-final.
+
+IMPORTANT:
+- PR #28 has already been merged and closed.
+- Do NOT modify or reopen PR #28.
+- Continue from the current origin/main.
+- Create a NEW PR when finished.
+- Do NOT create mock UI.
+- Implement only production-ready code.
+
+Project:
+This is a Telegram Drive web application inspired by Telegram + Google Drive + MEGA.
+The backend, upload system, folders, search, file management, and previous production fixes are already completed and merged.
+Do NOT rewrite working features.
+Preserve all existing APIs and business logic.
+
+Your task is ONLY to finish the remaining My Files production UI and UX.
+
+Requirements:
+
+1. Redesign My Files to look modern like MEGA / Google Drive while keeping our own identity.
+2. Keep both Grid View and List View.
+3. Add smooth switch animation between Grid and List.
+4. List View should resemble MEGA:
+   - thumbnail/icon
+   - filename
+   - file size
+   - modified date
+   - optional owner
+   - context menu (three dots)
+   - copy link button
+5. Grid View:
+   - responsive cards
+   - consistent spacing
+   - large preview
+   - selection state
+6. Folder cards:
+   - cleaner layout
+   - folder count
+   - modified date
+   - responsive
+7. Improve breadcrumbs.
+8. Improve search bar.
+9. Sticky header on mobile.
+10. Better spacing for Safe Area (Android & iPhone).
+11. Better FAB placement.
+12. Better empty states.
+13. Better loading skeletons.
+14. Better hover/focus/pressed states.
+15. Better dark/light compatibility.
+16. Mobile-first responsive design.
+17. Tablet responsive.
+18. Desktop responsive.
+
+Maintain existing features:
+
+- Upload Queue
+- Folder creation
+- Folder navigation
+- File preview
+- File download
+- Copy Link
+- Context Menu
+- Search
+- Breadcrumbs
+- Upload progress
+- Existing APIs
+- Existing authentication
+- Existing routing
+
+Do NOT remove or break:
+- Working backend
+- MongoDB logic
+- Upload logic
+- Download logic
+- Folder APIs
+- Existing tests
+
+Fix remaining UI inconsistencies without changing business logic.
+
+Before committing:
+- npm install
+- npm run lint
+- npm run typecheck
+- npm run build
+- Run Playwright tests
+- Fix every failing test
+- Verify Chromium, Firefox and WebKit
+
+Only commit if:
+- Build passes
+- Typecheck passes
+- Lint passes
+- Browser tests pass
+- Mobile layout verified
+- No runtime errors
+
+Finally:
+- Commit changes.
+- Push the new branch.
+- Open a NEW Pull Request.
+- Include screenshots of Desktop, Tablet and Mobile.
+- Include a summary of every UI improvement.
+- Do NOT stop until every requirement above has been completed and verified.
+
+
+
+```
 # Prompt 29 – Final Production List View (MEGA Style)
 ```
 
