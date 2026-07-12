@@ -1,7 +1,207 @@
 
 
 
+# 
+```
+# Telegram Drive - Phase 5.1 (Production Implementation)
 
+Gunakan branch terbaru dari main.
+
+WAJIB mengikuti workflow berikut:
+
+- Selalu mulai dari latest main.
+- Satu phase = satu branch.
+- Satu branch = satu Pull Request.
+- Satu Pull Request = satu merge.
+- Jangan pernah force push ke main.
+- Jangan menggunakan mock.
+- Jangan menghapus fitur production yang sudah ada.
+- Jangan membuat placeholder.
+- Jangan membuat TODO tanpa implementasi.
+- Gunakan production code.
+
+Sebelum mengubah kode:
+
+1. Pull latest main.
+2. Jalankan lint.
+3. Jalankan typecheck.
+4. Jalankan build.
+5. Jalankan seluruh regression test.
+6. Pastikan baseline hijau.
+
+==================================================================
+
+PHASE 5.1
+
+Implementasikan seluruh fitur berikut dalam SATU PHASE.
+
+## Favorites
+
+- Star / Unstar file
+- Star / Unstar folder
+- Favorites page
+- Favorites sorting
+- Favorites persistence
+- Favorites API
+- Favorites database
+
+==================================================================
+
+## Recent
+
+- Recent files
+- Recent folders
+- Last opened
+- Last viewed
+- Last downloaded
+- Recent API
+- Recent database
+
+==================================================================
+
+## Folder Download ZIP
+
+- Download folder sebagai ZIP
+- Progress indicator
+- Cancel download
+- Preserve folder structure
+- Streaming ZIP
+- Large folder support
+- Production ready
+
+==================================================================
+
+## File Detail Panel
+
+Klik file akan menampilkan panel detail:
+
+- Preview
+- File Name
+- Size
+- Type
+- MIME
+- Owner
+- Upload Date
+- Modified Date
+- Folder Path
+- Telegram Message ID
+- Telegram Channel
+- File Hash
+- Download Count
+
+Desktop menggunakan side panel.
+
+Mobile menggunakan bottom sheet.
+
+==================================================================
+
+## Breadcrumb Navigation
+
+Contoh:
+
+My Files
+>
+Movies
+>
+2026
+>
+Marvel
+
+Breadcrumb dapat ditekan.
+
+==================================================================
+
+## File Information
+
+Tambahkan metadata:
+
+- Type
+- Extension
+- Size
+- Created
+- Modified
+- Owner
+- Path
+
+==================================================================
+
+QUALITY
+
+Tidak boleh merusak fitur berikut:
+
+✓ Upload
+✓ Folder
+✓ Rename
+✓ Delete
+✓ Move
+✓ Copy
+✓ Search
+✓ Grid View
+✓ List View
+✓ Preview
+✓ Download
+✓ Copy Link
+✓ Multi Select
+✓ Bulk Actions
+✓ Sort
+✓ Filter
+✓ Responsive UI
+
+==================================================================
+
+TESTING
+
+Sebelum commit:
+
+- lint
+- typecheck
+- build
+- API integration
+- Folder integration
+- Playwright Chromium
+- Playwright Firefox
+- Playwright WebKit
+
+Jika ada kegagalan:
+
+- baca log GitHub Actions
+- identifikasi root cause
+- perbaiki production code
+- jalankan ulang seluruh CI
+
+Ulangi sampai seluruh GitHub Actions hijau.
+
+==================================================================
+
+Setelah selesai:
+
+1. Push ke branch baru.
+2. Buat Pull Request.
+3. Tunggu seluruh GitHub Actions selesai.
+4. Jangan merge jika masih ada satu saja check merah.
+5. Perbaiki sampai seluruh CI hijau.
+6. Jalankan regression test penuh.
+7. Merge ke main jika semua hijau.
+8. Hapus branch setelah merge.
+
+==================================================================
+
+Setelah merge selesai:
+
+- Audit seluruh aplikasi.
+- Pastikan tidak ada regression.
+- Update README.md dan CHANGELOG.md dengan fitur Phase 5.1.
+- Tulis ringkasan perubahan.
+- Berikan daftar file yang diubah.
+- Berikan daftar API yang ditambah atau diubah.
+- Berikan daftar database/model yang berubah.
+- Berikan hasil lint, build, typecheck, Playwright, GitHub Actions.
+- Jangan lanjut ke Phase 5.2 sampai seluruh hasil Phase 5.1 sudah production-ready dan tervalidasi.
+
+
+
+
+```
 # 
 ```
 
