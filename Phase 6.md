@@ -2,7 +2,58 @@
 
 
 
+# Lanjutkan PR #37 sampai selesai.
+```
 
+
+
+Lanjutkan PR #37 sampai selesai.
+
+Jangan berhenti sebelum:
+
+- seluruh GitHub Actions hijau,
+- lint hijau,
+- typecheck hijau,
+- seluruh build hijau,
+- API smoke hijau,
+- folder integration hijau,
+- Chromium hijau,
+- Firefox hijau,
+- WebKit hijau,
+- full cross-phase regression hijau,
+- production audit hijau.
+
+Jika ada CI gagal:
+- baca log,
+- perbaiki,
+- commit,
+- push,
+- jalankan ulang,
+- ulangi sampai seluruh pipeline hijau.
+
+Setelah seluruh CI hijau:
+- merge PR #37 ke main,
+- audit ulang repository menggunakan latest main,
+- pastikan dua temuan CONFIRMED benar-benar sudah terselesaikan,
+- pastikan tidak ada regression baru.
+
+Jangan membuat fitur baru.
+
+Jangan membuat phase baru.
+
+Hanya kirim SATU laporan akhir setelah seluruh proses selesai.
+
+Laporan akhir harus menyebutkan dengan jelas:
+
+- status PR #37,
+- merge commit,
+- seluruh GitHub Actions,
+- hasil full regression,
+- hasil production audit,
+- apakah repository production-ready,
+- jika masih belum production-ready, jelaskan hanya blocker yang benar-benar tersisa beserta buktinya.
+
+```
 # 
 ```
 Lakukan verifikasi terhadap seluruh temuan audit.
