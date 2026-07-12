@@ -3,7 +3,42 @@
 
 
 
+# Prompt 1
+```
 
+Before starting Phase 5.1, perform a full regression audit.
+
+Verify that all existing production features still work:
+
+- Upload
+- Folder creation
+- Folder navigation
+- Search
+- List View
+- Grid View
+- File Preview
+- Download
+- Copy Link
+- Rename
+- Move
+- Delete
+- Mobile UI
+- Desktop UI
+- Responsive layout
+- Telegram API integration
+
+If any regression is found, fix it before merging.
+
+Only when all CI is green and regression audit passes, merge PR #31 into main.
+
+After merge, create a new branch for Phase 5.1.
+
+Never stack multiple features in one PR.
+One phase = one branch = one PR = one merge.
+
+
+
+```
 
 # Prompt 
 ```
