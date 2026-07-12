@@ -5,6 +5,47 @@
 
 
 
+# 
+```
+STOP.
+
+Jangan membuat audit, ringkasan, atau laporan.
+
+Saya ingin memverifikasi implementasi yang Anda klaim sudah selesai.
+
+Kirim SELURUH source code yang Anda buat untuk fitur Upload dan Download.
+
+Sertakan:
+
+1. Semua file halaman Upload.
+2. Semua file halaman Download.
+3. Semua komponen React yang digunakan.
+4. Semua API route yang dibuat atau diubah.
+5. Semua helper/service untuk upload ke Telegram.
+6. Semua perubahan routing.
+7. Sebutkan path lengkap setiap file.
+
+Contoh:
+
+app/upload/page.tsx
+app/download/[id]/page.tsx
+components/upload/UploadForm.tsx
+components/download/DownloadPreview.tsx
+lib/telegram.ts
+app/api/upload/route.ts
+app/api/download/[id]/route.ts
+
+Jika file terlalu panjang, kirim satu file penuh per balasan sampai seluruh implementasi selesai.
+
+Jangan ringkas.
+Jangan hanya menyebut nama file.
+Jangan mengatakan "sudah ada di repository".
+Saya ingin melihat isi source code lengkap untuk setiap file yang Anda ubah.
+
+
+
+
+```
 # Prompt 39 – Complete Mobile Upload & Download UI (No Audit Until Finished)
 ```
 
