@@ -1,3 +1,40 @@
+
+
+
+
+
+
+
+# 
+```
+
+
+Roadmap backend dan audit repository sudah selesai.
+
+JANGAN melakukan audit ulang.
+JANGAN membuat laporan production-ready lagi.
+JANGAN mengulang pemeriksaan GitHub Actions kecuali saat akan merge.
+
+Fokus hanya mengimplementasikan fitur yang masih belum ada.
+
+Daftar pekerjaan:
+
+1. Kecilkan seluruh font mobile.
+2. Perkecil card, padding, margin, bottom action.
+3. Selesaikan halaman Upload dengan seluruh fitur upload.
+4. Selesaikan halaman Download agar tidak membuka api.telegram.org langsung.
+5. Tambahkan halaman Download lengkap (preview, metadata, tombol download, progress, counter).
+6. Perbaiki seluruh UI mobile agar mirip Google Drive.
+7. Jalankan test.
+8. Jika CI hijau langsung merge.
+9. Setelah merge langsung lanjut pekerjaan berikutnya sampai seluruh daftar di atas selesai.
+
+Jangan berhenti setelah satu fitur.
+Jangan membuat laporan audit lagi.
+Laporan cukup sekali setelah seluruh pekerjaan UI selesai.
+
+
+```
 # Prompt 38 — UI Mobile Final + Upload Page + Download Page (Production)
 ```
 
