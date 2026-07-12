@@ -1,8 +1,135 @@
 
 
 
+# Prompt Phase 5.2
+```
 
-# Phase 5.2
+PROJECT: Telegram Drive
+NEXT PHASE: Phase 5.2 – Advanced File Manager
+
+Ikuti workflow ini tanpa pengecualian.
+
+GENERAL RULES
+
+- Jangan pernah menggunakan mock.
+- Jangan menghapus fitur yang sudah ada.
+- Jangan mengubah perilaku production yang sudah berjalan.
+- Jangan merusak API lama.
+- Semua perubahan harus production-ready.
+- Semua perubahan harus lolos lint, typecheck, build, Playwright, API Integration, Folder Integration dan GitHub Actions.
+- Selalu mulai dari main terbaru.
+- Buat branch baru khusus Phase 5.2.
+- Selesaikan seluruh implementasi sebelum merge.
+
+PHASE 5.2 TARGET
+
+Implement fitur lanjutan File Manager yang masih belum ada:
+
+1. Advanced Sort
+- Name
+- Date
+- Size
+- Type
+- Ascending
+- Descending
+
+2. Advanced Filters
+- Images
+- Videos
+- Documents
+- Audio
+- Archives
+- Folder
+- Favorites
+- Recent
+
+3. Search Improvements
+- Instant search
+- Debounce
+- Highlight keyword
+- Search folder
+- Search file
+- Search metadata
+
+4. Selection Improvements
+- Shift select
+- Ctrl select
+- Touch multi select
+- Select all
+- Clear selection
+
+5. Bulk Actions
+- Copy
+- Move
+- Delete
+- Download
+- Favorite
+- Remove favorite
+
+6. File Information
+- MIME Type
+- Upload Date
+- Modified Date
+- Size
+- Telegram Message ID
+- Channel
+- Preview
+
+7. Folder Navigation
+- Better breadcrumb
+- Back
+- Forward
+- Remember last folder
+
+8. UX Improvements
+- Better animations
+- Loading states
+- Empty states
+- Error states
+- Mobile optimization
+
+REQUIREMENTS
+
+- Jangan menghapus satu pun fitur yang sudah ada.
+- Pertahankan Favorites.
+- Pertahankan Recent.
+- Pertahankan ZIP Streaming.
+- Pertahankan File Details.
+- Pertahankan semua API lama.
+- Tambahkan test regression untuk seluruh fitur baru.
+- Update README.md.
+- Update CHANGELOG.md.
+
+WORKFLOW
+
+1. Pull latest main.
+2. Create new branch Phase 5.2.
+3. Implement seluruh fitur.
+4. Jalankan:
+   - lint
+   - typecheck
+   - build
+   - API integration
+   - Folder integration
+   - Chromium
+   - Firefox
+   - WebKit
+5. Jika ada satu saja gagal:
+   - cari root cause
+   - perbaiki production code
+   - ulangi CI sampai hijau
+6. Setelah seluruh GitHub Actions hijau:
+   - audit production
+   - regression test
+   - merge ke main
+7. Baru setelah merge selesai, berhenti dan berikan laporan lengkap.
+
+Jangan berhenti di tengah implementasi. Selesaikan seluruh Phase 5.2 sampai merged ke main jika seluruh CI sudah hijau.
+
+
+
+```
+# Phase 5.1
 ```
 
 
