@@ -8,6 +8,47 @@
 # Prompt 
 ```
 
+
+
+Update roadmap.
+
+Jangan mulai dari Trash.
+
+Prioritaskan fitur yang paling meningkatkan pengalaman pengguna (UX) sebelum fitur keamanan.
+
+Urutan implementasi:
+
+Phase 5.0
+- Multi Select
+- Bulk Actions (Delete, Move, Copy, Download)
+- Sort (Name, Date, Size, Type)
+- Filter (Image, Video, Audio, Document, Archive)
+
+Phase 5.1
+- Favorites
+- Recent
+- Folder Download as ZIP
+- Detail Panel
+- Breadcrumb Navigation
+- File Details
+
+Phase 5.2
+- Trash (Soft Delete)
+- Restore
+- Empty Trash
+- Retention Policy
+
+Setelah roadmap diperbarui, buat branch baru dari main dan implementasikan Phase 5.0 secara lengkap menggunakan production code.
+
+Jangan menggunakan mock.
+Jangan menghapus fitur yang sudah ada.
+Semua perubahan harus lulus lint, typecheck, build, Playwright, dan GitHub Actions.
+Buat PR ke main, merge jika seluruh CI hijau, lalu lanjut ke fitur berikutnya.
+
+```
+# Prompt 
+```
+
 Sekarang buat roadmap implementasi berdasarkan hasil audit.
 
 Jangan langsung mengubah kode.
