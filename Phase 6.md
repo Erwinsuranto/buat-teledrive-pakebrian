@@ -1,3 +1,79 @@
+
+
+
+
+
+
+
+
+
+# Prompt berikutnya
+```
+
+PROJECT: Telegram Drive
+
+Lanjutkan Phase 6 sampai benar-benar selesai.
+
+Jangan berhenti setelah memberi status.
+
+WORKFLOW WAJIB
+
+1. Pantau seluruh GitHub Actions pada PR Phase 6.
+2. Jangan merge sebelum SEMUA check selesai.
+3. Jika ada SATU check gagal:
+   - buka log GitHub Actions
+   - identifikasi root cause
+   - perbaiki production code
+   - commit
+   - push
+   - jalankan ulang CI
+   - ulangi sampai seluruh check hijau
+4. Jangan gunakan mock.
+5. Jangan menghapus fitur lama.
+6. Semua regression harus tetap hijau.
+7. Semua API lama harus tetap kompatibel.
+
+Jika seluruh GitHub Actions hijau:
+
+- Merge PR ke main.
+- Pull latest main.
+- Jalankan full production regression.
+- Audit production.
+- Pastikan tidak ada regression.
+
+Update:
+- README.md
+- CHANGELOG.md
+
+Buat laporan lengkap:
+- file yang berubah
+- endpoint API baru
+- perubahan database
+- hasil seluruh GitHub Actions
+- hasil regression
+- commit merge
+- status production
+
+Jika seluruh audit production berhasil tanpa regression:
+
+LANGSUNG mulai Phase 7 menggunakan latest main dengan workflow yang sama.
+
+Setelah Phase 7 selesai dan merged:
+langsung lanjut Enterprise menggunakan workflow yang sama.
+
+Setiap phase harus:
+- production-ready
+- regression-tested
+- seluruh GitHub Actions hijau
+- merge ke main
+- audit production
+- baru lanjut phase berikutnya.
+
+Jangan berhenti sampai seluruh roadmap selesai atau ada blocker teknis yang benar-benar tidak dapat diselesaikan beserta bukti log dan penjelasannya.
+
+
+
+```
 # Phase 6.
 ```
 
