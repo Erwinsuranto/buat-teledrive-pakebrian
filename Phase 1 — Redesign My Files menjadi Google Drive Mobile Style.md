@@ -1,6 +1,57 @@
 
 
 
+
+# Phase 5.2
+```
+
+
+Jangan lanjut ke Phase 5.2.
+
+Tetap fokus pada Pull Request Phase 5.1.
+
+Tunggu seluruh GitHub Actions selesai.
+
+Jika ada satu saja check merah:
+
+- buka log GitHub Actions
+- identifikasi root cause
+- perbaiki production code
+- jalankan ulang CI
+- ulangi sampai seluruh check hijau
+
+Jangan menggunakan mock.
+Jangan menghapus fitur yang sudah ada.
+Jangan menurunkan kualitas UI maupun UX.
+
+Jika seluruh GitHub Actions sudah hijau:
+
+1. Jalankan regression test penuh.
+2. Pastikan:
+   - lint PASS
+   - typecheck PASS
+   - build PASS
+   - API integration PASS
+   - Folder integration PASS
+   - Playwright Chromium PASS
+   - Playwright Firefox PASS
+   - Playwright WebKit PASS
+3. Merge Pull Request ke main.
+4. Hapus branch feature.
+5. Pull latest main.
+6. Audit aplikasi production untuk memastikan tidak ada regression.
+7. Update README.md dan CHANGELOG.md dengan seluruh perubahan Phase 5.1.
+8. Berikan ringkasan:
+   - file yang berubah
+   - API yang berubah
+   - database/model yang berubah
+   - hasil seluruh GitHub Actions
+   - hasil regression test
+
+Hanya setelah semua langkah di atas selesai dan main dalam kondisi hijau, baru buat branch baru untuk Phase 5.2.
+
+
+```
 # 
 ```
 # Telegram Drive - Phase 5.1 (Production Implementation)
