@@ -4,6 +4,30 @@
 
 
 
+# 
+```
+
+
+Saya melanjutkan project Telegram Drive.
+
+Current status:
+- Backend production selesai.
+- Upload, download, preview, folder, search, copy link sudah production.
+- PR #29 sudah merged ke main.
+- Semua lint, typecheck, build, Playwright, Chromium, Firefox, WebKit sudah PASS.
+
+Mulai sekarang jangan mengulang fitur yang sudah selesai.
+
+Fokus hanya pada fitur berikutnya yang belum ada.
+Selalu gunakan production code.
+Jangan membuat mock.
+Jangan menghapus fitur yang sudah bekerja.
+Selalu buat branch baru dan Pull Request baru.
+
+
+```
+
+
 # Prompt 29 – Final Production List View (MEGA Style)
 ```
 
