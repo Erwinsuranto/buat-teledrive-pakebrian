@@ -1,6 +1,68 @@
 
 
+# 
+```
+Lanjutkan sesuai workflow production Telegram Drive.
 
+Pantau seluruh GitHub Actions pada PR #33 sampai selesai.
+
+Jika ada SATU saja check gagal:
+
+- buka log GitHub Actions
+- identifikasi root cause
+- perbaiki production code
+- commit
+- push
+- jalankan ulang CI
+- ulangi sampai seluruh GitHub Actions hijau
+
+Jangan memakai mock.
+Jangan menghapus fitur yang sudah ada.
+Jangan mengubah API lama.
+Jangan menurunkan UX maupun UI.
+
+Jika seluruh GitHub Actions sudah hijau:
+
+1. Merge PR #33 ke main.
+2. Pull latest main.
+3. Jalankan full production regression.
+4. Verifikasi:
+   - lint
+   - typecheck
+   - build
+   - API smoke
+   - Folder integration
+   - Canonical data
+   - Playwright Chromium
+   - Playwright Firefox
+   - Playwright WebKit
+   - tidak ada regression
+5. Update README.md.
+6. Update CHANGELOG.md.
+7. Hapus branch feature Phase 5.2.
+8. Audit production sekali lagi.
+9. Berikan laporan lengkap:
+   - seluruh file yang berubah
+   - endpoint API baru
+   - perubahan database
+   - hasil seluruh GitHub Actions
+   - hasil regression
+   - commit merge
+   - kondisi production
+
+Jika semua langkah di atas berhasil, langsung lanjut membuat branch baru untuk Phase 6 (Sharing & Collaboration).
+
+Phase 6 harus dikerjakan dengan workflow yang sama:
+- production code only
+- tanpa mock
+- regression test wajib
+- seluruh GitHub Actions wajib hijau
+- merge ke main hanya setelah semua check selesai.
+
+
+
+
+```
 # Prompt Phase 5.2
 ```
 
