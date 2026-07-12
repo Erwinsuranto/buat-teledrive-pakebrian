@@ -6,7 +6,59 @@
 
 
 
+# 
+```
 
+Mulai sekarang jangan memberikan update setiap progress kecil.
+
+Jangan melapor ketika:
+- CI masih berjalan.
+- Masih 8/10, 9/10 check.
+- Masih menunggu Playwright.
+- Masih memperbaiki error kecil.
+- Masih push commit.
+
+Kerjakan semuanya sendiri sampai selesai.
+
+Jika CI gagal:
+- baca log,
+- perbaiki,
+- commit,
+- push,
+- jalankan ulang,
+- ulangi terus tanpa bertanya.
+
+Jangan kirim status sementara.
+
+Hanya berhenti dan memberikan laporan jika salah satu kondisi berikut terjadi:
+
+1. Seluruh GitHub Actions hijau.
+2. PR berhasil di-merge ke main.
+3. Production regression selesai.
+4. Audit production selesai.
+5. Phase berikutnya sudah dibuat.
+6. Ada blocker teknis yang benar-benar tidak bisa diperbaiki beserta log lengkap.
+
+Jika seluruh Phase selesai, LANGSUNG lanjut ke phase berikutnya menggunakan workflow yang sama tanpa meminta izin lagi.
+
+Di akhir setiap phase cukup kirim SATU laporan lengkap berisi:
+- nomor Phase
+- PR
+- commit merge
+- file yang berubah
+- endpoint API baru
+- perubahan database
+- hasil GitHub Actions
+- hasil regression
+- status production
+- phase berikutnya yang dimulai
+
+Jangan mengirim update lain di tengah proses.
+Fokus menyelesaikan roadmap secepat mungkin dengan tetap menjaga production tetap hijau.
+
+
+
+```
 # Prompt berikutnya
 ```
 
