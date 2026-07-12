@@ -2,7 +2,34 @@
 
 
 
+# memperbaiki CI sampai hijau.
+```
 
+
+Do not start Phase 5.1.
+
+Investigate every failed GitHub Action in PR #31.
+
+Open each failed workflow log and identify the exact root cause.
+
+Fix only the production code required to make all checks pass.
+
+Do not remove any Phase 5.0 functionality.
+
+After each fix:
+- run lint
+- typecheck
+- build
+- Playwright
+- API integration
+- push to the same PR
+
+Repeat until every GitHub Action is green.
+
+Only then merge PR #31.
+
+
+```
 # Prompt 1
 ```
 
