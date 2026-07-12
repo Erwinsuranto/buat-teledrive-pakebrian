@@ -5,7 +5,69 @@
 
 
 
+# 
+```
 
+Lanjutkan pekerjaan.
+
+Phase 6 sudah selesai, merged ke main, seluruh GitHub Actions hijau, regression lulus, production bersih.
+
+Sekarang lanjutkan mulai Phase 7 sampai seluruh roadmap selesai.
+
+Aturan tetap sama:
+
+- Jangan menggunakan mock.
+- Jangan menghapus fitur yang sudah ada.
+- Selalu mulai dari latest main.
+- Buat satu branch untuk satu phase.
+- Commit kecil jika diperlukan.
+- Push ke GitHub.
+- Buat Pull Request.
+- Perbaiki seluruh CI sampai hijau.
+- Merge ke main hanya setelah seluruh GitHub Actions hijau.
+- Audit production.
+- Baru lanjut ke phase berikutnya.
+
+Jika CI gagal:
+- baca log,
+- perbaiki,
+- commit,
+- push,
+- jalankan ulang,
+- ulangi sampai hijau.
+
+Jangan berhenti karena error kecil.
+
+Jangan meminta persetujuan di tengah jalan.
+
+Jangan memberikan update setiap commit, push, atau CI.
+
+Hanya kirim laporan ketika SATU phase selesai sepenuhnya.
+
+Setelah satu phase selesai, langsung lanjut phase berikutnya tanpa menunggu instruksi baru.
+
+Di akhir setiap phase kirim laporan lengkap:
+
+- Nomor phase
+- PR
+- Merge commit
+- Daftar file berubah
+- Endpoint API baru
+- Perubahan database
+- GitHub Actions
+- Regression test
+- Production audit
+- Branch yang dibuat
+- Branch yang di-merge
+- Branch yang masih perlu dibersihkan
+- Status roadmap (%)
+- Phase berikutnya yang langsung dimulai
+
+Target akhir adalah seluruh roadmap Phase 7 dan Enterprise selesai, seluruh PR sudah merge ke main, seluruh GitHub Actions hijau, production stabil, tanpa regression, dan tanpa menghentikan pekerjaan di tengah jalan kecuali ada blocker teknis yang benar-benar tidak dapat diperbaiki beserta log lengkap.
+
+
+
+```
 # 
 ```
 
