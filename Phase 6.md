@@ -3,7 +3,47 @@
 
 
 
+# 
+```
+Lakukan verifikasi terhadap seluruh temuan audit.
 
+Jangan menganggap temuan audit pasti benar.
+
+Untuk setiap temuan:
+
+1. Cari bukti langsung pada source code.
+2. Cari bukti pada test.
+3. Cari bukti pada GitHub Actions.
+4. Cari bukti pada runtime.
+5. Tentukan apakah:
+   - CONFIRMED
+   - FALSE POSITIVE
+   - NOT REPRODUCIBLE
+
+Jika CONFIRMED:
+- perbaiki menggunakan production code,
+- buat regression test,
+- lint,
+- typecheck,
+- build,
+- API test,
+- Playwright,
+- GitHub Actions,
+- merge jika seluruh CI hijau.
+
+Jika FALSE POSITIVE:
+jelaskan mengapa dengan bukti kode dan hasil test.
+
+Jangan menambah fitur baru.
+
+Fokus hanya menyelesaikan seluruh temuan audit sampai repository benar-benar production-ready.
+
+Baru setelah seluruh temuan selesai, lakukan audit independen kedua dan berikan keputusan akhir apakah repository sudah production-ready.
+
+
+
+
+```
 # 
 ```
 Roadmap telah dilaporkan selesai 100%.
