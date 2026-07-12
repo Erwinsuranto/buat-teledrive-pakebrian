@@ -1,5 +1,250 @@
 
 
+
+
+
+# Prompt 29 – Final Production List View (MEGA Style)
+```
+
+
+Continue working on the existing PR #28.
+
+Do NOT create a new PR.
+
+Implement the REAL production code only.
+
+Goal:
+Complete the My Files List View so it feels like a professional cloud drive similar to MEGA and Google Drive.
+
+Requirements
+
+1. Production List View
+
+Redesign every row.
+
+Each row must contain:
+
+• Proper file/folder icon
+• File/folder name
+• Metadata under the name
+    - size
+    - modified date
+    - optional type
+• Copy Link button
+• Three-dot context menu
+
+The layout must be compact and clean.
+
+Do not waste vertical space.
+
+Support long filenames with ellipsis.
+
+Responsive on:
+
+- Mobile
+- Tablet
+- Desktop
+
+------------------------------------------------
+
+2. File Icons
+
+Automatically display icons by file type.
+
+Folder
+Image
+Video
+Audio
+PDF
+ZIP
+RAR
+APK
+DOCX
+XLSX
+PPTX
+TXT
+Unknown
+
+Do not display the same icon for every file.
+
+------------------------------------------------
+
+3. Thumbnail Rules
+
+List View
+
+Image
+→ small thumbnail
+
+Video
+→ thumbnail with play indicator
+
+Other files
+→ icon only
+
+Folder
+→ folder icon
+
+No broken thumbnails.
+
+------------------------------------------------
+
+4. Copy Link
+
+Copy icon must
+
+• copy immediately
+
+• show success toast
+
+• work on desktop and mobile
+
+------------------------------------------------
+
+5. Context Menu
+
+Three-dot menu must include
+
+Preview
+
+Download
+
+Copy Link
+
+Rename
+
+Move
+
+Delete
+
+Properties
+
+Desktop:
+right click also opens this menu.
+
+------------------------------------------------
+
+6. Folder Rows
+
+Folder row shows
+
+Folder icon
+
+Folder name
+
+Number of files
+
+Last modified
+
+Three-dot menu
+
+------------------------------------------------
+
+7. Visual Polish
+
+Rounded cards
+
+Proper spacing
+
+Better typography
+
+Hover state (desktop)
+
+Pressed state (mobile)
+
+Smooth transitions
+
+Skeleton loading
+
+Empty state
+
+Loading state
+
+------------------------------------------------
+
+8. Responsive
+
+Desktop
+
+Tablet
+
+Mobile
+
+No overlapping elements.
+
+No clipped text.
+
+------------------------------------------------
+
+9. Accessibility
+
+Keyboard navigation
+
+Focus state
+
+ARIA labels
+
+Screen reader friendly
+
+------------------------------------------------
+
+10. Validation
+
+Test manually on
+
+Chrome
+
+Firefox
+
+Android Chrome
+
+Desktop
+
+Mobile
+
+------------------------------------------------
+
+Requirements
+
+Do not create mock UI.
+
+Implement production components.
+
+Keep existing backend.
+
+Do not break search.
+
+Do not break uploads.
+
+Do not break folder navigation.
+
+Do not break copy link.
+
+Do not break current API.
+
+Run:
+
+npm run lint
+
+npm run typecheck
+
+npm run build
+
+Run manual QA.
+
+Commit.
+
+Push to the SAME PR #28.
+
+Wait until every GitHub Action is green.
+
+Merge only after every check passes.
+
+Output only a PASS/FAIL checklist after manual verification.
+
+
+```
+
 # 
 ```
 
