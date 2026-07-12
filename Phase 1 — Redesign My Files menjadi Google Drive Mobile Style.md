@@ -4,6 +4,38 @@
 
 
 
+
+# 
+```
+
+Audit seluruh project Telegram Drive dari origin/main.
+
+Jangan langsung membuat branch.
+
+Buat laporan lengkap mengenai SEMUA fitur yang masih belum ada dibandingkan Google Drive, Telegram Drive, dan MEGA.
+
+Kelompokkan menjadi:
+
+Phase 5
+Phase 6
+Phase 7
+
+Untuk setiap fitur jelaskan:
+- Sudah ada atau belum
+- Tingkat prioritas
+- Dampak ke user
+- Estimasi kompleksitas
+- Apakah membutuhkan perubahan backend atau hanya frontend
+
+Urutkan berdasarkan prioritas production.
+
+Jangan mengubah kode apa pun.
+
+Setelah audit selesai, baru rekomendasikan satu fitur terbaik untuk dikerjakan berikutnya.
+
+
+
+```
 # 
 ```
 
