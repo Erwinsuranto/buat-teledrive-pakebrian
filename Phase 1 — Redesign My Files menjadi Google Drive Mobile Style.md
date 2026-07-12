@@ -2,6 +2,29 @@
 
 
 
+# 
+```
+
+Always start from the latest main branch.
+
+One phase = one branch.
+One branch = one Pull Request.
+One Pull Request = one merge.
+
+Do not continue to the next phase until:
+- lint passes
+- typecheck passes
+- build passes
+- API integration passes
+- Playwright (Chromium, Firefox, WebKit) passes
+- GitHub Actions are all green
+
+Every new feature must preserve existing production functionality and include regression testing before merge.
+
+
+
+```
+
 # memperbaiki CI sampai hijau.
 ```
 
