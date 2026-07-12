@@ -1,0 +1,140 @@
+# Phase 6.
+```
+
+
+PROJECT: Telegram Drive
+
+Mulai Phase 6 (Sharing & Collaboration).
+
+WAJIB mengikuti workflow ini untuk Phase 6, Phase 7, dan seluruh Enterprise.
+
+GENERAL RULES
+
+- Production code only.
+- Jangan menggunakan mock.
+- Jangan menghapus fitur yang sudah ada.
+- Jangan mengubah API lama kecuali benar-benar diperlukan dan tetap backward compatible.
+- Semua fitur lama harus tetap berjalan.
+- Semua perubahan harus regression-tested.
+- README.md dan CHANGELOG.md harus diperbarui setiap phase.
+- Setiap phase dimulai dari latest main.
+- Setiap phase menggunakan branch baru.
+- Merge hanya jika seluruh GitHub Actions hijau.
+
+========================================
+PHASE 6 — Sharing & Collaboration
+========================================
+
+Implement production-ready:
+
+1. Sharing ke user tertentu (ACL)
+   - Owner
+   - Editor
+   - Viewer
+   - Commenter
+
+2. Shared with me
+
+3. Shared folders
+
+4. Permission management UI
+
+5. Link sharing
+   - public
+   - private
+   - password
+   - expiration
+   - revoke
+
+6. Comments
+
+7. Mentions
+
+8. Notifications
+
+9. Activity feed
+
+10. Tags
+
+11. Labels
+
+12. Folder color
+
+13. Description
+
+14. Better collaboration UX
+
+15. Regression tests lengkap.
+
+========================================
+
+Setelah implementasi:
+
+- lint
+- typecheck
+- build
+- API Integration
+- Folder Integration
+- Chromium
+- Firefox
+- WebKit
+
+Jika SATU saja gagal:
+
+- buka log GitHub Actions
+- cari root cause
+- perbaiki production code
+- commit
+- push
+- jalankan ulang CI
+- ulangi sampai seluruh check hijau
+
+Jika semua hijau:
+
+- merge ke main
+- pull latest main
+- audit production
+- regression penuh
+- update README
+- update CHANGELOG
+
+========================================
+AUTOMATIC CONTINUATION
+========================================
+
+Setelah Phase 6 selesai:
+
+langsung mulai Phase 7 dengan workflow yang sama.
+
+Setelah Phase 7 selesai:
+
+langsung mulai Enterprise dengan workflow yang sama.
+
+========================================
+STOP CONDITION
+========================================
+
+Jangan berhenti di tengah pekerjaan.
+
+Hanya berhenti apabila:
+
+1. seluruh roadmap Telegram Drive telah selesai; ATAU
+
+2. ada blocker teknis yang benar-benar tidak dapat diselesaikan, dan sertakan:
+   - log GitHub Actions,
+   - root cause,
+   - file yang terdampak,
+   - solusi yang sudah dicoba,
+   - alasan teknis mengapa tidak dapat dilanjutkan.
+
+Di akhir setiap phase berikan laporan lengkap:
+- daftar file yang berubah,
+- endpoint API baru,
+- perubahan database,
+- hasil seluruh GitHub Actions,
+- hasil regression test,
+- commit merge,
+- status production.
+
+
+```
