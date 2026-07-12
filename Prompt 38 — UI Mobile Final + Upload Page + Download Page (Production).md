@@ -4,7 +4,24 @@
 
 
 
+# 
+```
 
+Lanjutkan.
+
+Jangan kirim wrapper page.
+
+Kirim file implementasi sebenarnya:
+
+components/final-ui/upload-studio.tsx
+
+atau file yang berisi UploadStudio.
+
+Saya ingin seluruh isi source code lengkap, bukan page wrapper.
+
+
+
+```
 # 
 ```
 STOP.
