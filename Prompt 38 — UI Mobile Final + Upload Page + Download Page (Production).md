@@ -5,7 +5,174 @@
 
 
 
+# Prompt 39 – Complete Mobile Upload & Download UI (No Audit Until Finished)
+```
 
+
+
+Lanjutkan pekerjaan dari PR #38.
+
+JANGAN membuat audit repository lagi.
+JANGAN membuat laporan progress lagi.
+JANGAN membuat laporan production-ready lagi.
+JANGAN membuat PR baru setiap fitur kecil.
+JANGAN berhenti setelah satu fitur selesai.
+
+Fokus hanya menyelesaikan implementasi UI dan functionality sampai benar-benar selesai.
+
+Target:
+
+========================
+1. Upload Page
+========================
+
+Buat halaman Upload lengkap.
+
+Harus memiliki:
+
+- Choose File
+- Upload Button
+- Drag & Drop
+- Mobile File Picker
+- Multiple Upload
+- Folder Upload jika browser mendukung
+- Progress Bar
+- Upload Speed
+- Remaining Time
+- Cancel Upload
+- Retry Upload
+- Pause Resume
+- Success Notification
+- Error Notification
+- Preview Image
+- Preview Video
+- Preview PDF
+- File Information
+- Upload Queue
+- Recent Uploads
+
+Upload harus langsung menggunakan API Telegram Drive yang sudah ada.
+
+========================
+2. Download Page
+========================
+
+Buat halaman Download lengkap.
+
+Harus memiliki:
+
+- File Preview
+- Thumbnail
+- File Metadata
+- Download Button
+- Download Progress
+- Remaining Time
+- Retry
+- Resume
+- Copy Link
+- Share
+- QR Code
+- Related Files
+- Recent Downloads
+
+========================
+3. Mobile UI
+========================
+
+Perbaiki seluruh UI mobile.
+
+Font terlalu besar.
+
+Gunakan ukuran yang nyaman seperti Google Drive.
+
+Kurangi whitespace.
+
+Perkecil:
+
+- Header
+- Card
+- Button
+- Menu
+- List
+- Dialog
+- Search
+- Metadata
+
+Semua harus nyaman digunakan pada layar HP.
+
+========================
+4. Navigation
+========================
+
+Pastikan menu:
+
+Home
+My Files
+Upload
+Download
+Favorites
+Recent
+Trash
+Settings
+
+berfungsi.
+
+========================
+5. Responsive
+========================
+
+Pastikan tampil baik pada:
+
+Android
+iPhone
+Tablet
+Desktop
+
+========================
+6. API
+========================
+
+Gunakan API yang sudah ada.
+
+Jangan membuat API baru jika endpoint lama masih bisa dipakai.
+
+========================
+7. Git
+========================
+
+Kerjakan seluruh implementasi dalam branch PR #38.
+
+Jangan membuat PR baru.
+
+Merge hanya jika:
+
+- seluruh UI Upload selesai
+- seluruh UI Download selesai
+- responsive selesai
+- tidak ada placeholder
+- tidak ada halaman kosong
+
+========================
+8. Output
+========================
+
+Jangan membuat laporan panjang.
+
+Jangan audit lagi.
+
+Jangan menjelaskan setiap perubahan.
+
+Kerjakan terus sampai seluruh fitur Upload dan Download selesai.
+
+Jika ada GitHub Actions gagal karena billing atau runner GitHub, hentikan hanya proses CI.
+
+Tetap lanjutkan implementasi source code.
+
+Yang penting seluruh kode selesai terlebih dahulu.
+
+Laporan cukup satu kali setelah semua fitur selesai.
+
+```
 # 
 ```
 
