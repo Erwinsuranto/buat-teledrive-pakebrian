@@ -4,7 +4,82 @@
 
 
 
+# 
+```
 
+Enterprise adalah phase terakhir.
+
+Jangan berhenti lagi sampai seluruh roadmap benar-benar selesai 100%.
+
+Jangan memberikan update sementara.
+
+Jangan melapor ketika:
+- commit selesai,
+- push selesai,
+- PR dibuat,
+- CI masih berjalan,
+- Playwright masih berjalan,
+- regression masih berjalan,
+- audit masih berjalan.
+
+Kerjakan semuanya sendiri.
+
+Workflow wajib:
+
+- mulai dari latest main
+- buat branch Enterprise
+- implementasikan seluruh sisa roadmap Enterprise
+- jangan menggunakan mock
+- jangan menghapus fitur yang sudah ada
+- pertahankan backward compatibility
+- update README, CHANGELOG dan dokumentasi bila diperlukan
+- commit
+- push
+- buat Pull Request
+- perbaiki seluruh CI sampai semuanya hijau
+- merge ke main
+- audit production
+- regression test penuh
+- bersihkan branch yang sudah selesai jika memungkinkan
+- pastikan repository berada pada kondisi production-ready
+
+Jika menemukan error:
+- baca log
+- perbaiki
+- commit
+- push
+- jalankan ulang CI
+- ulangi sampai hijau
+
+Jangan meminta persetujuan.
+Jangan berhenti karena error kecil.
+Jangan membuat phase baru jika roadmap sudah selesai.
+
+BARU kirim SATU laporan terakhir ketika seluruh roadmap benar-benar selesai 100%.
+
+Laporan akhir harus berisi:
+
+- Persentase roadmap (harus 100%)
+- Daftar seluruh phase yang selesai
+- Semua PR
+- Semua merge commit
+- Semua endpoint API baru
+- Semua perubahan database
+- Semua file yang berubah
+- Semua GitHub Actions hijau
+- Semua regression test lulus
+- Status production
+- Daftar branch yang masih ada
+- Daftar branch yang berhasil dibersihkan
+- Audit akhir repository
+- Daftar fitur yang belum ada (jika masih ada)
+- Kesimpulan apakah repository sudah production-ready
+
+Target akhirnya adalah repository selesai 100%, production-ready, seluruh roadmap selesai, seluruh GitHub Actions hijau, seluruh regression test lulus, tanpa regression, dan tidak ada pekerjaan roadmap yang tersisa.
+
+
+
+```
 # 
 ```
 
