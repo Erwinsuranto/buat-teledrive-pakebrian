@@ -1,5 +1,85 @@
 
 
+
+
+# Lanjutkan sampai Phase 5.2 benar-benar selesai.
+```
+
+
+PROJECT: Telegram Drive
+
+Lanjutkan sampai Phase 5.2 benar-benar selesai.
+
+Jangan berhenti setelah memberi laporan.
+
+Workflow wajib:
+
+1. Pantau seluruh GitHub Actions pada PR #33.
+2. Jangan merge sebelum SEMUA check selesai.
+3. Jika satu saja check merah:
+   - buka log GitHub Actions
+   - identifikasi root cause
+   - perbaiki production code
+   - commit
+   - push
+   - jalankan ulang CI
+   - ulangi sampai seluruh check hijau
+4. Jangan menggunakan mock.
+5. Jangan menghapus fitur yang sudah ada.
+6. Jangan mengubah perilaku production.
+7. Pertahankan seluruh API lama.
+8. Pertahankan seluruh regression test.
+
+Jika seluruh GitHub Actions sudah hijau:
+
+- Merge PR #33 ke main.
+- Pull latest main.
+- Jalankan full regression production.
+- Pastikan:
+  - lint PASS
+  - typecheck PASS
+  - build PASS
+  - API smoke PASS
+  - Folder Integration PASS
+  - Canonical Data PASS
+  - Chromium PASS
+  - Firefox PASS
+  - WebKit PASS
+  - tidak ada regression
+
+Kemudian:
+
+- Update README.md.
+- Update CHANGELOG.md.
+- Hapus branch feature Phase 5.2.
+- Audit production sekali lagi.
+
+Jika audit production selesai tanpa regression:
+
+LANGSUNG lanjut ke Phase 6.
+
+Phase 6 workflow:
+
+- pull latest main
+- buat branch baru
+- implement seluruh fitur Phase 6
+- production code only
+- tanpa mock
+- jangan menghapus fitur lama
+- regression test wajib
+- lint wajib hijau
+- typecheck wajib hijau
+- build wajib hijau
+- API wajib hijau
+- Playwright Chromium, Firefox dan WebKit wajib hijau
+- merge ke main hanya jika seluruh GitHub Actions hijau
+
+Setelah Phase 6 selesai, ulangi workflow yang sama untuk Phase 7, lalu Enterprise, hingga seluruh roadmap selesai.
+
+Jangan berhenti di tengah pekerjaan. Hanya berhenti jika seluruh roadmap telah selesai atau ada kegagalan yang benar-benar tidak dapat diperbaiki, dan sertakan bukti log serta penjelasan teknisnya.
+
+
+```
 # 
 ```
 Lanjutkan sesuai workflow production Telegram Drive.
